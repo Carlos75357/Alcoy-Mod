@@ -1,0 +1,48 @@
+ideas = {
+	country = {
+		ALC_industrial_tradition = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		
+		ALC_textile_industry = {
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.10
+			}
+		}
+		
+		ALC_paper_production = {
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+state = {
+	id = 1018
+	name = "STATE_1018"
+	manpower = 540000
+	
+	state_category = city
+	
+	resources = {
+		steel = 2
+		aluminium = 1
+	}
+	
+	history = {
+		owner = SPR
+		victory_points = {
+			4098 10
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 2
+			4098 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = SPR
+		1939.1.1 = {
+			owner = ALC
+			add_core_of = ALC
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 3
+				arms_factory = 1
+				dockyard = 1
+				air_base = 3
+				4098 = {
+					naval_base = 3
+				}
+			}
+		}
+	}
+	
+	provinces = {
+		4098 962
+	}
+}

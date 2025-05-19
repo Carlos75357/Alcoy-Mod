@@ -1,0 +1,36 @@
+
+state={
+	id=167
+	name="STATE_167"
+	manpower = 1111854
+	
+	state_category = large_town
+
+	resources = {
+		steel = 3
+		aluminium = 1
+	}
+
+	history={
+		owner = SPR
+		victory_points = {
+			6906 10
+		}
+
+		buildings = {
+			infrastructure = 3 #was: 6
+			dockyard = 1
+			air_base = 3
+			6906 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = SPR
+	}
+
+	provinces={
+		3799 6856 6906 6959 
+	}
+
+	local_supplies=0.0 
+}

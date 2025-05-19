@@ -1,0 +1,31 @@
+ALC_INF_01 = 
+{
+	name = "División de Infantería"
+
+	for_countries = { ALC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ALC_GAR_01 }
+
+	fallback_name = "División de Infantería %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "1ª División de Infantería 'Serpis'" }
+		2 = { "2ª División de Infantería 'Mariola'" }
+		3 = { "3ª División de Infantería 'Barxell'" }
+		4 = { "4ª División de Infantería 'Molinar'" }
+		5 = { "5ª División de Infantería 'Polop'" }
+		6 = { "6ª División de Infantería 'Montcabrer'" }
+		7 = { "7ª División de Infantería 'Barchell'" }
+		8 = { "8ª División de Infantería 'Uxola'" }
+		9 = { "9ª División de Infantería 'Preventori'" }
+		10 = { "10ª División de Infantería 'Font Roja'" }
+	}
+}

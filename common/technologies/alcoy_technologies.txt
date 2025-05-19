@@ -1,0 +1,66 @@
+technologies = {
+	
+	alc_textile_tech = {
+		
+		research_cost = 1
+		
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	alc_paper_tech = {
+		
+		research_cost = 1
+		
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		
+		research_speed_factor = 0.05
+		political_power_gain = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	alc_mountain_infantry = {
+		
+		enable_subunits = {
+			alc_mountain_infantry
+		}
+		
+		research_cost = 1.5
+		start_year = 1936
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = ALC
+			}
+		}
+		
+		categories = {
+			infantry_tech
+			mountaineers_tech
+		}
+	}
+}

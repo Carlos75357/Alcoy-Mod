@@ -1,0 +1,25 @@
+state = {
+	id = 1020
+	name = "STATE_1020"
+	manpower = 25000
+	
+	state_category = small_island
+	
+	history = {
+		owner = SPR
+		add_core_of = SPR
+		victory_points = {
+			7114 1
+		}
+		buildings = {
+			infrastructure = 2
+			7114 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces = {
+		7114
+	}
+}

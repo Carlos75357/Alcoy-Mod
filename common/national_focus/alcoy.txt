@@ -1,0 +1,189 @@
+focus_tree = {
+	id = alcoy_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALC
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = ALC_industrial_effort
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 3
+		y = 0
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = ALC_expand_textile_industry
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = { focus = ALC_industrial_effort }
+		x = 2
+		y = 1
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ALC_paper_mills
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = { focus = ALC_industrial_effort }
+		x = 4
+		y = 1
+		
+		completion_reward = {
+			add_ideas = ALC_paper_production
+		}
+	}
+	
+	focus = {
+		id = ALC_military_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 9
+		y = 0
+		
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = ALC_arms_production
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = { focus = ALC_military_effort }
+		x = 8
+		y = 1
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ALC_infantry_focus
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = { focus = ALC_military_effort }
+		x = 10
+		y = 1
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = ALC_political_effort
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		x = 6
+		y = 0
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = ALC_diplomatic_effort
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = { focus = ALC_political_effort }
+		x = 6
+		y = 1
+		
+		completion_reward = {
+			add_ideas = diplomatic_focus
+		}
+	}
+	
+	focus = {
+		id = ALC_align_with_republicans
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = { focus = ALC_diplomatic_effort }
+		mutually_exclusive = { focus = ALC_align_with_nationalists }
+		x = 5
+		y = 2
+		
+		completion_reward = {
+			add_opinion_modifier = { target = SPR modifier = large_increase }
+			SPR = { add_opinion_modifier = { target = ALC modifier = large_increase } }
+		}
+	}
+	
+	focus = {
+		id = ALC_align_with_nationalists
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = { focus = ALC_diplomatic_effort }
+		mutually_exclusive = { focus = ALC_align_with_republicans }
+		x = 7
+		y = 2
+		
+		completion_reward = {
+			add_opinion_modifier = { target = SPR modifier = large_decrease }
+			SPR = { add_opinion_modifier = { target = ALC modifier = large_decrease } }
+			add_political_power = 50
+		}
+	}
+}

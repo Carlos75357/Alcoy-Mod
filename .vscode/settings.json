@@ -1,0 +1,8 @@
+{
+    "cwtools.rules_version": "manual",
+    "cwtools.rules_folder": "D:\\Escritorio\\Carpetas\\cwtools-hoi4-config",
+    "cwtools.localisation.languages": [
+        "English",
+        "Spanish"
+    ]
+}
