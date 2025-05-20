@@ -68,8 +68,10 @@ create_corps_commander = {
 	set_war_support = 0.50
 	
 	add_ideas = {
-		ALC_industrial_tradition
+		ALC_autonomy_under_supervision
+		ALC_self_managed_union_network
 		ALC_textile_industry
+		ALC_international_political_isolation
 		ALC_paper_production
 	}
 }

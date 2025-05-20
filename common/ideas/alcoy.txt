@@ -72,35 +72,73 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				GER = { opinion_gain_monthly_same_ideology_factor = -0.50 }
-				ENG = { opinion_gain_monthly_same_ideology_factor = -0.50 }
-				FRA = { opinion_gain_monthly_same_ideology_factor = -0.50 }
-				ITA = { opinion_gain_monthly_same_ideology_factor = -0.50 }
-				SOV = { opinion_gain_monthly_same_ideology_factor = -0.50 }
-				USA = { opinion_gain_monthly_same_ideology_factor = -0.50 }
-				JAP = { opinion_gain_monthly_same_ideology_factor = -0.50 }
-				
 				justify_war_goal_time = -0.20
 			}
 			
 			on_add = {
-				GER = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				ENG = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				FRA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				ITA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				SOV = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				USA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				JAP = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				hidden_effect = {
+					if = {
+						limit = { country_exists = GER }
+						GER = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = ENG }
+						ENG = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = FRA }
+						FRA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = ITA }
+						ITA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = SOV }
+						SOV = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = USA }
+						USA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = JAP }
+						JAP = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+				}
 			}
 			
 			on_remove = {
-				GER = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				ENG = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				FRA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				ITA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				SOV = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				USA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-				JAP = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				hidden_effect = {
+					if = {
+						limit = { country_exists = GER }
+						GER = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = ENG }
+						ENG = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = FRA }
+						FRA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = ITA }
+						ITA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = SOV }
+						SOV = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = USA }
+						USA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+					if = {
+						limit = { country_exists = JAP }
+						JAP = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+					}
+				}
 			}
 		}
 	}
