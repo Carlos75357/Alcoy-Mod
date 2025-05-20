@@ -1,0 +1,11 @@
+opinion_modifiers = {
+	# Modificador para representar la falta de reconocimiento diplomático por grandes potencias
+	ALC_not_recognized_by_major_power = {
+		value = -50
+		decay = 0 # No desaparece con el tiempo
+		trade = yes
+		target_trigger = {
+			tag = ALC
+		}
+	}
+}

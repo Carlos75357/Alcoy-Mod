@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		ALC_industrial_tradition = {
+		ALC_autonomy_under_supervision = {
 			picture = generic_production_bonus
 			
 			allowed = {
@@ -10,8 +10,24 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.10
+				stability_factor = -0.10
+				communism_drift = 0.05
+				democratic_drift = 0.05
+			}
+		}
+
+		ALC_self_managed_union_network = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
 				production_speed_industrial_complex_factor = 0.10
+				army_org_factor = -0.05
 			}
 		}
 		
@@ -25,8 +41,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
-				local_resources_factor = 0.10
+				consumer_goods_factor = 0.05
+				local_resources_factor = 0.5
+				production_speed_buildings_factor = 0.10
 			}
 		}
 		
@@ -42,6 +59,48 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.05
 				political_power_gain = 0.10
+			}
+		}
+		
+		ALC_international_political_isolation = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				GER = { opinion_gain_monthly_same_ideology_factor = -0.50 }
+				ENG = { opinion_gain_monthly_same_ideology_factor = -0.50 }
+				FRA = { opinion_gain_monthly_same_ideology_factor = -0.50 }
+				ITA = { opinion_gain_monthly_same_ideology_factor = -0.50 }
+				SOV = { opinion_gain_monthly_same_ideology_factor = -0.50 }
+				USA = { opinion_gain_monthly_same_ideology_factor = -0.50 }
+				JAP = { opinion_gain_monthly_same_ideology_factor = -0.50 }
+				
+				justify_war_goal_time = -0.20
+			}
+			
+			on_add = {
+				GER = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				ENG = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				FRA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				ITA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				SOV = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				USA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				JAP = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+			}
+			
+			on_remove = {
+				GER = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				ENG = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				FRA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				ITA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				SOV = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				USA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
+				JAP = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
 			}
 		}
 	}

@@ -1,7 +1,11 @@
-﻿l_english:
- ALC_industrial_tradition:0 "Alcoy Industrial Tradition"
- ALC_industrial_tradition_desc:0 "Alcoy has a long tradition of industry that dates back to the 19th century, being one of the first industrial centers of Spain. This experience allows for greater efficiency in industrial production."
+l_english:
+ ALC_autonomy_under_supervision:0 "Autonomy Under Supervision"
+ ALC_autonomy_under_supervision_desc:0 "Alcoy's autonomy is under the supervision of Spain, limiting some aspects of self-governance and causing some internal political instability."
+ ALC_self_managed_union_network:0 "Self-Managed Union Network"
+ ALC_self_managed_union_network_desc:0 "The strong tradition of worker self-management in Alcoy has led to a network of unions that efficiently organize industrial production, but sometimes interfere with military discipline."
  ALC_textile_industry:0 "Textile Industry"
  ALC_textile_industry_desc:0 "The textile industry has historically been the pillar of the Alcoy economy, allowing for efficient production of consumer goods and better utilization of local resources."
  ALC_paper_production:0 "Paper Production"
  ALC_paper_production_desc:0 "The paper mills of Alcoy have been fundamental to the cultural and administrative development of the region, facilitating research and public administration."
+ ALC_international_political_isolation:0 "International Political Isolation"
+ ALC_international_political_isolation_desc:0 "Alcoy is not diplomatically recognized by major powers, but it is also not perceived as an immediate threat. This results in diplomatic isolation but also reduces the likelihood of being targeted for aggression."

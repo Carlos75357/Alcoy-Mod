@@ -8,13 +8,10 @@ ALC_INF_01 =
 
 	division_types = { "infantry" }
 
-	# Number reservation system will tie to another group.
 	link_numbering_with = { ALC_GAR_01 }
 
 	fallback_name = "División de Infantería %d"
 
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
 	ordered =
 	{
 		1 = { "1ª División de Infantería 'Serpis'" }
@@ -27,5 +24,45 @@ ALC_INF_01 =
 		8 = { "8ª División de Infantería 'Uxola'" }
 		9 = { "9ª División de Infantería 'Preventori'" }
 		10 = { "10ª División de Infantería 'Font Roja'" }
+		11 = { "11ª División de Infantería 'Viaducto'" }
+		12 = { "12ª División de Infantería 'Zorra'" }
+		13 = { "13ª División de Infantería 'Císcar'" }
+		14 = { "14ª División de Infantería 'El Salt'" }
+		15 = { "15ª División de Infantería 'El Racó'" }
+		16 = { "16ª División de Infantería 'El Partidor'" }
+		17 = { "17ª División de Infantería 'San Mauro'" }
+		18 = { "18ª División de Infantería 'San Roque'" }
+		19 = { "19ª División de Infantería 'La Sang'" }
+		20 = { "20ª División de Infantería 'La Beniata'" }
+		21 = { "21ª División de Infantería 'El Tosal'" }
+		22 = { "22ª División de Infantería 'Eixample'" }
+		23 = { "23ª División de Infantería 'La Zona Alta'" }
+		24 = { "24ª División de Infantería 'Santa Rosa'" }
+		25 = { "25ª División de Infantería 'Batoi'" }
+		26 = { "26ª División de Infantería 'El Castellar'" }
+		27 = { "27ª División de Infantería 'L'Estepar'" }
+		28 = { "28ª División de Infantería 'El Puig'" }
+		29 = { "29ª División de Infantería 'Les Llometes'" }
+		30 = { "30ª División de Infantería 'La Canal'" }
+		31 = { "31ª División de Infantería 'La Sarga'" }
+		32 = { "32ª División de Infantería 'Peña Roja'" }
+		33 = { "33ª División de Infantería 'Tossal de Don Pedro'" }
+		34 = { "34ª División de Infantería 'Collao'" }
+		35 = { "35ª División de Infantería 'Cova Gelada'" }
+		36 = { "36ª División de Infantería 'Mas de la Cova'" }
+		37 = { "37ª División de Infantería 'Torre Na Valora'" }
+		38 = { "38ª División de Infantería 'Riquer'" }
+		39 = { "39ª División de Infantería 'Torreta'" }
+		40 = { "40ª División de Infantería 'El Tossal'" }
+		41 = { "41ª División de Infantería 'Plaça de Dins'" }
+		42 = { "42ª División de Infantería 'Mercado San Mateo'" }
+		43 = { "43ª División de Infantería 'Cotes Baixes'" }
+		44 = { "44ª División de Infantería 'Cotes Altes'" }
+		45 = { "45ª División de Infantería 'Rosaleda'" }
+		46 = { "46ª División de Infantería 'Llotja Sant Jordi'" }
+		47 = { "47ª División de Infantería 'El Mapa'" }
+		48 = { "48ª División de Infantería 'La Glorieta'" }
+		49 = { "49ª División de Infantería 'Pont de Sant Jordi'" }
+		50 = { "50ª División de Infantería 'El Cinturó'" }
 	}
 }

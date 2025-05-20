@@ -7,6 +7,8 @@ set_research_slots = 3
 set_stability = 0.70
 set_war_support = 0.40
 
+SPR = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
+
 add_ideas = {
 	limited_conscription
 }
@@ -45,4 +47,29 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1938.6.12"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	
+	set_popularities = {
+		democratic = 65
+		fascism = 10
+		communism = 15
+		neutrality = 10
+	}
+	
+	set_stability = 0.80
+	set_war_support = 0.50
+	
+	add_ideas = {
+		ALC_industrial_tradition
+		ALC_textile_industry
+		ALC_paper_production
+	}
 }
