@@ -1,18 +1,23 @@
 l_spanish:
- alcoy.1.t:0 "Declaración de Independencia de Alcoy"
- alcoy.1.d:0 "Hoy es un día histórico para el pueblo de Alcoy. Después de años de lucha y determinación, hemos declarado formalmente nuestra independencia. Las calles están llenas de celebraciones mientras nuestra nueva bandera ondea en los edificios públicos. Sin embargo, esto es solo el comienzo de nuestro viaje como nación soberana, y debemos estar preparados para los desafíos que nos esperan."
- alcoy.1.a:0 "¡Un nuevo capítulo en nuestra historia!"
+ alcoy.1.t:0 "DeclaraciÃ³n de Independencia de Alcoy"
+ alcoy.1.d:0 "Hoy es un dÃ­a histÃ³rico para el pueblo de Alcoy. DespuÃ©s de aÃ±os de lucha y determinaciÃ³n, hemos declarado formalmente nuestra independencia. Las calles estÃ¡n llenas de celebraciones mientras nuestra nueva bandera ondea en los edificios pÃºblicos. Sin embargo, esto es solo el comienzo de nuestro viaje como naciÃ³n soberana, y debemos estar preparados para los desafÃ­os que nos esperan."
+ alcoy.1.a:0 "Â¡Un nuevo capÃ­tulo en nuestra historia!"
  
  alcoy.2.t:0 "Crisis en la Industria Textil"
- alcoy.2.d:0 "Nuestra industria textil, pilar fundamental de la economía alcoyana, está enfrentando dificultades. La competencia internacional y la inestabilidad política en la región han provocado una disminución de las exportaciones y un aumento del desempleo. Debemos tomar medidas decisivas para abordar esta crisis antes de que afecte seriamente a nuestra joven nación."
+ alcoy.2.d:0 "Nuestra industria textil, pilar fundamental de la economÃ­a alcoyana, estÃ¡ enfrentando dificultades. La competencia internacional y la inestabilidad polÃ­tica en la regiÃ³n han provocado una disminuciÃ³n de las exportaciones y un aumento del desempleo. Debemos tomar medidas decisivas para abordar esta crisis antes de que afecte seriamente a nuestra joven naciÃ³n."
  alcoy.2.a:0 "Debemos resistir y adaptarnos"
- alcoy.2.b:0 "Invertir en modernizar nuestras fábricas"
+ alcoy.2.b:0 "Invertir en modernizar nuestras fÃ¡bricas"
  
- alcoy.3.t:0 "Tensiones con España"
- alcoy.3.d:0 "Las relaciones con España se han deteriorado desde nuestra declaración de independencia. El gobierno español ha expresado su descontento con nuestra secesión y ha amenazado con tomar medidas diplomáticas contra nosotros. Debemos decidir cómo manejar esta delicada situación para evitar un conflicto mayor."
- alcoy.3.a:0 "¡No cederemos ante sus presiones!"
- alcoy.3.b:0 "Intentemos mejorar las relaciones diplomáticas"
+ alcoy.3.t:0 "Tensiones con EspaÃ±a"
+ alcoy.3.d:0 "Las relaciones con EspaÃ±a se han deteriorado desde nuestra declaraciÃ³n de independencia. El gobierno espaÃ±ol ha expresado su descontento con nuestra secesiÃ³n y ha amenazado con tomar medidas diplomÃ¡ticas contra nosotros. Debemos decidir cÃ³mo manejar esta delicada situaciÃ³n para evitar un conflicto mayor."
+ alcoy.3.a:0 "Â¡No cederemos ante sus presiones!"
+ alcoy.3.b:0 "Intentemos mejorar las relaciones diplomÃ¡ticas"
  
  alcoy.4.t:0 "Descubrimiento de Recursos en la Sierra de Mariola"
  alcoy.4.d:0 "Geólogos que exploraban la Sierra de Mariola han descubierto importantes yacimientos de hierro que no habían sido explotados previamente. Este hallazgo podría fortalecer significativamente nuestra industria y reducir nuestra dependencia de las importaciones. Los expertos estiman que estos recursos podrían ser una valiosa fuente para nuestra economía en los próximos años."
  alcoy.4.a:0 "¡Excelentes noticias para nuestra nación!"
+
+ alcoy.5.t:0 "Alcoy se une a la causa Republicana"
+ alcoy.5.d:0 "Con el estallido de la Guerra Civil Española, Alcoy se encuentra en una encrucijada crítica. Las fuerzas Nacionalistas bajo Franco buscan imponer su autoridad sobre toda España, pero nuestro pueblo históricamente se ha alineado con valores progresistas y democráticos. Hoy, nuestro gobierno ha tomado la decisión de liberarse del control Nacionalista y unirse al bando Republicano en este conflicto, alineándose con aquellos que luchan por la democracia y la libertad."
+ alcoy.5.a:0 "¡Por la libertad y la República!"
+ alcoy_joins_republicans_tooltip:0 "§YAlcoy§! se libera del control Nacionalista y se une a la facción Republicana."

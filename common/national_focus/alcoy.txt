@@ -10,69 +10,376 @@ focus_tree = {
 	}
 	
 	default = no
-	
+	# DESARROLLO INDUSTRIAL
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
 	focus = {
 		id = ALC_industrial_effort
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_industry
 		cost = 10.00
-		x = 3
+		x = 14
 		y = 0
 		
 		completion_reward = {
+			add_ideas = {
+				ALC_textile_industry
+			}
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_2
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 13
+		y = 1
+
+		prerequisite = {
+			focus = ALC_industrial_effort
+		}
+
+		completion_reward = {
+			add_ideas = {
+				ALC_paper_production
+			}
+			swap_ideas = {
+				remove_idea = ALC_textile_industry
+				add_idea = ALC_textile_industry_improved
+			}
+			custom_effect_tooltip = textile_industry_improved_tooltip
+		}
+	}
+
+focus = {
+		id = ALC_underground_shelters
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		x = 15
+		y = 1
+
+		prerequisite = {
+			focus = ALC_industrial_effort
+		}
+		
+		available = {
+			has_global_flag = spanish_civil_war
+		}
+		
+		completion_reward = {
+			add_ideas = ALC_underground_shelters
+			custom_effect_tooltip = underground_shelters_tooltip
+			
+			random_owned_controlled_state = {
+				limit = {
+					is_capital = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ALC_energy_self_sufficiency
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		x = 14
+		y = 2
+
+		prerequisite = {
+			focus = ALC_industrial_effort_2
+			focus = ALC_underground_shelters
+		}
+		
+		available = {
+			has_global_flag = spanish_civil_war
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_tech = synth_oil_experiments }
+				}
+				add_tech_bonus = {
+					name = synth_oil_bonus
+					bonus = 2.0
+					technology = synth_oil_experiments
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = synthetic_refinery
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ALC_technical_training
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		x = 14
+		y = 3
+
+		prerequisite = {
+			focus = ALC_energy_self_sufficiency
+		}
+		
+		completion_reward = {
 			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 0.5
-				uses = 1
+				name = tech_bonus
+				bonus = 1
+				uses = 2
 				category = industry
 			}
 		}
 	}
-	
+	# Una vez ya terminada la guerra civil
 	focus = {
-		id = ALC_expand_textile_industry
-		icon = GFX_goal_generic_consumer_goods
+		id = ALC_industrial_effort_6
+		icon = GFX_goal_generic_production
 		cost = 10.00
-		prerequisite = { focus = ALC_industrial_effort }
-		x = 2
-		y = 1
-		
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
+		x = 14
+		y = 4
+
+		prerequisite = {
+			focus = ALC_technical_training
 		}
 	}
-	
+
 	focus = {
-		id = ALC_paper_mills
-		icon = GFX_goal_generic_scientific_exchange
+		id = ALC_industrial_effort_7
+		icon = GFX_goal_generic_production
 		cost = 10.00
-		prerequisite = { focus = ALC_industrial_effort }
-		x = 4
-		y = 1
-		
-		completion_reward = {
-			add_ideas = ALC_paper_production
+		x = 12
+		y = 5
+
+		prerequisite = {
+			focus = ALC_industrial_effort_6
 		}
 	}
-	
+
 	focus = {
-		id = ALC_military_effort
+		id = ALC_industrial_effort_8
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 16
+		y = 5
+
+		prerequisite = {
+			focus = ALC_industrial_effort_6
+		}
+	}	
+
+	focus = {
+		id = ALC_industrial_effort_9
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 20
+		y = 5
+
+		prerequisite = {
+			focus = ALC_industrial_effort_6
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_10
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 12
+		y = 6
+
+		prerequisite = {
+			focus = ALC_industrial_effort_7
+		}
+
+		mutually_exclusive = {
+			focus = ALC_industrial_effort_11
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_11
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 16
+		y = 6
+
+		prerequisite = {
+			focus = ALC_industrial_effort_8
+		}
+
+		mutually_exclusive = {
+			focus = ALC_industrial_effort_10
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_12
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 20
+		y = 6
+
+		prerequisite = {
+			focus = ALC_industrial_effort_9
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_13
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 12
+		y = 7
+		
+		prerequisite = {
+			focus = ALC_industrial_effort_10
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_14
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 16
+		y = 7
+
+		prerequisite = {
+			focus = ALC_industrial_effort_11
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_15
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 18
+		y = 7
+
+		prerequisite = {
+			focus = ALC_industrial_effort_11
+		}
+
+		prerequisite = {
+			focus = ALC_industrial_effort_12
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_16
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 20
+		y = 7
+
+		prerequisite = {
+			focus = ALC_industrial_effort_12
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_17
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 10
+		y = 9
+
+		prerequisite = {
+			focus = ALC_industrial_effort_18
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_18
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 12
+		y = 8
+
+		prerequisite = {
+			focus = ALC_industrial_effort_13
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_19
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 14
+		y = 9
+
+		prerequisite = {
+			focus = ALC_industrial_effort_18
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_20
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 16
+		y = 8
+
+		prerequisite = {
+			focus = ALC_industrial_effort_14
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_21
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 18
+		y = 8
+
+		prerequisite = {
+			focus = ALC_industrial_effort_15
+		}
+	}
+
+	focus = {
+		id = ALC_industrial_effort_22
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 20
+		y = 9
+
+		prerequisite = {
+			focus = ALC_industrial_effort_16
+			focus = ALC_industrial_effort_21
+		}		
+	}
+
+	# DESARROLLO MILITAR
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+	# DURATE LA GUERRA CIVIL
+	#-----------------------------------------------------------------------------------------------------------------------------------------------------
+	focus = {
+		id = ALC_military_begin
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		x = 9
+		x = 28
 		y = 0
 		
 		completion_reward = {
@@ -87,103 +394,799 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ALC_arms_production
-		icon = GFX_goal_generic_small_arms
+		id = ALC_military_civil_war
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		prerequisite = { focus = ALC_military_effort }
-		x = 8
-		y = 1
+		x = 24
+		y = 2
+
+		prerequisite = {
+			focus = ALC_military_begin
+		}
+
+		available = {
+			has_global_flag = spanish_civil_war
+		}
 		
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_2
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 28
+		y = 2
+
+		prerequisite = {
+			focus = ALC_military_begin
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_3
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 32
+		y = 2
+
+		prerequisite = {
+			focus = ALC_military_begin
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_4
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 24
+		y = 3
+
+		prerequisite = {
+			focus = ALC_military_civil_war
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_5
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 28
+		y = 3
+
+		prerequisite = {
+			focus = ALC_military_civil_war_2
+		}
+
+		available = {
+			has_global_flag = spanish_civil_war
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_6
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 32
+		y = 3
+
+		prerequisite = {
+			focus = ALC_military_civil_war_3
+		}
+
+		available = {
+			has_global_flag = spanish_civil_war
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_7
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 24
+		y = 5
+
+		prerequisite = {
+			focus = ALC_military_civil_war_4
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_8
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 30
+		y = 4
+
+		prerequisite = {
+			focus = ALC_military_civil_war_5
+		}
+
+		prerequisite = {
+			focus = ALC_military_civil_war_6
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_9
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 28
+		y = 5
+
+		prerequisite = {
+			focus = ALC_military_civil_war_5
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_10
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 30
+		y = 5
+
+		prerequisite = {
+			focus = ALC_military_civil_war_8
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_11
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 24
+		y = 6
+
+		prerequisite = {
+			focus = ALC_military_civil_war_7
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_12
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 32
+		y = 6
+
+		prerequisite = {
+			focus = ALC_military_civil_war_6
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_13
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 29
+		y = 6
+
+		prerequisite = {
+			focus = ALC_military_civil_war_9
+		}
+
+		prerequisite = {
+			focus = ALC_military_civil_war_10
+		}
+	}
+
+	focus = {
+		id = ALC_military_civil_war_14
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 28
+		y = 8
+
+		prerequisite = {
+			focus = ALC_military_civil_war_11
+		}
+
+		prerequisite = {
+			focus = ALC_military_civil_war_13
+		}
+
+		prerequisite = {
+			focus = ALC_military_civil_war_12
 		}
 	}
 	
+	# TERRESTRE
+	# -----------------------------------------------------------------------------------------------------------------------------------------------------
+	#focus = {
+	#	id = ALC_military_effort
+	#	icon = GFX_goal_generic_allies_build_infantry
+	#	cost = 10.00
+	#	x = 40
+	#	y = 0
+	#	
+	#	completion_reward = {
+	#		army_experience = 25
+	#		add_tech_bonus = {
+	#			name = land_doc_bonus
+	#			bonus = 0.5
+	#			uses = 1
+	#			category = land_doctrine
+	#		}
+	#	}
+	#}
+
+	# NAVAL
+	# -----------------------------------------------------------------------------------------------------------------------------------------------------
+	#focus = {
+	#	id = ALC_naval_effort
+	#	icon = GFX_goal_generic_allies_build_infantry
+	#	cost = 10.00
+	#	x = 35
+	#	y = 0
+	#	
+	#	completion_reward = {
+	#		army_experience = 25
+	#		add_tech_bonus = {
+	#			name = naval_doc_bonus
+	#			bonus = 0.5
+	#			uses = 1
+	#			category = naval_doctrine
+	#		}
+	#	}
+	#}
+
+	# AEREA
+	# -----------------------------------------------------------------------------------------------------------------------------------------------------
+	#focus = {
+	#	id = ALC_aerial_effort
+	#	icon = GFX_goal_generic_allies_build_infantry
+	#	cost = 10.00
+	#	x = 40
+	#	y = 0
+	#	
+	#	completion_reward = {
+	#		army_experience = 25
+	#		add_tech_bonus = {
+	#			name = aerial_doc_bonus
+	#			bonus = 0.5
+	#			uses = 1
+	#			category = aerial_doctrine
+	#		}
+	#	}
+	#}
+
+	# DURANTE LA GUERRA CIVIL
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
 	focus = {
-		id = ALC_infantry_focus
-		icon = GFX_goal_generic_army_doctrines
+		id = ALC_national_crisis
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		prerequisite = { focus = ALC_military_effort }
-		x = 10
-		y = 1
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.5
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-	}
-	
-	focus = {
-		id = ALC_political_effort
-		icon = GFX_goal_generic_demand_territory
-		cost = 10.00
-		x = 6
+		x = 61
 		y = 0
-		
-		completion_reward = {
-			add_political_power = 120
-		}
 	}
-	
+
 	focus = {
-		id = ALC_diplomatic_effort
-		icon = GFX_goal_generic_improve_relations
+		id = ALC_break_with_the_republic
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		prerequisite = { focus = ALC_political_effort }
-		x = 6
+		x = 51
 		y = 1
-		
-		completion_reward = {
-			add_ideas = diplomatic_focus
+
+		prerequisite = {
+			focus = ALC_national_crisis
 		}
 	}
-	
+
+	# Fascismo
+	#-----------------------------------------------------------------------------------------------------------------------------------------------------
 	focus = {
-		id = ALC_align_with_republicans
-		icon = GFX_goal_support_democracy
+		id = ALC_fascist_road
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		prerequisite = { focus = ALC_diplomatic_effort }
-		mutually_exclusive = { focus = ALC_align_with_nationalists }
-		x = 5
+		x = 42
 		y = 2
-		
-		completion_reward = {
-			add_opinion_modifier = { target = SPR modifier = large_increase }
-			SPR = { add_opinion_modifier = { target = ALC modifier = large_increase } }
+
+		prerequisite = {
+			focus = ALC_break_with_the_republic
 		}
 	}
-	
+
+	# Monarquia
+	#-----------------------------------------------------------------------------------------------------------------------------------------------------
 	focus = {
-		id = ALC_align_with_nationalists
-		icon = GFX_goal_generic_national_unity
+		id = ALC_monarchist_road
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		prerequisite = { focus = ALC_diplomatic_effort }
-		mutually_exclusive = { focus = ALC_align_with_republicans }
-		x = 7
+		x = 53
 		y = 2
-		
-		completion_reward = {
-			add_opinion_modifier = { target = SPR modifier = large_decrease }
-			SPR = { add_opinion_modifier = { target = ALC modifier = large_decrease } }
-			add_political_power = 50
+
+		prerequisite = {
+			focus = ALC_break_with_the_republic
+		}
+	}
+
+	focus = {
+		id = ALC_second_republic_loyalty
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 70
+		y = 1
+
+		prerequisite = {
+			focus = ALC_national_crisis
+		}
+	}
+
+	# Comunismo
+	#-----------------------------------------------------------------------------------------------------------------------------------------------------
+	focus = {
+		id = ALC_communist_road
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 60
+		y = 2
+
+		prerequisite = {
+			focus = ALC_second_republic_loyalty
+		}
+	}
+
+	# No alineados (no se que hacer aqui todavia)
+	#-----------------------------------------------------------------------------------------------------------------------------------------------------
+	focus = {
+		id = ALC_non_aligned_road
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 70
+		y = 2
+
+		prerequisite = {
+			focus = ALC_second_republic_loyalty
+		}
+	}
+
+	# Democraticos
+	#-----------------------------------------------------------------------------------------------------------------------------------------------------
+	focus = {
+		id = ALC_democratic_road
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 80
+		y = 2
+
+		prerequisite = {
+			focus = ALC_second_republic_loyalty
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 77
+		y = 3
+
+		prerequisite = {
+			focus = ALC_democratic_road
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_1
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 75
+		y = 4
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_2
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 77
+		y = 4
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_3
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 79
+		y = 4
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_4
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 75
+		y = 5
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_1
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_5
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 77
+		y = 5
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_2
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_6
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 79
+		y = 5
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_3
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_7
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 73
+		y = 6
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_4
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_8
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 76
+		y = 6
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_4
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_9
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 79
+		y = 6
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_6
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_10
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 81
+		y = 6
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_6
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_11
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 73
+		y = 7
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_7
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_12
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 77
+		y = 7
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_5
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_13
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 79
+		y = 7
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_9
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_6
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 81
+		y = 7
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_10
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_15
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 75
+		y = 8
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_7
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_16
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 77
+		y = 8
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_12
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_17
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 79
+		y = 8
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_13
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_republic_6
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 77
+		y = 9
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_15
+		}
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_16
+		}
+
+		prerequisite = {
+			focus = ALC_democratic_road_republic_17
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 87
+		y = 3
+
+		prerequisite = {
+			focus = ALC_democratic_road
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_1
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 87
+		y = 4
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_2
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 85
+		y = 5
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_1
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_3
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 87
+		y = 6
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_1
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_4
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 85
+		y = 7
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_1
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_5
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 87
+		y = 7
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_3
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_6
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 92
+		y = 7
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_3
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_7
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 85
+		y = 8
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_4
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_8
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 87
+		y = 8
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_5
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_9
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 90
+		y = 8
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_6
+		}
+
+		mutually_exclusive = {
+			focus = ALC_democratic_road_wait_10
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_10
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 94
+		y = 8
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_6
+		}
+
+		mutually_exclusive = {
+			focus = ALC_democratic_road_wait_9
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_11
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 85
+		y = 9
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_7
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_12
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 87
+		y = 9
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_8
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_13
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 92
+		y = 9
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_9
+		}
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_10
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_14
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 89
+		y = 10
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_13
+		}
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_12
+		}
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_11
 		}
 	}
 }

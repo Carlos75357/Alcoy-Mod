@@ -42,8 +42,26 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.05
-				local_resources_factor = 0.5
+				local_resources_factor = 0.15
 				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+		ALC_textile_industry_improved = {
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.10
+				production_speed_infrastructure_factor = 0.15
+				local_building_slots_factor = 0.10
 			}
 		}
 		
@@ -72,73 +90,24 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				justify_war_goal_time = -0.20
+				enemy_justify_war_goal_time = -0.20
+				political_power_gain = -0.20
+			}
+		}
+		
+		ALC_underground_shelters = {
+			picture = generic_fortify_the_borders
+			
+			allowed = {
+				original_tag = ALC
 			}
 			
-			on_add = {
-				hidden_effect = {
-					if = {
-						limit = { country_exists = GER }
-						GER = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = ENG }
-						ENG = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = FRA }
-						FRA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = ITA }
-						ITA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = SOV }
-						SOV = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = USA }
-						USA = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = JAP }
-						JAP = { add_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-				}
-			}
+			removal_cost = -1
 			
-			on_remove = {
-				hidden_effect = {
-					if = {
-						limit = { country_exists = GER }
-						GER = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = ENG }
-						ENG = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = FRA }
-						FRA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = ITA }
-						ITA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = SOV }
-						SOV = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = USA }
-						USA = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-					if = {
-						limit = { country_exists = JAP }
-						JAP = { remove_opinion_modifier = { target = ALC modifier = ALC_not_recognized_by_major_power } }
-					}
-				}
+			modifier = {
+				defense_bonus_against_major = 0.10 
+				production_speed_bunker_factor = 0.15 
+				civilian_war_support_factor = 0.05 
 			}
 		}
 	}

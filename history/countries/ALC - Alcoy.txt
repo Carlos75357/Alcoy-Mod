@@ -10,7 +10,9 @@ set_war_support = 0.40
 SPR = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
 
 add_ideas = {
-	limited_conscription
+	ALC_autonomy_under_supervision
+	ALC_self_managed_union_network
+	ALC_international_political_isolation
 }
 
 set_politics = {
