@@ -17,6 +17,20 @@ state = {
 				naval_base = 1
 			}
 		}
+		1939.1.1 = {
+			owner = ALC
+			add_core_of = ALC
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 3
+				arms_factory = 1
+				dockyard = 1
+				air_base = 3
+				4098 = {
+					naval_base = 3
+				}
+			}
+		}
 	}
 	
 	provinces = {
