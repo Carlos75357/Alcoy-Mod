@@ -1,7 +1,31 @@
 technologies = {
 	
-	alc_textile_tech = {
+	# Tecnologías exclusivas de Alcoy
+	
+	tech_militia_alcoy = {
+
+		enable_subunits = {
+			militia_alcoyana
+		}
+
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 2 }
+		}
+		start_year = 1936
+		research_cost = 2
+
+		category = {
+			infantry
+		}
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
 		
+	# Tecnologías originales (mantener para compatibilidad)
+	alc_textile_tech = {
 		research_cost = 1
 		
 		# only from focus!!! #####
@@ -19,7 +43,6 @@ technologies = {
 	}
 	
 	alc_paper_tech = {
-		
 		research_cost = 1
 		
 		# only from focus!!! #####
@@ -32,35 +55,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0
-		}
-	}
-	
-	alc_mountain_infantry = {
-		
-		enable_subunits = {
-			alc_mountain_infantry
-		}
-		
-		research_cost = 1.5
-		start_year = 1936
-		
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				tag = ALC
-			}
-		}
-		
-		categories = {
-			infantry_tech
-			mountaineers_tech
 		}
 	}
 }

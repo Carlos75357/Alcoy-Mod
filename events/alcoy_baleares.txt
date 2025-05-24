@@ -1,0 +1,150 @@
+add_namespace = alcoy_baleares
+
+# Evento para corregir la distribución de las Islas Baleares durante la Guerra Civil
+country_event = {
+	id = alcoy_baleares.1
+	title = alcoy_baleares.1.t
+	desc = alcoy_baleares.1.d
+	picture = GFX_report_event_spanish_civil_war_soldiers
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = spanish_civil_war
+		NOT = { has_global_flag = alcoy_baleares_fixed }
+		OR = {
+			tag = SPR
+			tag = D01
+			tag = D02
+			tag = D03
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = alcoy_baleares_fixed
+			
+			# Variables para almacenar los países que representan a cada bando
+			save_global_event_target_as = nationalist_spain
+			save_global_event_target_as = republican_spain
+			
+			# Encontrar el país nacionalista (fascista o no alineado)
+			if = {
+				# Si SPR es fascista o no alineado, es el bando nacionalista
+				limit = { 
+					SPR = { 
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+				}
+				SPR = { save_global_event_target_as = nationalist_spain }
+			}
+			else_if = {
+				# Si D01 es fascista o no alineado, es el bando nacionalista
+				limit = { 
+					D01 = { 
+						exists = yes
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+				}
+				D01 = { save_global_event_target_as = nationalist_spain }
+			}
+			else_if = {
+				# Si D02 es fascista o no alineado, es el bando nacionalista
+				limit = { 
+					D02 = { 
+						exists = yes
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+				}
+				D02 = { save_global_event_target_as = nationalist_spain }
+			}
+			else = {
+				# Por defecto, si no encontramos ninguna España nacionalista, usamos SPR
+				SPR = { save_global_event_target_as = nationalist_spain }
+			}
+			
+			# Encontrar el país republicano (democrático o comunista)
+			if = {
+				# Si SPR es democrático o comunista, es el bando republicano
+				limit = { 
+					SPR = { 
+						OR = {
+							has_government = democratic
+							has_government = communism
+						}
+					}
+				}
+				SPR = { save_global_event_target_as = republican_spain }
+			}
+			else = {
+				# Buscar cualquier país que tenga el tag original SPR (España republicana)
+				# Primero intentamos con D01, que es el más común
+				if = {
+					limit = { D01 = { exists = yes original_tag = SPR } }
+					D01 = { save_global_event_target_as = republican_spain }
+				}
+				# Si D01 no existe o no es la España republicana, intentamos con D02
+				else_if = {
+					limit = { D02 = { exists = yes original_tag = SPR } }
+					D02 = { save_global_event_target_as = republican_spain }
+				}
+				# Si D02 no existe o no es la España republicana, intentamos con D03
+				else_if = {
+					limit = { D03 = { exists = yes original_tag = SPR } }
+					D03 = { save_global_event_target_as = republican_spain }
+				}
+				# Por defecto, si no encontramos ninguna España republicana, usamos D01
+				else = {
+					D01 = { save_global_event_target_as = republican_spain }
+				}
+			}
+			
+			# Asignar Mallorca a los nacionalistas
+			if = {
+				limit = {
+					177 = { # Mallorca
+						is_owned_by = SPR
+					}
+				}
+				event_target:nationalist_spain = { transfer_state = 177 }
+			}
+			
+			# Asignar Menorca a los republicanos
+			if = {
+				limit = {
+					1021 = { # Menorca
+						is_owned_by = SPR
+					}
+				}
+				event_target:republican_spain = { transfer_state = 1021 }
+			}
+			
+			# Asignar Ibiza a los republicanos
+			if = {
+				limit = {
+					1020 = { # Ibiza
+						is_owned_by = SPR
+					}
+				}
+				event_target:republican_spain = { transfer_state = 1020 }
+			}
+		}
+	}
+	
+	option = {
+		name = alcoy_baleares.1.a
+		ai_chance = { factor = 100 }
+		
+		custom_effect_tooltip = alcoy_baleares_distribution_tooltip
+	}
+}

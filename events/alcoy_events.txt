@@ -13,14 +13,62 @@ country_event = {
 	trigger = {
 		tag = ALC
 		has_global_flag = spanish_civil_war
-		is_subject_of = SPD
+		is_subject_of = SPR
 	}
 	
 	immediate = {
 		hidden_effect = {
+			set_global_flag = alcoy_joined_republicans
+			
+			# Logs para ver los países con tags dinámicos
+			log = "DEBUG: Comprobando países existentes con tags dinámicos"
+			
+			if = { limit = { D01 = { exists = yes } }
+				log = "DEBUG: D01 existe"
+				if = { limit = { D01 = { original_tag = SPR } }
+					log = "DEBUG: D01 tiene original_tag = SPR"
+				}
+				log = "DEBUG: D01 gobierno: [D01.GetGovernment]"
+			}
+			
+			if = { limit = { D02 = { exists = yes } }
+				log = "DEBUG: D02 existe"
+				if = { limit = { D02 = { original_tag = SPR } }
+					log = "DEBUG: D02 tiene original_tag = SPR"
+				}
+				log = "DEBUG: D02 gobierno: [D02.GetGovernment]"
+			}
+			
+			if = { limit = { D03 = { exists = yes } }
+				log = "DEBUG: D03 existe"
+				if = { limit = { D03 = { original_tag = SPR } }
+					log = "DEBUG: D03 tiene original_tag = SPR"
+				}
+				log = "DEBUG: D03 gobierno: [D03.GetGovernment]"
+			}
+			
+			log = "DEBUG: SPR gobierno: [SPR.GetGovernment]"
+			
+			# Liberar a Alcoy de cualquier país del que sea títere
 			if = {
-				limit = { is_subject_of = SPD }
-				SPD = { end_puppet = ALC }
+				limit = { is_subject_of = SPR }
+				SPR = { end_puppet = ALC }
+				log = "DEBUG: Liberado de SPR"
+			}
+			if = {
+				limit = { is_subject_of = D01 }
+				D01 = { end_puppet = ALC }
+				log = "DEBUG: Liberado de D01"
+			}
+			if = {
+				limit = { is_subject_of = D02 }
+				D02 = { end_puppet = ALC }
+				log = "DEBUG: Liberado de D02"
+			}
+			if = {
+				limit = { is_subject_of = D03 }
+				D03 = { end_puppet = ALC }
+				log = "DEBUG: Liberado de D03"
 			}
 		}
 	}
@@ -33,16 +81,38 @@ country_event = {
 		name = alcoy.5.a
 		ai_chance = { factor = 100 }
 		
+		# Buscar quién representa a la España republicana
 		if = {
-			limit = { SPR = { has_government = democratic } }
-			SPR = { add_to_faction = ALC }
-		}
-		else_if = {
-			limit = { D01 = { exists = yes } }
-			D01 = { add_to_faction = ALC }
+			# Si SPR sigue siendo democrático, es el bando republicano
+			limit = { SPR = { exists = yes has_government = democratic } }
+			ALC = { set_autonomy = { target = SPR autonomy_state = autonomy_puppet } }
+			log = "[Root.GetName] se ha unido a SPR democrática"
 		}
 		else = {
-			SPR = { add_to_faction = ALC }
+			# Buscar cualquier país que tenga el tag original SPR (España republicana)
+			# Primero intentamos con D01, que es el más común
+			if = {
+				limit = { D01 = { exists = yes original_tag = SPR } }
+				ALC = { set_autonomy = { target = D01 autonomy_state = autonomy_puppet } }
+				log = "[Root.GetName] se ha unido a D01 (republicana)"
+			}
+			# Si D01 no existe o no es la España republicana, intentamos con D02
+			else_if = {
+				limit = { D02 = { exists = yes original_tag = SPR } }
+				ALC = { set_autonomy = { target = D02 autonomy_state = autonomy_puppet } }
+				log = "[Root.GetName] se ha unido a D02 (republicana)"
+			}
+			# Si D02 no existe o no es la España republicana, intentamos con D03
+			else_if = {
+				limit = { D03 = { exists = yes original_tag = SPR } }
+				ALC = { set_autonomy = { target = D03 autonomy_state = autonomy_puppet } }
+				log = "[Root.GetName] se ha unido a D03 (republicana)"
+			}
+			# Por defecto, si no encontramos ninguna España republicana, nos unimos a D01
+			else = {
+				ALC = { set_autonomy = { target = SPR autonomy_state = autonomy_puppet } }
+				log = "[Root.GetName] se ha unido a SPR (por defecto)"
+			}
 		}
 		
 		add_war_support = 0.15

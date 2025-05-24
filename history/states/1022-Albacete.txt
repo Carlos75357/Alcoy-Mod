@@ -1,0 +1,22 @@
+state = {
+	id = 1022
+	name = "STATE_1022"
+	manpower = 357436
+	
+	state_category = large_town
+	
+	history = {
+		owner = SPR
+		victory_points = {
+			832 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SPR
+	}
+	
+	provinces = {
+		832 3835 4195 9903 11807 11812 11884
+	}
+}

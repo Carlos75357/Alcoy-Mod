@@ -1,3 +1,26 @@
 ﻿l_english:
- ALC_INF_01:0 "Alcoy Infantry Division"
+  ALC_INF_01:0 "Alcoy Infantry Division"
  ALC_INF_01_DESC:0 "The infantry divisions of Alcoy are known for their resilience and determination, reflecting the industrial and worker spirit of the region."
+ militia_alcoyana:0 "Alcoy Militia"
+ militia_alcoyana_desc:0 "Specialized infantry units from Alcoy trained for mountain warfare, taking advantage of the region's mountainous terrain."
+
+ ALCOY_TECH_TITLE:0 "Alcoy Unique Technologies"
+ ALCOY_TECH_DESC:0 "Technologies exclusive to Alcoy that reflect its industrial and cultural heritage."
+ alcoy_tech_folder:0 "Alcoy Unique Technologies"
+ ALCOY_TECH_TAB_TT:0 "Alcoy Unique Technologies"
+ ALC:0 "ALC"
+
+ alc_textile_industry_1:0 "Alcoy Textile Industry I"
+ alc_textile_industry_1_desc:0 "The textile industry of Alcoy has a long tradition dating back to the 18th century. Modernizing these facilities will boost our industrial capacity."
+ alc_textile_industry_2:0 "Alcoy Textile Industry II"
+ alc_textile_industry_2_desc:0 "Further advancements in our textile industry will allow us to produce more efficiently and reduce consumer goods needs."
+
+ alc_paper_industry_1:0 "Alcoy Paper Industry I"
+ alc_paper_industry_1_desc:0 "Alcoy's paper industry is renowned throughout Spain. Investing in it will improve our research capabilities and political influence."
+ alc_paper_industry_2:0 "Alcoy Paper Industry II"
+ alc_paper_industry_2_desc:0 "Advanced paper manufacturing techniques will significantly boost our research speed and political power gain."
+
+ alc_mountain_infantry:0 "Alcoy Mountain Infantry"
+ alc_mountain_infantry_desc:0 "Specialized infantry units trained to fight in the mountainous terrain surrounding Alcoy."
+ alc_mountain_infantry_2:0 "Advanced Mountain Warfare"
+ alc_mountain_infantry_2_desc:0 "Further training and equipment for our mountain infantry will make them even more effective in difficult terrain."

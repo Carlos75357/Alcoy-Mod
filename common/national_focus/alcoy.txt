@@ -764,6 +764,10 @@ focus = {
 		prerequisite = {
 			focus = ALC_democratic_road
 		}
+		
+		mutually_exclusive = {
+			focus = ALC_democratic_road_wait
+		}
 	}
 
 	focus = {
