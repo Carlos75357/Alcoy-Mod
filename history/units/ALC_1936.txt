@@ -3,8 +3,8 @@ division_template = {
 	division_names_group = ALC_INF_01
 	
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
+		militia_alcoyana = { x = 0 y = 0 }
+		militia_alcoyana = { x = 0 y = 1 }
 	}
 }
 
