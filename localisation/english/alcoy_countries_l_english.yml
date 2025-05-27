@@ -1,9 +1,11 @@
-﻿l_english:
+l_english:
  ALC:0 "Alcoy"
  ALC_DEF:0 "Alcoy"
  ALC_ADJ:0 "Alcoyana"
- ALC_democratic:0 "Alcoy Democratic Republic"
- ALC_democratic_DEF:0 "The Democratic Republic of Alcoy"
+ ALC_democratic:0 "Alcoy"
+ ALC_democratic_DEF:0 "Alcoy"
+ ALC_democratic_alt:0 "Alcoy Committee"
+ ALC_democratic_alt_DEF:0 "The Public Health Committee of Alcoy"
  ALC_fascism:0 "Alcoy National State"
  ALC_fascism_DEF:0 "The National State of Alcoy"
  ALC_communism:0 "Alcoy Popular Commune"
