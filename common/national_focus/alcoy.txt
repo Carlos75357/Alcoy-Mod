@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = ALC_industrial_effort
 		icon = GFX_goal_generic_industry
-		cost = 10.00
+		cost = 5.00
 		x = 14
 		y = 0
 		
@@ -29,7 +29,7 @@ focus_tree = {
 	focus = {
 		id = ALC_industrial_effort_2
 		icon = GFX_goal_generic_production
-		cost = 10.00
+		cost = 5.00
 		x = 13
 		y = 1
 
@@ -68,18 +68,11 @@ focus = {
 			add_ideas = ALC_underground_shelters
 			custom_effect_tooltip = underground_shelters_tooltip
 			
-			random_owned_controlled_state = {
-				limit = {
-					is_capital = yes
-				}
+			9889 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
 					instant_build = yes
-					province = {
-						all = yes
-						limit_to_border = yes
-					}
 				}
 			}
 		}
@@ -162,6 +155,10 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_technical_training
+		}
+
+		available = {
+			NOT = { has_global_flag = spanish_civil_war }
 		}
 	}
 
@@ -378,7 +375,7 @@ focus = {
 	focus = {
 		id = ALC_military_begin
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 28
 		y = 0
 		
@@ -386,7 +383,7 @@ focus = {
 			army_experience = 25
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 0.6
 				uses = 1
 				category = land_doctrine
 			}
@@ -396,7 +393,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 24
 		y = 2
 
@@ -408,48 +405,76 @@ focus = {
 			has_global_flag = spanish_civil_war
 		}
 		
+		completion_reward = {
+			add_ideas = ALC_popular_army_alcoyana_improved
+			load_oob = "OOB_Br_ALC"
+		}
 	}
 
 	focus = {
 		id = ALC_military_civil_war_2
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 28
 		y = 2
 
 		prerequisite = {
 			focus = ALC_military_begin
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_equipment_bonus
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+		}
 	}
 
 	focus = {
 		id = ALC_military_civil_war_3
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4
 		x = 32
 		y = 2
 
 		prerequisite = {
 			focus = ALC_military_begin
 		}
+
+		completion_reward = {
+			add_ideas = ALC_popular_army_alcoyana
+		}
 	}
 
 	focus = {
 		id = ALC_military_civil_war_4
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 24
 		y = 3
 
 		prerequisite = {
 			focus = ALC_military_civil_war
 		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
 		id = ALC_military_civil_war_5
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 5.00
 		x = 28
 		y = 3
 
@@ -465,7 +490,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_6
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 5.00
 		x = 32
 		y = 3
 
@@ -481,19 +506,32 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_7
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 5.00
 		x = 24
 		y = 5
 
 		prerequisite = {
 			focus = ALC_military_civil_war_4
 		}
+
+		completion_reward = {
+			# Crear una nueva división de infantería
+			division = {
+				division_name = {
+					is_name_ordered = yes
+					name_order = 1
+				}
+				location = 9889
+				division_template = "División de Infantería"
+				start_experience_factor = 0.3
+			}
+		}
 	}
 
 	focus = {
 		id = ALC_military_civil_war_8
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 30
 		y = 4
 
@@ -509,7 +547,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_9
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 28
 		y = 5
 
@@ -521,7 +559,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_10
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 30
 		y = 5
 
@@ -533,7 +571,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_11
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 24
 		y = 6
 
@@ -545,7 +583,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_12
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 32
 		y = 6
 
@@ -557,7 +595,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_13
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 29
 		y = 6
 
@@ -573,7 +611,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_14
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 4.00
 		x = 28
 		y = 8
 
@@ -670,6 +708,10 @@ focus = {
 		prerequisite = {
 			focus = ALC_national_crisis
 		}
+
+		mutually_exclusive = {
+			focus = ALC_second_republic_loyalty
+		}
 	}
 
 	# Fascismo
@@ -700,6 +742,8 @@ focus = {
 		}
 	}
 
+	# Segunda República
+	#-----------------------------------------------------------------------------------------------------------------------------------------------------
 	focus = {
 		id = ALC_second_republic_loyalty
 		icon = GFX_goal_generic_allies_build_infantry
@@ -709,6 +753,10 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_national_crisis
+		}
+
+		mutually_exclusive = {
+			focus = ALC_break_with_the_republic
 		}
 	}
 
@@ -927,7 +975,7 @@ focus = {
 	}
 
 	focus = {
-		id = ALC_democratic_road_republic_6
+		id = ALC_democratic_road_republic_14
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
 		x = 81
@@ -975,7 +1023,7 @@ focus = {
 	}
 
 	focus = {
-		id = ALC_democratic_road_republic_6
+		id = ALC_democratic_road_republic_18
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
 		x = 77
@@ -1003,6 +1051,10 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_democratic_road
+		}
+
+		mutually_exclusive = {
+			focus = ALC_democratic_road_republic
 		}
 	}
 

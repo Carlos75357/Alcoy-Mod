@@ -110,5 +110,47 @@ ideas = {
 				stability_weekly = 0.02
 			}
 		}
+
+		ALC_popular_army_alcoyana = {
+			picture = generic_fortify_the_borders
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		
+		ALC_popular_army_alcoyana_improved = {
+			picture = generic_fortify_the_borders
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.05
+			}
+		}
+
+		ALC_cnt_fai_support = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
 	}
 }
