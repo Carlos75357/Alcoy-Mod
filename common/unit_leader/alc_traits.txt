@@ -1,0 +1,41 @@
+leader_traits = {
+    militia_alcoyana_trait = {
+        type = land
+        trait_type = personality_trait
+
+        unit_type = {
+            type = militia_alcoyana
+        }
+
+        unit_trigger = {
+            division_has_majority_template = militia_alcoyana
+        }
+        attack_skill = 1
+        planning_skill = 1
+
+        attack_skill_factor = 1
+        planning_skill_factor = 1
+
+        modified = {
+            modifier_army_sub_unit_militia_alcoyana_attack_factor = 0.1
+            modifier_army_sub_unit_infantry_defence_factor = 0.1
+            modifier_army_sub_unit_militia_alcoyana_speed_factor = 0.1
+            modifier_army_sub_unit_militia_alcoyana_max_org_factor = 0.1
+            modifier_army_sub_unit_militia_alcoyana_org_recovery_cap_factor = 0.1
+        }
+
+        non_shared_modifier = {
+            army_morale_factor = 0.2
+        }
+
+        new_commander_weight = {
+            factor = 0
+            
+            modifier = {
+              FROM = { ALC }   
+              factor = 2
+            }
+        }
+
+    }    
+}

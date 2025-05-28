@@ -1,0 +1,92 @@
+spriteTypes = {    
+    spriteType = {
+        name = "GFX_portrait_san_mauro"
+        textureFile = "gfx/interface/ideas/idea_generic_political_advisor_europe_1.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_juan_botella_asensi"
+        textureFile = "gfx/interface/ideas/idea_generic_political_advisor_europe_2.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_enrique_carbonell_antoli"
+        textureFile = "gfx/interface/ideas/idea_generic_political_advisor_europe_3.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_jose_cort_merita"
+        textureFile = "gfx/interface/ideas/idea_generic_political_advisor_europe_3.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_jose_sanchis_gracia"
+        textureFile = "gfx/interface/ideas/idea_generic_political_advisor_europe_2.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_vicente_camarasa_quiles"
+        textureFile = "gfx/interface/ideas/idea_generic_political_advisor_europe_1.dds"
+    }
+    
+    # Retratos para comandantes y líderes militares
+    spriteType = {
+        name = "GFX_portrait_salvador_garcia_munoz_small"
+        textureFile = "gfx/interface/ideas/idea_generic_political_advisor_europe_1.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_salvador_garcia_munoz_large"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_enrique_vano_nicomedes_small"
+        textureFile = "gfx/interface/ideas/idea_generic_army_europe_1.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_enrique_vano_nicomedes_large"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_amalia_abad_casasempere"
+        textureFile = "gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_antonio_barber_molto"
+        textureFile = "gfx/interface/ideas/idea_generic_army_europe_2.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_sant_jordi"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_manuel_hernandez_arteaga"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_copernico_ballester_frances"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_modesto_rodriguez_requena"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_gerardo_civera_martinez"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_vicente_camarasa_jaen"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+    }
+    
+    # Retratos para líderes navales
+    spriteType = {
+        name = "GFX_portrait_virgilio_botella_pastor_small"
+        textureFile = "gfx/interface/ideas/idea_generic_navy_europe_2.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_virgilio_botella_pastor_large"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+    }
+    
+    # Retratos para líderes aéreos
+    spriteType = {
+        name = "GFX_portrait_rafael_carbonell_blanes"
+        textureFile = "gfx/interface/ideas/idea_generic_air_europe_1.dds"
+    }
+}

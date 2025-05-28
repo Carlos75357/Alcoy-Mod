@@ -2,10 +2,16 @@ capital = 1017
 
 oob = "ALC_1936"
 
-set_research_slots = 3
+set_convoys = 10
+set_research_slots = 2
 
-set_stability = 0.70
-set_war_support = 0.40
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+}
+
+set_stability = 0.30
+set_war_support = 0.10
 
 SPR = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
 
@@ -23,33 +29,32 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 60
-	fascism = 10
-	communism = 20
-	neutrality = 10
+	democratic = 53
+	fascism = 0
+	communism = 47
+	neutrality = 0
 }
 
-create_country_leader = {
-	name = "Evaristo Botella"
-	desc = "POLITICS_EVARISTO_BOTELLA_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Joaquín Aracil"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { infantry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = ALC_evaristo_botella
+recruit_character = ALC_severino_albaracin_2
+recruit_character = ALC_san_mauro
+recruit_character = ALC_juan_botella_asensi
+recruit_character = ALC_enrique_carbonell_antoli
+recruit_character = ALC_salvador_garcia_munoz
+recruit_character = ALC_enrique_vano_nicomedes
+recruit_character = ALC_amalia_abad_casasempere
+recruit_character = ALC_jose_cort_merita
+recruit_character = ALC_jose_sanchis_gracia
+recruit_character = ALC_antonio_barber_molto
+recruit_character = ALC_vicente_camarasa_quiles
+recruit_character = ALC_sant_jordi
+recruit_character = ALC_manuel_hernandez_arteaga
+recruit_character = ALC_copernico_ballester_frances
+recruit_character = ALC_modesto_rodriguez_requena
+recruit_character = ALC_gerardo_civera_martinez
+recruit_character = ALC_vicente_camarasa_jaen
+recruit_character = ALC_virgilio_botella_pastor
+recruit_character = ALC_rafael_carbonell_blanes
 
 1939.1.1 = {
 	set_politics = {
@@ -61,13 +66,13 @@ create_corps_commander = {
 	
 	set_popularities = {
 		democratic = 65
-		fascism = 10
-		communism = 15
-		neutrality = 10
+		fascism = 0
+		communism = 35
+		neutrality = 0
 	}
 	
-	set_stability = 0.80
-	set_war_support = 0.50
+	set_stability = 0.50
+	set_war_support = 0.20
 	
 	add_ideas = {
 		ALC_autonomy_under_supervision

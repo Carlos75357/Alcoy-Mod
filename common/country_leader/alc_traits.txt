@@ -1,0 +1,19 @@
+leader_traits = {
+    evaritos_trait_1 = {
+        random = no
+        fascism_drift = -0.05
+        neutrality_drift = -0.05
+        political_power_gain = -0.3
+    }
+
+    jose_cort_merita_trait = {
+        random = no
+        base_fuel_gain_factor = 0.6
+        global_building_slots_factor = 0.12
+        production_speed_industrial_complex_factor = 0.15
+        production_speed_synthetic_refinery_factor = 0.15
+        production_factory_efficiency_gain_factor = 0.05
+        fuel_gain_factor = 0.05
+        supply_consumption_factor = -0.05
+    }
+}

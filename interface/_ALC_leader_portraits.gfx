@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_san_mauro"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_evaristo_botella"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+    }
+}

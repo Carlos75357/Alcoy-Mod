@@ -1,0 +1,398 @@
+characters = {
+    #### Líderes politicos
+    ALC_evaristo_botella = {
+        name = "Evaristo Botella"
+        portraits = { 
+            civilian = {
+                large = GFX_portrait_evaristo_botella
+            }
+        }
+        country_leader = {
+            ideology = socialism
+            traits = { champion_of_equality evaritos_trait_1 }
+            expire = "1965.1.1"
+            desc = POLITICS_EVARISTO_BOTELLA_DESC
+        }        
+    }
+
+    ALC_severino_albaracin_2 = {
+        name = "Severino Albaracin II"
+        portraits = { 
+            civilian = {
+                large = GFX_portrait_severino_albaracín
+            }
+        }
+        country_leader = {
+            ideology = socialism
+            traits = { socialite_connections }
+            expire = "1965.1.1"
+            desc = POLITICS_EVARISTO_BOTELLA_DESC
+        }   
+        country_leader = {
+            ideology = anarchism
+            traits = { socialist_journalist }
+            expire = "1965.1.1"
+            desc = POLITICS_EVARISTO_BOTELLA_DESC
+        }
+    }
+    #### Political advisors
+
+    ALC_san_mauro = {
+        name = "San Mauro"
+        portraits = { 
+            army = {
+                small = GFX_portrait_san_mauro
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = san_mauro
+            traits = { editor compassionate_gentleman }
+            desc = POLITICS_SAN_MAUR_DESC
+        }
+    }
+
+    ALC_juan_botella_asensi = {
+        name = "Juan Botella Asensi"
+        portraits = { 
+            army = {
+                small = GFX_portrait_juan_botella_asensi
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = juan_botella_asensi
+            traits = { liberal_journalist ideological_crusader popular_figurehead }
+            desc = POLITICS_JUAN_BOTELLA_ASENSI_DESC
+        }
+    }
+
+    ALC_enrique_carbonell_antoli = {
+        name = "Enrique Carbonell Antoli"
+        portraits = { 
+            army = {
+                small = GFX_portrait_enrique_carbonell_antoli
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = enrique_carbonell_antoli
+            traits = { captain_of_industry economist }
+            desc = POLITICS_ENRIQUE_CARBONELL_ANTOLI_DESC
+        }
+    }
+
+    ALC_salvador_garcia_munoz = {
+        name = "Salvador Garcia Munoz"
+        portraits = { 
+            army = {
+                small = GFX_portrait_salvador_garcia_munoz_small
+                large = GFX_portrait_salvador_garcia_munoz_large
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = salvador_garcia_munoz_political
+            traits = { patriotic_socialist collectivization_specialist }
+            desc = POLITICS_SALVADOR_GARCIA_MUNOZ_DESC
+        }
+        advisor = {
+            slot = high_command
+            idea_token = salvador_garcia_munoz_high_command
+            ledger = army
+            traits = { army_infantry_2 army_artillery_2 }
+            desc = POLITICS_SALVADOR_GARCIA_MUNOZ_DESC
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 2
+            traits = { infantry_officer career_officer brilliant_strategist militia_alcoyana_trait skilled_staffer }
+            desc = POLITICS_SALVADOR_GARCIA_MUNOZ_DESC
+        }
+    }
+
+    ALC_enrique_vano_nicomedes = {
+        name = "Enrique Vano Nicomedes"
+        portraits = { 
+            army = {
+                small = GFX_portrait_enrique_vano_nicomedes_small
+                large = GFX_portrait_enrique_vano_nicomedes_large
+            }
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = enrique_vano_nicomedes_chief
+            traits = { army_chief_old_guard army_chief_defensive_2 }
+            desc = POLITICS_ENRIQUE_VANO_NICOMEDES_DESC
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 2
+            traits = { infantry_officer war_hero militia_alcoyana_trait }
+            desc = POLITICS_SALVADOR_GARCIA_MUNOZ_DESC
+        }
+    }
+
+    ALC_amalia_abad_casasempere = {
+        name = "Amalia Abad Casasempere"
+        portraits = { 
+            army = {
+                small = GFX_portrait_amalia_abad_casasempere
+            }
+        }
+        advisor = {
+            slot = theorist
+            idea_token = amalia_abad_casasempere
+            traits = { military_theorist naval_theorist air_warfare_theorist }
+            desc = POLITICS_AMALIA_ABAD_CASASEMPERE_DESC
+        }
+    }
+
+    ALC_jose_cort_merita = {
+        name = "Jose Cort Merita"
+        portraits = { 
+            army = {
+                small = GFX_portrait_jose_cort_merita
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = jose_cort_merita_political
+            traits = { economist technocrat jose_cort_merita_trait }
+            desc = POLITICS_JOSE_CORT_MERITA_DESC
+        }
+    }
+
+    ALC_jose_sanchis_gracia = {
+        name = "Jose Sanchis Gracia"
+        portraits = { 
+            army = {
+                small = GFX_portrait_jose_sanchis_gracia
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = jose_sanchis_gracia_political
+            traits = { fortification_engineer quartermaster_general }
+            desc = POLITICS_JOSE_SANCHIS_GRACIA_DESC
+        }
+        advisor = {
+            slot = high_command
+            idea_token = jose_sanchis_gracia_high_command
+            ledger = army
+            traits = { air_air_superiority_2 air_bomber_interception_2 }
+            desc = POLITICS_JOSE_SANCHIS_GRACIA_DESC
+        }
+        advisor = {
+            slot = air_chief
+            idea_token = jose_sanchis_gracia_air_chief
+            traits = { air_chief_safety_2 air_chief_ground_support_2 }
+            desc = POLITICS_JOSE_SANCHIS_GRACIA_DESC
+        }
+    }
+
+    ALC_antonio_barber_molto = {
+        name = "Antonio Barber Molto"
+        portraits = { 
+            army = {
+                small = GFX_portrait_antonio_barber_molto
+            }
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = antonio_barber_molto_chief
+            traits = { army_chief_reform_2 army_chief_drill_2 }
+            desc = POLITICS_ANTONIO_BARBER_MOLTO_DESC
+        }
+    }
+
+    ALC_vicente_camarasa_quiles = {
+        name = "Vicente Camarasa Quiles"
+        portraits = { 
+            army = {
+                small = GFX_portrait_vicente_camarasa_quiles
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = vicente_camarasa_quiles_political
+            traits = { propaganda_expert war_industrialist }
+            desc = POLITICS_VICENTE_CAMARASA_QUILES_DESC
+        }
+        advisor = {
+            slot = high_command
+            idea_token = vicente_camarasa_quiles_high_command
+            ledger = army
+            traits = { army_regrouping_2 army_cavalry_2 }
+            desc = POLITICS_VICENTE_CAMARASA_QUILES_DESC
+        }
+    }
+
+    ALC_sant_jordi = {
+        name = "Sant Jordi"
+        portraits = { 
+            civilian = {
+                large = GFX_portrait_sant_jordi
+            }
+        }
+        field_marshal = {
+            skill = 5
+            attack_skill = 6
+            defense_skill = 8
+            planning_skill = 4
+            logistics_skill = 7
+            traits = { militia_alcoyana_trait infantry_officer cavalry_officer armor_officer engineer_officer organizer }
+            desc = POLITICS_SANT_JORDI_DESC
+        }
+    }
+
+    ALC_manuel_hernandez_arteaga = {
+        name = "Manuel Hernandez Arteaga"
+        portraits = { 
+            army = {
+                large = GFX_portrait_manuel_hernandez_arteaga
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 3
+            traits = { militia_alcoyana_trait cavalry_officer mountaineer }
+            desc = POLITICS_MANUEL_HERNANDEZ_ARTEAGA_DESC
+        }
+    }
+
+    ALC_copernico_ballester_frances = {
+        name = "Copernico Ballester Frances"
+        portraits = { 
+            army = {
+                large = GFX_portrait_copernico_ballester_frances
+            }
+        }
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 5
+            traits = { militia_alcoyana_trait armor_officer inflexible_strategist }
+            desc = POLITICS_COPERNICO_BALLESTER_FRANCES_DESC
+        }
+    }
+
+    ALC_modesto_rodriguez_requena = {
+        name = "Modesto Rodriguez Requena"
+        portraits = { 
+            army = {
+                large = GFX_portrait_modesto_rodriguez_requena
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 1
+            traits = { militia_alcoyana_trait career_officer cautilous }
+            desc = POLITICS_MODESTO_RODRIGUEZ_REQUENA_DESC
+        }
+    }
+
+    ALC_gerardo_civera_martinez = {
+        name = "Gerardo Civera Martinez"
+        portraits = { 
+            army = {
+                large = GFX_portrait_gerardo_civera_martinez
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 1
+            traits = { militia_alcoyana_trait infantry_officer }
+            desc = POLITICS_GERARDO_CIVERA_MARTINEZ_DESC
+        }
+    }
+
+    ALC_vicente_camarasa_jaen = {
+        name = "Vicente Camarasa Jaen"
+        portraits = { 
+            army = {
+                large = GFX_portrait_vicente_camarasa_jaen
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 1
+            traits = { militia_alcoyana_trait reckless media_personality bearer_of_artillery }
+            desc = POLITICS_VICENTE_CAMARASA_JAEN_DESC
+        }
+    }
+
+    ALC_virgilio_botella_pastor = {
+        name = "Virgilio Botella Pastor"
+        portraits = { 
+            navy = {
+                small = GFX_portrait_virgilio_botella_pastor_small
+                large = GFX_portrait_virgilio_botella_pastor_large
+            }
+        }
+        navy_leader = {
+            skill = 3
+            attack_skill = 1
+            defense_skill = 2
+            maneuvering_skill = 3
+            coordination_skill = 2
+            legacy_id = 10
+            traits = { bold gentlemanly }
+        }
+        advisor = {
+            slot = high_command
+            idea_token = virgilio_botella_pastor_high_command
+            ledger = navy
+            traits = { navy_submarines_2 navy_anti_submarine_1 }
+        }
+        advisor = {
+            slot = navy_chief
+            idea_token = virgilio_botella_pastor_navy_chief
+            traits = { navy_chief_reform_2 navy_chief_decisive_battle_2 }
+        }
+    }
+
+    ALC_rafael_carbonell_blanes = {
+        name = "Rafael Carbonell Blanes"
+        portraits = { 
+            army = {
+                small = GFX_portrait_rafael_carbonell_blanes
+            }
+        }
+        advisor = {
+            slot = air_chief
+            idea_token = rafael_carbonell_blanes_air_chief
+            traits = { air_chief_reform_2 air_chief_all_weather_2 air_chief_ground_support_2 }
+            desc = POLITICS_RAFAEL_CARBONELL_BLANES_DESC
+        }
+        advisor = {
+            slot = high_command
+            idea_token = rafael_carbonell_blanes_high_command
+            ledger = air
+            traits = { air_air_combat_training_2 air_strategic_bombing_2 air_air_superiority_1 }
+            desc = POLITICS_RAFAEL_CARBONELL_BLANES_DESC
+        }
+    }
+
+    ### Industria
+}
