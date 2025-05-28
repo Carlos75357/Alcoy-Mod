@@ -8,8 +8,6 @@ ALC_INF_01 =
 
 	division_types = { "infantry" }
 
-	link_numbering_with = { ALC_GAR_01 }
-
 	fallback_name = "División de Infantería %d"
 
 	ordered =

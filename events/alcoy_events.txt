@@ -85,7 +85,7 @@ country_event = {
 		if = {
 			# Si SPR sigue siendo democrático, es el bando republicano
 			limit = { SPR = { exists = yes has_government = democratic } }
-			ALC = { set_autonomy = { target = SPR autonomy_state = autonomy_puppet } }
+			SPR = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
 			log = "[Root.GetName] se ha unido a SPR democrática"
 		}
 		else = {
@@ -93,24 +93,24 @@ country_event = {
 			# Primero intentamos con D01, que es el más común
 			if = {
 				limit = { D01 = { exists = yes original_tag = SPR } }
-				ALC = { set_autonomy = { target = D01 autonomy_state = autonomy_puppet } }
+				D01 = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
 				log = "[Root.GetName] se ha unido a D01 (republicana)"
 			}
 			# Si D01 no existe o no es la España republicana, intentamos con D02
 			else_if = {
 				limit = { D02 = { exists = yes original_tag = SPR } }
-				ALC = { set_autonomy = { target = D02 autonomy_state = autonomy_puppet } }
+				D02 = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
 				log = "[Root.GetName] se ha unido a D02 (republicana)"
 			}
 			# Si D02 no existe o no es la España republicana, intentamos con D03
 			else_if = {
 				limit = { D03 = { exists = yes original_tag = SPR } }
-				ALC = { set_autonomy = { target = D03 autonomy_state = autonomy_puppet } }
+				D03 = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
 				log = "[Root.GetName] se ha unido a D03 (republicana)"
 			}
 			# Por defecto, si no encontramos ninguna España republicana, nos unimos a D01
 			else = {
-				ALC = { set_autonomy = { target = SPR autonomy_state = autonomy_puppet } }
+				SPR = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
 				log = "[Root.GetName] se ha unido a SPR (por defecto)"
 			}
 		}

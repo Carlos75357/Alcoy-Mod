@@ -105,9 +105,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				defense_bonus_against_major = 0.10 
-				production_speed_bunker_factor = 0.15 
-				civilian_war_support_factor = 0.05 
+				production_speed_bunker_factor = 0.15
+				war_support_weekly = 0.02
+				stability_weekly = 0.02
 			}
 		}
 	}
