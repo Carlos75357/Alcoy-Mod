@@ -1,0 +1,89 @@
+technologies = {
+    militia_alcoyana = {
+        start_year = 1918
+        research_cost = 1
+        folder = {
+            name = infantry_folder
+            position = { x = 0 y = @1918 }
+        }
+
+        category_militia_alcoyana = {
+            max_strength = 0.05
+            max_organisation = 5
+            default_morale = 0.05
+            soft_attack = 0.05
+            defense = 0.05
+        }
+
+        categories = {
+            militia_alcoyana
+        }
+
+        path = {
+			leads_to_tech = militia_alcoyana_2
+			research_cost_coeff = 1
+		}
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    militia_alcoyana_2 = {
+        
+        path = {
+			leads_to_tech = militia_alcoyana_3
+			research_cost_coeff = 1
+		}
+
+        start_year = 1936
+        research_cost = 1
+
+        folder = {
+            name = infantry_folder
+            position = { x = 0 y = 2 }
+        }
+
+        category_militia_alcoyana = {
+            max_strength = 0.05
+            max_organisation = 5
+            default_morale = 0.05
+            soft_attack = 0.05
+            defense = 0.05
+        }
+
+        categories = {
+            militia_alcoyana
+        }
+
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    militia_alcoyana_3 = {
+
+        start_year = 1939
+
+        research_cost = 1
+        folder = {
+            name = infantry_folder
+            position = { x = 0 y = 6 }
+        }
+
+        category_militia_alcoyana = {
+            max_organisation = 5
+            soft_attack = 0.05
+            defense = 0.05
+        }
+
+        categories = {
+            militia_alcoyana
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

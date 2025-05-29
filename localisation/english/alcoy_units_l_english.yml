@@ -1,6 +1,8 @@
 ﻿l_english:
-  ALC_INF_01:0 "Alcoy Infantry Division"
+ ALC_INF_01:0 "Alcoy Infantry Division"
  ALC_INF_01_DESC:0 "The infantry divisions of Alcoy are known for their resilience and determination, reflecting the industrial and worker spirit of the region."
+ ALC_INF_02:0 "Alcoy Brigades"
+ ALC_INF_02_DESC:0 "The infantry brigades of Alcoy are known for their resilience and determination, reflecting the industrial and worker spirit of the region."
  militia_alcoyana:0 "Alcoy Militia"
  militia_alcoyana_desc:0 "Specialized infantry units from Alcoy trained for mountain warfare, taking advantage of the region's mountainous terrain."
 

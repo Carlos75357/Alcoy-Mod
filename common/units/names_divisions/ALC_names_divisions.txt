@@ -64,3 +64,69 @@ ALC_INF_01 =
 		50 = { "50ª División de Infantería 'El Cinturó'" }
 	}
 }
+
+ALC_INF_02 = {
+	name = "Brigada Alcoyana"
+
+	for_countries = { ALC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "Brigada Alcoyana %d"
+
+	ordered =
+	{
+		1 = { "1ª Brigada Alcoyana 'Serpis'" }
+		2 = { "2ª Brigada Alcoyana 'Mariola'" }
+		3 = { "3ª Brigada Alcoyana 'Barxell'" }
+		4 = { "4ª Brigada Alcoyana 'Molinar'" }
+		5 = { "5ª Brigada Alcoyana 'Polop'" }
+		6 = { "6ª Brigada Alcoyana 'Montcabrer'" }
+		7 = { "7ª Brigada Alcoyana 'Barchell'" }
+		8 = { "8ª Brigada Alcoyana 'Uxola'" }
+		9 = { "9ª Brigada Alcoyana 'Preventori'" }
+		10 = { "10ª Brigada Alcoyana 'Font Roja'" }
+		11 = { "11ª Brigada Alcoyana 'Viaducto'" }
+		12 = { "12ª Brigada Alcoyana 'Zorra'" }
+		13 = { "13ª Brigada Alcoyana 'Císcar'" }
+		14 = { "14ª Brigada Alcoyana 'El Salt'" }
+		15 = { "15ª Brigada Alcoyana 'El Racó'" }
+		16 = { "16ª Brigada Alcoyana 'El Partidor'" }
+		17 = { "17ª Brigada Alcoyana 'San Mauro'" }
+		18 = { "18ª Brigada Alcoyana 'San Roque'" }
+		19 = { "19ª Brigada Alcoyana 'La Sang'" }
+		20 = { "20ª Brigada Alcoyana 'La Beniata'" }
+		21 = { "21ª Brigada Alcoyana 'El Tosal'" }
+		22 = { "22ª Brigada Alcoyana 'Eixample'" }
+		23 = { "23ª Brigada Alcoyana 'La Zona Alta'" }
+		24 = { "24ª Brigada Alcoyana 'Santa Rosa'" }
+		25 = { "25ª Brigada Alcoyana 'Batoi'" }
+		26 = { "26ª Brigada Alcoyana 'El Castellar'" }
+		27 = { "27ª Brigada Alcoyana 'L'Estepar'" }
+		28 = { "28ª Brigada Alcoyana 'El Puig'" }
+		29 = { "29ª Brigada Alcoyana 'Les Llometes'" }
+		30 = { "30ª Brigada Alcoyana 'La Canal'" }
+		31 = { "31ª Brigada Alcoyana 'La Sarga'" }
+		32 = { "32ª Brigada Alcoyana 'Peña Roja'" }
+		33 = { "33ª Brigada Alcoyana 'Tossal de Don Pedro'" }
+		34 = { "34ª Brigada Alcoyana 'Collao'" }
+		35 = { "35ª Brigada Alcoyana 'Cova Gelada'" }
+		36 = { "36ª Brigada Alcoyana 'Mas de la Cova'" }
+		37 = { "37ª Brigada Alcoyana 'Torre Na Valora'" }
+		38 = { "38ª Brigada Alcoyana 'Riquer'" }
+		39 = { "39ª Brigada Alcoyana 'Torreta'" }
+		40 = { "40ª Brigada Alcoyana 'El Tossal'" }
+		41 = { "41ª Brigada Alcoyana 'Plaça de Dins'" }
+		42 = { "42ª Brigada Alcoyana 'Mercado San Mateo'" }
+		43 = { "43ª Brigada Alcoyana 'Cotes Baixes'" }
+		44 = { "44ª Brigada Alcoyana 'Cotes Altes'" }
+		45 = { "45ª Brigada Alcoyana 'Rosaleda'" }
+		46 = { "46ª Brigada Alcoyana 'Llotja Sant Jordi'" }
+		47 = { "47ª Brigada Alcoyana 'El Mapa'" }
+		48 = { "48ª Brigada Alcoyana 'La Glorieta'" }
+		49 = { "49ª Brigada Alcoyana 'Pont de Sant Jordi'" }
+		50 = { "50ª Brigada Alcoyana 'El Cinturó'" }
+	}
+}
