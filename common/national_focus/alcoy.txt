@@ -406,7 +406,7 @@ focus = {
 		}
 		
 		completion_reward = {
-			add_ideas = ALC_popular_army_alcoyana_improved
+			add_ideas = ALC_popular_army_alcoyana
 			load_oob = "OOB_Br_ALC"
 		}
 	}
@@ -444,7 +444,7 @@ focus = {
 		}
 
 		completion_reward = {
-			add_ideas = ALC_popular_army_alcoyana
+			add_ideas = ALC_population_alcoyana
 		}
 	}
 
@@ -460,6 +460,7 @@ focus = {
 		}
 
 		completion_reward = {
+			add_ideas = ALC_cnt_fai_support
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -485,6 +486,42 @@ focus = {
 		available = {
 			has_global_flag = spanish_civil_war
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = armored_car_bonus
+				bonus = 1
+				uses = 1
+				category = cat_armored_cars
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_tech = tech_trucks
+					}
+				}
+				add_tech_bonus = {
+					name = motorized_bonus
+					bonus = 1
+					uses = 1
+					category = motorized_equipment
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = mechanized_bonus
+					bonus = 2
+					uses = 1
+					category = cat_mechanized_equipment
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -501,6 +538,13 @@ focus = {
 		available = {
 			has_global_flag = spanish_civil_war
 		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALC_population_alcoyana
+				add_idea = ALC_population_alcoyana_improved
+			}
+		}
 	}
 
 	focus = {
@@ -515,15 +559,15 @@ focus = {
 		}
 
 		completion_reward = {
-			# Crear una nueva división de infantería
-			division = {
-				division_name = {
-					is_name_ordered = yes
-					name_order = 1
+			capital_scope = {
+				create_unit = {
+					division = "name = \"1ª División de Infantería\" division_template = \"Brigada Alcoyana\" start_experience_factor = 0.7"
+					owner = ROOT
 				}
-				location = 9889
-				division_template = "División de Infantería"
-				start_experience_factor = 0.3
+			}
+			swap_ideas = {
+				remove_idea = ALC_popular_army_alcoyana
+				add_idea = ALC_popular_army_alcoyana_improved
 			}
 		}
 	}
@@ -542,6 +586,16 @@ focus = {
 		prerequisite = {
 			focus = ALC_military_civil_war_6
 		}
+
+		completion_reward = {
+			add_ideas = ALC_monthly_population_alcoyana
+			add_tech_bonus = {
+				name = support_equipment_bonus_2
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+		}
 	}
 
 	focus = {
@@ -553,6 +607,21 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_military_civil_war_5
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = planes_bonus
+				bonus = 1
+				uses = 3
+				category = air_equipment
+			}
+			add_tech_bonus = {
+				name = plane_modules_tech_bonus
+				bonus = 1
+				uses = 3
+				category = plane_modules_tech
+			}
 		}
 	}
 
@@ -566,6 +635,25 @@ focus = {
 		prerequisite = {
 			focus = ALC_military_civil_war_8
 		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALC_monthly_population_alcoyana
+				add_idea = ALC_monthly_population_alcoyana_improved
+			}
+			add_tech_bonus = {
+				name = tanks_bonus
+				bonus = 1
+				uses = 2
+				category = mio_cat_tech_all_armor_and_modules
+			}
+			add_tech_bonus = {
+				name = naval_bonus
+				bonus = 1
+				uses = 3
+				category = naval_equipment
+			}
+		}
 	}
 
 	focus = {
@@ -578,6 +666,31 @@ focus = {
 		prerequisite = {
 			focus = ALC_military_civil_war_7
 		}
+
+		completion_reward = {
+			capital_scope = {
+				create_unit = {
+					division = "name = \"2ra División de Infantería\" division_template = \"Brigada Alcoyana\" start_experience_factor = 0.5"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"3ra División de Infantería\" division_template = \"Brigada Alcoyana\" start_experience_factor = 0.5"
+					owner = ROOT
+				}
+			}
+			swap_ideas = {
+				remove_idea = ALC_popular_army_alcoyana
+				add_idea = ALC_popular_army_alcoyana_improved_2
+			}
+			1017 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -589,6 +702,13 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_military_civil_war_6
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALC_population_alcoyana_improved
+				add_idea = ALC_population_alcoyana_improved_2
+			}
 		}
 	}
 
@@ -605,6 +725,12 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_military_civil_war_10
+		}
+
+		completion_reward = {
+			add_ideas = ALC_naval_production
+			add_ideas = ALC_tank_production
+			add_ideas = ALC_plane_production
 		}
 	}
 
@@ -625,6 +751,31 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_military_civil_war_12
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALC_cnt_fai_support
+				add_idea = ALC_cnt_fai_support_improved
+			}
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_tech
+			}
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = mio_cat_all_artillery_equipment
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"4ta División de Infantería\" division_template = \"Brigada Alcoyana\" start_experience_factor = 0.5"
+					owner = ROOT
+				}
+			}
 		}
 	}
 	
@@ -747,7 +898,7 @@ focus = {
 	focus = {
 		id = ALC_second_republic_loyalty
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 10
 		x = 70
 		y = 1
 
@@ -1042,6 +1193,8 @@ focus = {
 		}
 	}
 
+	### WAIT FOCUSES
+	#------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	focus = {
 		id = ALC_democratic_road_wait
 		icon = GFX_goal_generic_allies_build_infantry
@@ -1134,30 +1287,6 @@ focus = {
 		id = ALC_democratic_road_wait_7
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		x = 85
-		y = 8
-
-		prerequisite = {
-			focus = ALC_democratic_road_wait_4
-		}
-	}
-
-	focus = {
-		id = ALC_democratic_road_wait_8
-		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
-		x = 87
-		y = 8
-
-		prerequisite = {
-			focus = ALC_democratic_road_wait_5
-		}
-	}
-
-	focus = {
-		id = ALC_democratic_road_wait_9
-		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
 		x = 90
 		y = 8
 
@@ -1166,12 +1295,12 @@ focus = {
 		}
 
 		mutually_exclusive = {
-			focus = ALC_democratic_road_wait_10
+			focus = ALC_democratic_road_wait_8
 		}
 	}
 
 	focus = {
-		id = ALC_democratic_road_wait_10
+		id = ALC_democratic_road_wait_8
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
 		x = 94
@@ -1182,7 +1311,31 @@ focus = {
 		}
 
 		mutually_exclusive = {
-			focus = ALC_democratic_road_wait_9
+			focus = ALC_democratic_road_wait_7
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_9
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 85
+		y = 9
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_4
+		}
+	}
+
+	focus = {
+		id = ALC_democratic_road_wait_10
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 87
+		y = 9
+
+		prerequisite = {
+			focus = ALC_democratic_road_wait_5
 		}
 	}
 
@@ -1190,11 +1343,12 @@ focus = {
 		id = ALC_democratic_road_wait_11
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		x = 85
+		x = 92
 		y = 9
 
 		prerequisite = {
 			focus = ALC_democratic_road_wait_7
+			focus = ALC_democratic_road_wait_8
 		}
 	}
 
@@ -1202,20 +1356,8 @@ focus = {
 		id = ALC_democratic_road_wait_12
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		x = 87
-		y = 9
-
-		prerequisite = {
-			focus = ALC_democratic_road_wait_8
-		}
-	}
-
-	focus = {
-		id = ALC_democratic_road_wait_13
-		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
-		x = 92
-		y = 9
+		x = 89
+		y = 10
 
 		prerequisite = {
 			focus = ALC_democratic_road_wait_9
@@ -1223,22 +1365,6 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_democratic_road_wait_10
-		}
-	}
-
-	focus = {
-		id = ALC_democratic_road_wait_14
-		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
-		x = 89
-		y = 10
-
-		prerequisite = {
-			focus = ALC_democratic_road_wait_13
-		}
-
-		prerequisite = {
-			focus = ALC_democratic_road_wait_12
 		}
 
 		prerequisite = {

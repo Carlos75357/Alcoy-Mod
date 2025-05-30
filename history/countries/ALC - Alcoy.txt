@@ -19,6 +19,8 @@ add_ideas = {
 	ALC_autonomy_under_supervision
 	ALC_self_managed_union_network
 	ALC_international_political_isolation
+	ALC_poor_country
+	ALC_weak_army
 }
 
 set_politics = {
