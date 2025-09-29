@@ -1,0 +1,10 @@
+l_english:
+  ALC_wait_consequences_1:0 "Waiting for the consequences of the civil war will cause a -50 opinion penalty with the Republic."
+  ALC_wait_consequences_1_desc:0 "Waiting for the consequences of the civil war will cause a -50 opinion penalty with the Republic."
+  ALC_wait_consequences_2:0 "Waiting for the consequences of the civil war will cause a -25 opinion penalty with the Republic."
+  ALC_wait_consequences_2_desc:0 "Waiting for the consequences of the civil war will cause a -25 opinion penalty with the Republic."
+  ALC_catching_up_europeans_power:0 "Catching up to the power of Europeans"
+  ALC_catching_up_europeans_power_desc:0 "Catching up to the power of Europeans"
+  ALC_catching_up_allies_faction:0 "Catching up to the power of allies in the faction"
+  ALC_catching_up_allies_faction_desc:0 "Catching up to the power of allies in the faction"
+  

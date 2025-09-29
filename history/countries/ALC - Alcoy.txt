@@ -20,7 +20,7 @@ add_ideas = {
 	ALC_self_managed_union_network
 	ALC_international_political_isolation
 	ALC_poor_country
-	ALC_weak_army
+	ALC_weakest_army
 }
 
 set_politics = {

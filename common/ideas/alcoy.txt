@@ -34,7 +34,25 @@ ideas = {
 			}
 		}
 
-		ALC_weak_army = {
+		ALC_poor_country_improved = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20
+				stability_weekly = -0.05
+				war_support_weekly = -0.05
+				autonomy_gain = 0.01
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		ALC_weakest_army = {
 			picture = generic_disjointed_gov
 			
 			allowed = {
@@ -50,6 +68,22 @@ ideas = {
 			}
 		}
 
+		ALC_weak_army = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = -0.25
+				army_defence_factor = -0.3
+			}
+		}
+
 		ALC_self_managed_union_network = {
 			picture = generic_production_bonus
 			
@@ -62,6 +96,21 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.10
 				army_org_factor = -0.05
+			}
+		}
+
+		ALC_self_managed_union_network_improved = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20
+				army_org_factor = -0.02
 			}
 		}
 		
@@ -127,6 +176,22 @@ ideas = {
 				enemy_justify_war_goal_time = -0.20
 				political_power_gain = -0.20
 				research_speed_factor = -0.30
+			}
+		}
+
+		ALC_international_political_isolation_2 = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				original_tag = ALC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				enemy_justify_war_goal_time = -0.10
+				political_power_gain = -0.25
+				research_speed_factor = -0.35
 			}
 		}
 		
@@ -422,6 +487,20 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.15
 				}
+			}
+		}
+
+		ALC_oppose_communism = {
+			picture = generic_disjointed_gov
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = -0.1
 			}
 		}
 	}

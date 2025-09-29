@@ -118,7 +118,112 @@ country_event = {
 		add_war_support = 0.15
 		add_stability = -0.05
 		add_political_power = 50
+		complete_national_focus = ALC_second_republic_loyalty
 		
 		custom_effect_tooltip = alcoy_joins_republicans_tooltip
+	}
+	option = {
+		name = alcoy.5.b
+		ai_chance = { factor = 0 }
+		
+		# Buscar quién representa a la España republicana
+		if = {
+			SPR = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
+			log = "[Root.GetName] se ha unido a SPR democrática"
+		}
+		else = {
+			# Buscar cualquier país que tenga el tag original SPR (España republicana)
+			# Primero intentamos con D01, que es el más común
+			if = {
+				limit = { D01 = { exists = yes original_tag = SPR } }
+				D01 = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
+				log = "[Root.GetName] se ha unido a D01 (republicana)"
+			}
+			# Si D01 no existe o no es la España republicana, intentamos con D02
+			else_if = {
+				limit = { D02 = { exists = yes original_tag = SPR } }
+				D02 = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
+				log = "[Root.GetName] se ha unido a D02 (republicana)"
+			}
+			# Si D02 no existe o no es la España republicana, intentamos con D03
+			else_if = {
+				limit = { D03 = { exists = yes original_tag = SPR } }
+				D03 = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
+				log = "[Root.GetName] se ha unido a D03 (republicana)"
+			}
+			# Por defecto, si no encontramos ninguna España republicana, nos unimos a D01
+			else = {
+				SPR = { set_autonomy = { target = ALC autonomy_state = autonomy_puppet } }
+				log = "[Root.GetName] se ha unido a SPR (por defecto)"
+			}
+		}
+
+		add_war_support = 0.20
+		add_stability = -0.05
+		add_political_power = 50
+		complete_national_focus = ALC_break_with_the_republic
+		
+		custom_effect_tooltip = alcoy_breaks_with_republicans_tooltip
+	}
+}
+
+# En este evento se elige el apoyar a la república
+country_event = {
+	id = alcoy.6
+	title = alcoy.6.t
+	desc = alcoy.6.d
+	picture = GFX_report_event_spanish_civil_war_soldiers
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = alcoy.6.a
+		ai_chance = { factor = 0 }
+		
+		complete_national_focus = ALC_communist_road
+	}
+	option = {
+		name = alcoy.6.b
+		ai_chance = { factor = 0 }
+		
+		complete_national_focus = ALC_non_aligned_road
+	}
+	option = {
+		name = alcoy.6.c
+		ai_chance = { factor = 100 }
+		
+		complete_national_focus = ALC_democratic_road
+	}
+}
+
+country_event = {
+	id = alcoy.7
+	title = alcoy.7.t
+	desc = alcoy.7.d
+	picture = GFX_report_event_spanish_civil_war_soldiers
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = alcoy.7.a
+		ai_chance = { factor = 100 }
+		
+		complete_national_focus = ALC_fascist_road
+	}
+	option = {
+		name = alcoy.7.b
+		ai_chance = { factor = 0 }
+		
+		complete_national_focus = ALC_monarchist_road
 	}
 }

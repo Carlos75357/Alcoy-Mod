@@ -1,0 +1,104 @@
+alcoy_annexation_decisions = {
+	icon = GFX_decision_generic_territory
+	allowed = {
+		original_tag = ALC
+	}
+
+	# Decisión: Anexar Alicante
+	alcoy_annex_alicante = {
+		icon = GFX_decision_generic_territory
+		available = {
+			NOT = { owns_state = 1018 }
+			has_completed_focus = ALC_democratic_road_wait_2
+		}
+		requirements = {
+			NOT = { owns_state = 1018 }
+		}
+		visible = {
+			has_completed_focus = ALC_democratic_road_wait_2
+		}
+		cost = 50
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			annex_state = 1018
+		}
+	}
+
+	# Decisión: Anexar Menorca
+	alcoy_annex_menorca = {
+		icon = GFX_decision_generic_territory
+		available = {
+			NOT = { owns_state = 1021 }
+			has_completed_focus = ALC_democratic_road_wait_2
+		}
+		requirements = {
+			NOT = { owns_state = 1021 }
+		}
+		visible = {
+			has_completed_focus = ALC_democratic_road_wait_2
+		}
+		cost = 50
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			annex_state = 1021
+		}
+	}
+
+	# Decisiones extra si se ha dado la espalda a la república
+	alcoy_annex_mallorca = {
+		icon = GFX_decision_generic_territory
+		available = {
+			NOT = { owns_state = 177 }
+			has_completed_focus = ALC_break_with_the_republic
+		}
+		requirements = {
+			NOT = { owns_state = 177 }
+		}
+		visible = {
+			has_completed_focus = ALC_break_with_the_republic
+		}
+		cost = 50
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			annex_state = 177
+		}
+	}
+
+	alcoy_annex_ibiza = {
+		icon = GFX_decision_generic_territory
+		available = {
+			NOT = { owns_state = 1022 }
+			has_completed_focus = ALC_break_with_the_republic
+		}
+		requirements = {
+			NOT = { owns_state = 1022 }
+		}
+		visible = {
+			has_completed_focus = ALC_break_with_the_republic
+		}
+		cost = 50
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			annex_state = 1022
+		}
+	}
+
+	alcoy_annex_valencia = {
+		icon = GFX_decision_generic_territory
+		available = {
+			NOT = { owns_state = 167 }
+			has_completed_focus = ALC_break_with_the_republic
+		}
+		requirements = {
+			NOT = { owns_state = 167 }
+		}
+		visible = {
+			has_completed_focus = ALC_break_with_the_republic
+		}
+		cost = 50
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			annex_state = 167
+		}
+	}
+}
