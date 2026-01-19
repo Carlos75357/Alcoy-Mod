@@ -1,1 +1,2 @@
 *.ps1
+!fix_map_buildings_from_errorlog.ps1

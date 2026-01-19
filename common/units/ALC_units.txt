@@ -1,5 +1,5 @@
 sub_units = {
-    	militia_alcoyana = {
+	militia_alcoyana = {
 		abbreviation = "IAL"
 		sprite = infantry
 		map_icon_category = infantry

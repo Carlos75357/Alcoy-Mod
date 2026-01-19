@@ -3,6 +3,6 @@ tags={
 	"Alternative History"
 }
 name="Alcoy"
-supported_version="1.16.6"
+supported_version="1.17.*"
 path="mod/alcoy_c"
 remote_file_id="3484391424"

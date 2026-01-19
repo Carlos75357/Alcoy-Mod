@@ -5,6 +5,10 @@ state = {
 	
 	state_category = rural
 	
+	resources = {
+		oil = 1
+	}
+	
 	history = {
 
 		victory_points = {

@@ -1,11 +1,12 @@
-alcoy_annexation_decisions = {
-	icon = GFX_decision_generic_territory
-	allowed = {
-		original_tag = ALC
-	}
+decisions = {
+	alcoy_annexation_decisions = {
+		icon = GFX_decision_generic_territory
+		allowed = {
+			original_tag = ALC
+		}
 
-	# Decisión: Anexar Alicante
-	alcoy_annex_alicante = {
+		# Decisión: Anexar Alicante
+		alcoy_annex_alicante = {
 		icon = GFX_decision_generic_territory
 		available = {
 			NOT = { owns_state = 1018 }
@@ -100,5 +101,6 @@ alcoy_annexation_decisions = {
 		complete_effect = {
 			annex_state = 167
 		}
+	}
 	}
 }
