@@ -1,7 +1,10 @@
 ﻿l_english:
+ STATE_290:0 "Rif"
  STATE_1047:0 "Alcoy"
  STATE_1048:0 "Alicante"
  STATE_1049:0 "Castellon"
  STATE_1050:0 "Ibiza"
  STATE_1051:0 "Menorca"
  STATE_1052:0 "Albacete"
+ STATE_1053:0 "Ceuta"
+ STATE_1054:0 "Melilla"
