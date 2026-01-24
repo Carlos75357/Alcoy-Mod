@@ -13,3 +13,31 @@
  
  ALC_improve_infrastructure:0 "Mejorar la Infraestructura"
  ALC_improve_infrastructure_desc:0 "La geografÃ­a montaÃ±osa de Alcoy dificulta las comunicaciones. Mejorar nuestra infraestructura facilitarÃ¡ el transporte de bienes y tropas, fortaleciendo tanto nuestra economÃ­a como nuestra capacidad defensiva."
+ 
+ # Decisiones de anexión territorial
+ alcoy_annexation_decisions:0 "Expansión Territorial de Alcoy"
+ alcoy_annexation_decisions_desc:0 "Decisiones para expandir el territorio de Alcoy mediante la anexión de provincias vecinas."
+ 
+ alcoy_annex_alicante:0 "Anexar Alicante"
+ alcoy_annex_alicante_desc:0 "Alicante es una provincia estratégica con un importante puerto mediterráneo. Su anexión fortalecerá nuestra posición en la costa."
+ 
+ alcoy_annex_valencia:0 "Anexar Valencia"
+ alcoy_annex_valencia_desc:0 "Valencia es la capital del antiguo Reino de Valencia. Su anexión nos dará acceso a una gran ciudad industrial y comercial."
+ 
+ alcoy_annex_castellon:0 "Anexar Castellón"
+ alcoy_annex_castellon_desc:0 "Castellón completa nuestro control sobre la costa valenciana. Su industria cerámica complementará nuestra economía."
+ 
+ alcoy_annex_menorca:0 "Anexar Menorca"
+ alcoy_annex_menorca_desc:0 "Menorca nos proporcionará una base naval estratégica en el Mediterráneo oriental."
+ 
+ alcoy_annex_ibiza:0 "Anexar Ibiza"
+ alcoy_annex_ibiza_desc:0 "Ibiza es una isla estratégica que fortalecerá nuestro control del Mediterráneo occidental."
+ 
+ alcoy_annex_mallorca:0 "Anexar Mallorca"
+ alcoy_annex_mallorca_desc:0 "Mallorca es la mayor de las Islas Baleares. Su anexión nos dará control total del archipiélago."
+ 
+ alcoy_annex_murcia:0 "Anexar Murcia"
+ alcoy_annex_murcia_desc:0 "Murcia es una provincia agrícola rica que fortalecerá nuestra seguridad alimentaria y expandirá nuestras fronteras hacia el sur."
+ 
+ alcoy_annex_albacete:0 "Anexar Albacete"
+ alcoy_annex_albacete_desc:0 "Albacete nos proporcionará profundidad estratégica y acceso a importantes rutas comerciales hacia el interior de España."

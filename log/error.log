@@ -1,103 +1,12 @@
-[12:52:24][no_game_date][persistent.cpp:66]: Error: "Unexpected token: thumbnail, near line: 7" in file: "mod/ugc_710273161.mod" near line: 7
-[12:52:24][no_game_date][localize.cpp:1639]: Localization file 'localisation/english/alcoy_diplomacy_l_english.yml' should be in in utf-8-bom encoding
-[12:52:24][no_game_date][pdx_localize.cpp:1031]: Missing UTF8 BOM in localisation/english/alcoy_diplomacy_l_english.yml
-[12:52:30][no_game_date][pdx_entity.cpp:324]: Failed to find entity "ITA_mechanized_vehicle_1_entity" for attachment in vehicle
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_carrier_fighter, near line: 20" in file: "common/units/air.txt" near line: 20
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_carrier_cas, near line: 43" in file: "common/units/air.txt" near line: 43
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_carrier_nav_bomber, near line: 66" in file: "common/units/air.txt" near line: 66
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_maritime_patrol_bomber, near line: 148" in file: "common/units/air.txt" near line: 148
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_anti_tank, near line: 23
-Invalid subunit category: category_mobile_anti_tank, near line: 24" in file: "common/units/anti_tank.txt" near line: 25
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_anti_tank, near line: 22" in file: "common/units/anti_tank_brigade.txt" near line: 23
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_anti_tank, near line: 95
-Invalid subunit category: category_mobile_anti_tank, near line: 96" in file: "common/units/anti_tank_brigade.txt" near line: 97
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_rocket_artillery, near line: 74" in file: "common/units/artillery.txt" near line: 75
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_rocket_artillery, near line: 179" in file: "common/units/artillery_brigade.txt" near line: 180
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_rocket_artillery, near line: 254" in file: "common/units/artillery_brigade.txt" near line: 255
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_rocket_artillery, near line: 331" in file: "common/units/artillery_brigade.txt" near line: 332
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_rangers, near line: 326" in file: "common/units/infantry.txt" near line: 328
-[12:52:30][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_rangers, near line: 454" in file: "common/units/recon.txt" near line: 455
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_carrier_fighter, near line: 280" in file: "common/doctrines/subdoctrines/air/air_fighter_aircraft_subdoctrines.txt" near line: 283
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_maritime_patrol_bomber, near line: 236" in file: "common/doctrines/subdoctrines/air/air_heavy_aircraft_subdoctrines.txt" near line: 238
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_maritime_patrol_bomber, near line: 245" in file: "common/doctrines/subdoctrines/air/air_heavy_aircraft_subdoctrines.txt" near line: 248
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_maritime_patrol_bomber, near line: 257" in file: "common/doctrines/subdoctrines/air/air_heavy_aircraft_subdoctrines.txt" near line: 259
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_maritime_patrol_bomber, near line: 284" in file: "common/doctrines/subdoctrines/air/air_heavy_aircraft_subdoctrines.txt" near line: 286
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_maritime_patrol_bomber, near line: 296" in file: "common/doctrines/subdoctrines/air/air_heavy_aircraft_subdoctrines.txt" near line: 299
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_maritime_patrol_bomber, near line: 354" in file: "common/doctrines/subdoctrines/air/air_heavy_aircraft_subdoctrines.txt" near line: 356
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_carrier_cas, near line: 173" in file: "common/doctrines/subdoctrines/air/air_strike_aircraft_subdoctrines.txt" near line: 175
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_carrier_nav_bomber, near line: 176" in file: "common/doctrines/subdoctrines/air/air_strike_aircraft_subdoctrines.txt" near line: 178
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_carrier_nav_bomber, near line: 186" in file: "common/doctrines/subdoctrines/air/air_strike_aircraft_subdoctrines.txt" near line: 188
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_carrier_cas, near line: 192" in file: "common/doctrines/subdoctrines/air/air_strike_aircraft_subdoctrines.txt" near line: 194
-[12:52:31][no_game_date][persistent.cpp:66]: Error: "Unexpected token: category_carrier_nav_bomber, near line: 303" in file: "common/doctrines/subdoctrines/air/air_strike_aircraft_subdoctrines.txt" near line: 305
-[12:52:32][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_tac_bomber_equipment
-[12:52:32][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_strat_bomber_equipment
-[12:52:32][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_iw_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[12:52:32][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_basic_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[12:52:32][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_improved_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[12:52:32][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_advanced_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[12:52:32][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_modern_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Expected a number after '=': position, near line: 7" in file: "common/technologies/ALC_militia.txt" near line: 7
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unknown modifier: category_rocket_artillery, near line: 522" in file: "common/technologies/artillery.txt" near line: 524
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unknown modifier: category_rocket_artillery, near line: 558" in file: "common/technologies/artillery.txt" near line: 560
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unknown modifier: category_anti_tank, near line: 1085" in file: "common/technologies/artillery.txt" near line: 1088
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unknown modifier: category_anti_tank, near line: 1241" in file: "common/technologies/artillery.txt" near line: 1244
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unknown modifier: category_anti_tank, near line: 1318" in file: "common/technologies/artillery.txt" near line: 1321
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unknown modifier: category_rangers, near line: 1537" in file: "common/technologies/special_forces_doctrine.txt" near line: 1541
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Invalid subunit category: category_rangers, near line: 1618" in file: "common/technologies/special_forces_doctrine.txt" near line: 1618
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unknown modifier: category_rangers, near line: 1655" in file: "common/technologies/special_forces_doctrine.txt" near line: 1658
-[12:52:32][no_game_date][subunit_definition_database.cpp:58]: Invalid sub unit/category in modifier: modifier_army_sub_unit_infantry_militia_alcoyana_attack_factor
-[12:52:32][no_game_date][subunit_definition_database.cpp:58]: Invalid sub unit/category in modifier: modifier_army_sub_unit_infantry_militia_alcoyana_defence_factor
-[12:52:32][no_game_date][subunit_definition_database.cpp:58]: Invalid sub unit/category in modifier: modifier_army_sub_unit_infantry_militia_alcoyana_speed_factor
-[12:52:32][no_game_date][subunit_definition_database.cpp:58]: Invalid sub unit/category in modifier: modifier_army_sub_unit_infantry_militia_alcoyana_max_org_factor
-[12:52:32][no_game_date][subunit_definition_database.cpp:58]: Invalid sub unit/category in modifier: modifier_army_sub_unit_infantry_militia_alcoyana_org_recovery_cap_factor
-[12:52:32][no_game_date][common/ideas/alcoy.txt:405]: Value does not belong to designated Script EnumType: light_tank_equipment not in script_enum_equipment_bonus_type
-[12:52:32][no_game_date][common/ideas/alcoy.txt:409]: Value does not belong to designated Script EnumType: medium_tank_equipment not in script_enum_equipment_bonus_type
-[12:52:32][no_game_date][common/ideas/alcoy.txt:413]: Value does not belong to designated Script EnumType: heavy_tank_equipment not in script_enum_equipment_bonus_type
-[12:52:32][no_game_date][common/ideas/alcoy.txt:417]: Value does not belong to designated Script EnumType: super_heavy_tank_equipment not in script_enum_equipment_bonus_type
-[12:52:32][no_game_date][common/ideas/alcoy.txt:421]: Value does not belong to designated Script EnumType: modern_tank_equipment not in script_enum_equipment_bonus_type
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unknown modifier: modifier_army_sub_unit_category_rocket_artillery_attack_factor, near line: 14023" in file: "common/country_leader/00_traits.txt" near line: 14023
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unexpected token: modified, near line: 19" in file: "common/unit_leader/alc_traits.txt" near line: 25
-[12:52:32][no_game_date][parser.cpp:966]: Error: unexpected token in file: "common/unit_leader/alc_traits.txt" near line: 35 ( ALC )
-[12:52:32][no_game_date][trigger.cpp:700]: Invalid trigger 'factor' in common/unit_leader/alc_traits.txt line : 36
-[12:52:32][no_game_date][trigger.cpp:568]: Error: "Unknown trigger-type: factor, near line: 36" in file: "common/unit_leader/alc_traits.txt" near line: 37
-[12:52:32][no_game_date][trigger.cpp:568]: Error: "Unknown category: alcoy_annexation_decisions: {, near line: 1" in file: "common/decisions/alcoy_decisions.txt" near line: 5
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unexpected token: alcoy_annex_alicante, near line: 8" in file: "common/decisions/alcoy_decisions.txt" near line: 25
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unexpected token: alcoy_annex_menorca, near line: 28" in file: "common/decisions/alcoy_decisions.txt" near line: 45
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unexpected token: alcoy_annex_mallorca, near line: 48" in file: "common/decisions/alcoy_decisions.txt" near line: 65
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unexpected token: alcoy_annex_ibiza, near line: 67" in file: "common/decisions/alcoy_decisions.txt" near line: 84
-[12:52:32][no_game_date][persistent.cpp:66]: Error: "Unexpected token: alcoy_annex_valencia, near line: 86" in file: "common/decisions/alcoy_decisions.txt" near line: 103
-[12:52:32][no_game_date][gameitemdatabasehelper.h:149]: Error: "Unknown category for : icon It will be ignored: }, near line: 104" in file: "common/decisions/alcoy_decisions.txt" near line: 105
-[12:52:32][no_game_date][effect.cpp:433]: Invalid scope type for effect add_building_construction in common/national_focus/alcoy.txt line : 1461
-[12:52:32][no_game_date][effect.cpp:356]: Error: "Unexpected token: state, near line: 1464" in file: "common/national_focus/alcoy.txt" near line: 1466
-[12:52:32][no_game_date][parser.cpp:966]: Error: unexpected token in file: "common/national_focus/alcoy.txt" near line: 1510 ( else )
-[12:52:32][no_game_date][effect.cpp:356]: Error: "Non assign effect is not enclosed in {}: else, near line: 1510" in file: "common/national_focus/alcoy.txt" near line: 1513
-[12:52:35][no_game_date][tech_formatter.cpp:42]: Invalid token for tech_effect
-[12:52:36][no_game_date][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: rangers_tech. use var:var_name to explicitly use variables in effects/triggers
-[12:52:36][no_game_date][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: PHI_battalion_combat_teams. use var:var_name to explicitly use variables in effects/triggers
-[12:52:36][no_game_date][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: rangers_tech. use var:var_name to explicitly use variables in effects/triggers
-[12:52:36][no_game_date][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: BEL_chasseurs_ardennais_ncns. use var:var_name to explicitly use variables in effects/triggers
-[12:52:36][no_game_date][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: rangers_tech. use var:var_name to explicitly use variables in effects/triggers
-[12:52:36][no_game_date][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: BEL_chasseurs_ardennais_ncns. use var:var_name to explicitly use variables in effects/triggers
-[12:52:36][no_game_date][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: JAP_silver_wheels. use var:var_name to explicitly use variables in effects/triggers
-[12:52:36][no_game_date][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: JAP_lighter_tanks. use var:var_name to explicitly use variables in effects/triggers
-[12:52:36][no_game_date][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: rangers_tech. use var:var_name to explicitly use variables in effects/triggers
-[12:52:36][no_game_date][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: rangers_tech. use var:var_name to explicitly use variables in effects/triggers
-[12:52:39][no_game_date][gameapplication.cpp:841]: The game has loc key collisions. Check logs/text.log for more details
-[12:52:41][no_game_date][character_manager.cpp:759]: Several characters have the legacy unit leader id 10: Virgilio Botella Pastor and Walter Model
-[12:52:41][1936.01.01.12][effect.cpp:443]: Invalid effect 'IRQ_kamil_shabib' in history/countries/IRQ - Iraq.txt line : 110
-[12:52:41][1936.01.01.12][effect.cpp:356]: Error: "Unknown effect-type: IRQ_kamil_shabib, near line: 110" in file: "history/countries/IRQ - Iraq.txt" near line: 121
-[12:52:41][1936.01.01.12][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: rangers_tech. use var:var_name to explicitly use variables in effects/triggers
-[12:52:41][1936.01.01.12][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: BEL_chasseurs_ardennais_ncns. use var:var_name to explicitly use variables in effects/triggers
-[12:52:41][1936.01.01.12][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: rangers_tech. use var:var_name to explicitly use variables in effects/triggers
-[12:52:41][1936.01.01.12][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: BEL_chasseurs_ardennais_ncns. use var:var_name to explicitly use variables in effects/triggers
-[12:52:41][1936.01.01.12][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: JAP_silver_wheels. use var:var_name to explicitly use variables in effects/triggers
-[12:52:41][1936.01.01.12][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: JAP_lighter_tanks. use var:var_name to explicitly use variables in effects/triggers
-[12:52:41][1936.01.01.12][database_scoped_variables.cpp:266]: invalid database object for effect/trigger: rangers_tech. use var:var_name to explicitly use variables in effects/triggers
-[12:52:41][1936.01.01.12][equipment_effects.cpp:812]: 'history/countries/GER - Germany.txt:1496: create_equipment_variant': 'Hs 123' - Invalid icon 'GFX_GER_cv_fighter1_medium'.
-[12:52:41][1936.01.01.12][technology_effect_implementation.cpp:992]: history/countries/BEL - Belgium.txt:9: set_technology: Invalid tech
-[12:52:41][1936.01.01.12][technology_effect_implementation.cpp:992]: history/countries/BEL - Belgium.txt:9: set_technology: Invalid tech
-[12:52:41][1936.01.01.12][technology_effect_implementation.cpp:992]: history/countries/JAP - Japan.txt:437: set_technology: Invalid tech
-[12:52:41][1936.01.01.12][technology_effect_implementation.cpp:992]: history/countries/JAP - Japan.txt:437: set_technology: Invalid tech
-[12:52:41][1936.01.01.12][technology_effect_implementation.cpp:992]: history/countries/PHI - Philippines.txt:7: set_technology: Invalid tech
-[12:52:43][1936.01.01.12][mapbuildings.cpp:634]: map/buildings.txt error at line 65658: invalid arguments count.
-[12:53:39][1936.01.01.12][mapbuildings.cpp:634]: map/buildings.txt error at line 65658: invalid arguments count.
+[22:41:43][no_game_date][persistent.cpp:66]: Error: "Unexpected token: thumbnail, near line: 7" in file: "mod/ugc_710273161.mod" near line: 7
+[22:41:48][no_game_date][pdx_entity.cpp:324]: Failed to find entity "ITA_mechanized_vehicle_1_entity" for attachment in vehicle
+[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_tac_bomber_equipment
+[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_strat_bomber_equipment
+[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_iw_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_basic_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_improved_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_advanced_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_modern_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[22:41:57][1936.01.01.12][effect.cpp:443]: Invalid effect 'IRQ_kamil_shabib' in history/countries/IRQ - Iraq.txt line : 110
+[22:41:57][1936.01.01.12][effect.cpp:356]: Error: "Unknown effect-type: IRQ_kamil_shabib, near line: 110" in file: "history/countries/IRQ - Iraq.txt" near line: 121
+[22:41:57][1936.01.01.12][equipment_effects.cpp:812]: 'history/countries/GER - Germany.txt:1496: create_equipment_variant': 'Hs 123' - Invalid icon 'GFX_GER_cv_fighter1_medium'.

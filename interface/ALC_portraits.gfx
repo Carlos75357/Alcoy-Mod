@@ -1,4 +1,15 @@
-spriteTypes = {    
+spriteTypes = {
+    # Retratos para líderes de país
+    spriteType = {
+        name = "GFX_portrait_evaristo_botella"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_severino_albaracín"
+        textureFile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+    }
+    
+    # Retratos para asesores
     spriteType = {
         name = "GFX_portrait_san_mauro"
         textureFile = "gfx/interface/ideas/idea_generic_political_advisor_europe_1.dds"

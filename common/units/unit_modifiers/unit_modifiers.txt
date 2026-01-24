@@ -21,13 +21,12 @@
 
 sub_unit_modifiers = {
 	## Alcoy
-	modifier_army_sub_unit_infantry_militia_alcoyana_attack_factor
-	modifier_army_sub_unit_infantry_militia_alcoyana_defence_factor
-	modifier_army_sub_unit_infantry_militia_alcoyana_speed_factor
-	modifier_army_sub_unit_infantry_militia_alcoyana_max_org_factor
-	modifier_army_sub_unit_infantry_militia_alcoyana_org_recovery_cap_factor
+	modifier_army_sub_unit_militia_alcoyana_attack_factor
+	modifier_army_sub_unit_militia_alcoyana_defence_factor
+	modifier_army_sub_unit_militia_alcoyana_speed_factor
+	modifier_army_sub_unit_militia_alcoyana_max_org_factor
+	modifier_army_sub_unit_militia_alcoyana_org_recovery_cap_factor
 
-	### Base game
 	modifier_army_sub_unit_cavalry_attack_factor
 	modifier_army_sub_unit_cavalry_defence_factor
 	modifier_army_sub_unit_cavalry_speed_factor
@@ -98,5 +97,8 @@ sub_unit_modifiers = {
 	modifier_army_sub_unit_long_range_patrol_support_defence_factor
 
 	modifier_army_sub_unit_category_special_forces_max_org_factor 
+
+	modifier_army_sub_unit_category_rocket_artillery_attack_factor
+	
 
 }

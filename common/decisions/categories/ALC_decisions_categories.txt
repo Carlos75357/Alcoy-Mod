@@ -1,3 +1,6 @@
 alc_annex_category = {
-    
+    icon = GFX_decision_category_generic_territory
+    allowed = {
+        original_tag = ALC
+    }
 }

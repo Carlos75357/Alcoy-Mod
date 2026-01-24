@@ -1,19 +1,11 @@
-decisions = {
-	alcoy_annexation_decisions = {
-		icon = GFX_decision_generic_territory
-		allowed = {
-			original_tag = ALC
-		}
+alc_annex_category = {
 
-		# Decisión: Anexar Alicante
-		alcoy_annex_alicante = {
+	# Decisión: Anexar Alicante
+	alcoy_annex_alicante = {
 		icon = GFX_decision_generic_territory
 		available = {
-			NOT = { owns_state = 1018 }
+			NOT = { owns_state = 1048 }
 			has_completed_focus = ALC_democratic_road_wait_2
-		}
-		requirements = {
-			NOT = { owns_state = 1018 }
 		}
 		visible = {
 			has_completed_focus = ALC_democratic_road_wait_2
@@ -21,7 +13,9 @@ decisions = {
 		cost = 50
 		ai_will_do = { factor = 1 }
 		complete_effect = {
-			annex_state = 1018
+			1048 = {
+				transfer_state_to = ROOT
+			}
 		}
 	}
 
@@ -29,11 +23,8 @@ decisions = {
 	alcoy_annex_menorca = {
 		icon = GFX_decision_generic_territory
 		available = {
-			NOT = { owns_state = 1021 }
+			NOT = { owns_state = 1051 }
 			has_completed_focus = ALC_democratic_road_wait_2
-		}
-		requirements = {
-			NOT = { owns_state = 1021 }
 		}
 		visible = {
 			has_completed_focus = ALC_democratic_road_wait_2
@@ -41,7 +32,9 @@ decisions = {
 		cost = 50
 		ai_will_do = { factor = 1 }
 		complete_effect = {
-			annex_state = 1021
+			1051 = {
+				transfer_state_to = ROOT
+			}
 		}
 	}
 
@@ -52,27 +45,23 @@ decisions = {
 			NOT = { owns_state = 177 }
 			has_completed_focus = ALC_break_with_the_republic
 		}
-		requirements = {
-			NOT = { owns_state = 177 }
-		}
 		visible = {
 			has_completed_focus = ALC_break_with_the_republic
 		}
 		cost = 50
 		ai_will_do = { factor = 1 }
 		complete_effect = {
-			annex_state = 177
+			177 = {
+				transfer_state_to = ROOT
+			}
 		}
 	}
 
 	alcoy_annex_ibiza = {
 		icon = GFX_decision_generic_territory
 		available = {
-			NOT = { owns_state = 1022 }
+			NOT = { owns_state = 1050 }
 			has_completed_focus = ALC_break_with_the_republic
-		}
-		requirements = {
-			NOT = { owns_state = 1022 }
 		}
 		visible = {
 			has_completed_focus = ALC_break_with_the_republic
@@ -80,7 +69,9 @@ decisions = {
 		cost = 50
 		ai_will_do = { factor = 1 }
 		complete_effect = {
-			annex_state = 1022
+			1050 = {
+				transfer_state_to = ROOT
+			}
 		}
 	}
 
@@ -90,17 +81,15 @@ decisions = {
 			NOT = { owns_state = 167 }
 			has_completed_focus = ALC_break_with_the_republic
 		}
-		requirements = {
-			NOT = { owns_state = 167 }
-		}
 		visible = {
 			has_completed_focus = ALC_break_with_the_republic
 		}
 		cost = 50
 		ai_will_do = { factor = 1 }
 		complete_effect = {
-			annex_state = 167
+			167 = {
+				transfer_state_to = ROOT
+			}
 		}
-	}
 	}
 }

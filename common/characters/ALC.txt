@@ -356,7 +356,7 @@ characters = {
             defense_skill = 2
             maneuvering_skill = 3
             coordination_skill = 2
-            legacy_id = 10
+            legacy_id = 9010
             traits = { bold gentlemanly }
         }
         advisor = {

@@ -13,3 +13,31 @@
  
  ALC_improve_infrastructure:0 "Improve Infrastructure"
  ALC_improve_infrastructure_desc:0 "The mountainous geography of Alcoy makes communications difficult. Improving our infrastructure will facilitate the transport of goods and troops, strengthening both our economy and our defensive capacity."
+ 
+ # Territorial Annexation Decisions
+ alcoy_annexation_decisions:0 "Alcoy Territorial Expansion"
+ alcoy_annexation_decisions_desc:0 "Decisions to expand Alcoy's territory through the annexation of neighboring provinces."
+ 
+ alcoy_annex_alicante:0 "Annex Alicante"
+ alcoy_annex_alicante_desc:0 "Alicante is a strategic province with an important Mediterranean port. Its annexation will strengthen our position on the coast."
+ 
+ alcoy_annex_valencia:0 "Annex Valencia"
+ alcoy_annex_valencia_desc:0 "Valencia is the capital of the former Kingdom of Valencia. Its annexation will give us access to a major industrial and commercial city."
+ 
+ alcoy_annex_castellon:0 "Annex Castellón"
+ alcoy_annex_castellon_desc:0 "Castellón completes our control over the Valencian coast. Its ceramic industry will complement our economy."
+ 
+ alcoy_annex_menorca:0 "Annex Menorca"
+ alcoy_annex_menorca_desc:0 "Menorca will provide us with a strategic naval base in the eastern Mediterranean."
+ 
+ alcoy_annex_ibiza:0 "Annex Ibiza"
+ alcoy_annex_ibiza_desc:0 "Ibiza is a strategic island that will strengthen our control of the western Mediterranean."
+ 
+ alcoy_annex_mallorca:0 "Annex Mallorca"
+ alcoy_annex_mallorca_desc:0 "Mallorca is the largest of the Balearic Islands. Its annexation will give us total control of the archipelago."
+ 
+ alcoy_annex_murcia:0 "Annex Murcia"
+ alcoy_annex_murcia_desc:0 "Murcia is a rich agricultural province that will strengthen our food security and expand our borders to the south."
+ 
+ alcoy_annex_albacete:0 "Annex Albacete"
+ alcoy_annex_albacete_desc:0 "Albacete will provide us with strategic depth and access to important trade routes to the interior of Spain."
