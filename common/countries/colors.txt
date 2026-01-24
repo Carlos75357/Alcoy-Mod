@@ -4,6 +4,42 @@ ALC = {
 	color = rgb { 118 231 197 }
 	color_ui = rgb { 140 208 185 }
 }
+
+MNC = {
+	color = rgb { 135 206 250 }
+	color_ui = rgb { 135 206 250 }
+}
+
+MLL = {
+	color = rgb { 70 130 180 }
+	color_ui = rgb { 70 130 180 }
+}
+
+CST = {
+	color = rgb { 178 34 34 }
+	color_ui = rgb { 178 34 34 }
+}
+
+CAS = {
+	color = rgb { 255 140 0 }
+	color_ui = rgb { 255 140 0 }
+}
+
+VAL = {
+	color = rgb { 220 20 60 }
+	color_ui = rgb { 220 20 60 }
+}
+
+ARA = {
+	color = rgb { 255 215 0 }
+	color_ui = rgb { 255 215 0 }
+}
+
+MUR = {
+	color = rgb { 34 139 34 }
+	color_ui = rgb { 34 139 34 }
+}
+
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
