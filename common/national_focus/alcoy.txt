@@ -52,7 +52,7 @@ focus_tree = {
 focus = {
 		id = ALC_underground_shelters
 		icon = GFX_goal_generic_fortify_city
-		cost = 10.00
+		cost = 3.00
 		x = 15
 		y = 1
 
@@ -81,7 +81,7 @@ focus = {
 	focus = {
 		id = ALC_energy_self_sufficiency
 		icon = GFX_goal_generic_oil_refinery
-		cost = 10.00
+		cost = 5.00
 		x = 14
 		y = 2
 
@@ -128,7 +128,7 @@ focus = {
 	focus = {
 		id = ALC_technical_training
 		icon = GFX_goal_generic_scientific_exchange
-		cost = 10.00
+		cost = 4.00
 		x = 14
 		y = 3
 
@@ -375,7 +375,7 @@ focus = {
 	focus = {
 		id = ALC_military_begin
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4.00
+		cost = 3.00
 		x = 28
 		y = 0
 		
@@ -393,7 +393,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4.00
+		cost = 3.00
 		x = 24
 		y = 2
 
@@ -414,7 +414,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_2
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4.00
+		cost = 3.00
 		x = 28
 		y = 2
 
@@ -435,7 +435,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_3
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4
+		cost = 3.00
 		x = 32
 		y = 2
 
@@ -451,7 +451,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_4
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4.00
+		cost = 3.00
 		x = 24
 		y = 3
 
@@ -550,7 +550,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_7
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 5.00
+		cost = 2.00
 		x = 24
 		y = 5
 
@@ -575,7 +575,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_8
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4.00
+		cost = 2.00
 		x = 30
 		y = 4
 
@@ -628,7 +628,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_10
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4.00
+		cost = 2.00
 		x = 30
 		y = 5
 
@@ -659,7 +659,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_11
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4.00
+		cost = 2.00
 		x = 24
 		y = 6
 
@@ -696,7 +696,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_12
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4.00
+		cost = 2.00
 		x = 32
 		y = 6
 
@@ -737,7 +737,7 @@ focus = {
 	focus = {
 		id = ALC_military_civil_war_14
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4.00
+		cost = 2.00
 		x = 28
 		y = 8
 
