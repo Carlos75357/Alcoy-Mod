@@ -113,7 +113,7 @@ Cada bombardeo tendrá eventos con:
 Hacer que el gobierno se rompa y sea una junta autónoma la que dirija, no se si definido, desde un foco, evento o devisión.
 Añadir nuevas leyes - nueva de manpower que de 0.5 del manpower nacional y otra que de mas de 25% del manpower nacional, un 30% y que solo la pueda tener Alcoy o sus aliados.
 
-# Hoja de ruta
+# Eventos Guerra Independencia fase 1
 
 - Termina la guerra civil española:
     - Se preparan las independencias, no por eventos, si no por focos
@@ -167,3 +167,85 @@ Añadir nuevas leyes - nueva de manpower que de 0.5 del manpower nacional y otra
           - España desaparece y se convierte en la Corona de Castilla con debuffos explicados en otro momento (WIP) y un arbol de focos nuevo, si el jugador es el que controla España que pase a controlar este pais
           - La provincias de Castilla se convierten en zona desmilitarizada:
            - Sevilla, Cordoba, Ciudad Real, Guadalajara, Burgos, Asturias y León (state 169, 789, 175, 793, 176, 790, 174)
+
+# Focos post-guerra
+
+## Confederación Ibérica
+
+- Este foco cambiará el nombre de la coalición a Confederación Ibérica y añadirá a los paises ibericos que han sido liberados a la coalición, ademas le meterá una idea que de +0.15 de apoyo democratico a cada miembro, que podrá ser contrarestado por los focos de ellos si tiran por otra rama.
+
+## Fragmentar Castilla
+
+- Este foco depende de "Confederación Ibérica"
+- Meterá decisiones para crear los estados en los que se podrá fragmentar castilla, no los independizará, solo les dara el core a cada uno, castilla podrá intentar impedirlo o reducir los impactos.
+
+  - Esta decision la veamos los dos paises, Castilla y Alcoy, con una decision puedo aumentar un numero que, como lo de alemania e inglaterra con paises bajos, va subiendo, para cada pais por separado, pero cuando haya llegado a 100 se le ponga el core, yo tendre decisiones para subirlo y castilla para bajarlo, empezará en 50, si llega a 0 se pierde y no se puede subir y si llega a 100 se consigue y ya no se puede bajar ni quitar el core
+  - Los paises son: 
+    - Andalucia (789, 169, 118 (este es gibraltar, no lo conseguira pero si quiero que tenga core))
+    - Leon: (174, 788, 170)
+    - Asturias (790)
+    - Castilla Vieja (791, 176)
+    - Castilla Nueva (41, 793)
+    - La mancha (175)
+
+## Más influencia
+
+- Este foco depende de "Confederación Ibérica"
+- Aumentará la influencia que tiene Alcoy sobre los paises en la confederación ibérica, paises como Mallorca o Menorca no opondrán mucha resistencia, pero otros como Cataluña sí, serán decisiones para al final llegar a hacerlos vasallos.
+
+- **Estabilidad (`stability`)**:  
+  - Alcoy puede reducirla mediante decisiones de diplomacia, propaganda o sabotaje.  
+  - El país objetivo puede aumentarla para resistir la influencia.  
+- **Condiciones de vasallización**:  
+  - Alcoy puede vasallizar si `stability ≤ 15%`.  
+  - Si el país alcanza `stability ≥ 90%` o cumple otras condiciones, la acción se cancela.  
+- **Decisiones**:  
+  - Alcoy: “Aumentar influencia sobre [país]” → reduce estabilidad u otros recursos.  
+  - País objetivo: “Resistir influencia de Alcoy” → aumenta estabilidad, apoyo popular, recursos, etc.  
+
+  - **Apoyo popular / ideología**  
+    - Alcoy solo puede vasallizar si el apoyo a la ideología gobernante ≤ 20%.  
+    - El país objetivo puede incrementarlo para resistir.  
+
+  - **Economía / recursos**  
+    - Alcoy no puede vasallizar si el país tiene recursos críticos o fábricas ≥ X.  
+    - El país objetivo puede mejorar su economía para resistir.  
+
+  - **Fuerza militar / tropas**  
+    - La acción solo se puede realizar si la fuerza militar ≤ X.  
+    - El país puede reforzarse para resistir.  
+
+  - **Eventos pasados / decisiones previas**  
+    - Si Alcoy presionó demasiado o cometió errores diplomáticos, el país se vuelve más resistente.  
+
+  - **Posición geopolítica / alianzas**  
+    - Alcoy solo puede vasallizar si el país no tiene aliados fuertes (`is_in_faction_with = OTHER_TAG` o relaciones diplomáticas altas).  
+
+  - **Condición primaria**: estabilidad ≤ 15% → vasallización.  
+  - **Condiciones secundarias**:  
+    - Apoyo popular ≤ 20%  
+
+## Preparación de guerra
+
+- Este foco depende de "Confederación Ibérica"
+- Dará un poco de bufo a la producción de barcos y tanques, dará un bufo al manpower conseguido y un poco de research speed para lo militar
+
+## Mejor integración iberica
+
+- Este foco depende de "Fragmentar Castilla" y "Preparación de guerra"
+- Da un poco de manpower, ademas de que da población civil a la provincia de Alcoy
+
+## Comunidad Valenciana
+
+- Este foco depende de "Mas Influencia"
+- Da dos decisiones para llegar a integrar Valencia y Castellón, ya sea como vasallo o anexarlos, depende de lo que la ia decida, da core si se anexa
+
+## Integración ibérica
+
+- Este foco depende de "Fragmentar Castilla"
+- Más poder politico, más apoyo a los paises de la confederación, una idea que les de un pequeño bufo a la estabilidad.
+
+## Guerra con Castilla
+
+- Este foco depende de "Comunidad Valenciana" y "Integración ibérica"
+- Con los paises que hayan llegado a tener core en el territorio de castilla se revelan como vasallos de Alcoy, se unen a la coalición.

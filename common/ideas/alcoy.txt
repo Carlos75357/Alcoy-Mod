@@ -716,5 +716,70 @@ ideas = {
 				army_org_factor = -0.05
 			}
 		}
+
+		ALC_iberic_democracy = {
+			picture = generic_democratic_drift_bonus
+
+			allowed = {
+				always = yes
+			}
+
+			visible = yes
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.08
+				stability_factor = 0.01
+			}
+		}
+
+		ALC_war_preparation_bonus = {
+			picture = generic_war_preparation
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				infantry = 0.1
+			}
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+
+		ALC_iberian_integration = {
+			picture = generic_democratic_drift_bonus
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+				stability_factor = 0.05
+			}
+		}
+
+		ALC_iberian_confederation_help = {
+			picture = generic_democratic_drift_bonus
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.025
+				stability_weekly_factor = 0.002
+			}
+		}
 	}
 }

@@ -2239,6 +2239,10 @@ focus = {
 		prerequisite = {
 			focus = ALC_mediterranean_confederation
 		}
+
+		completion_reward = {
+			country_event = { id = alcoy_confederation.8 }
+		}
 	}
 
 	focus = {
@@ -2278,6 +2282,14 @@ focus = {
 		prerequisite = {
 			focus = ALC_iberian_confederation
 		}
+
+		completion_reward = {
+			add_ideas = {
+				ALC_war_preparation_bonus
+			}
+
+			add_manpower = 50000
+		}
 	}
 
 	focus = {
@@ -2290,6 +2302,17 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_fragment_castile
+		}
+
+		completion_reward = {
+			add_manpower = 25000
+			1047 = {
+				add_manpower = 11300
+			}
+
+			add_ideas = {
+				ALC_iberian_integration
+			}
 		}
 	}
 
@@ -2304,6 +2327,17 @@ focus = {
 		prerequisite = {
 			focus = ALC_war_preparation
 			focus = ALC_fragment_castile
+		}
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				add_ideas = {
+					ALC_iberian_confederation_help
+				}
+			}
 		}
 	}
 

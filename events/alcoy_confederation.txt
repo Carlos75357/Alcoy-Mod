@@ -459,6 +459,50 @@ country_event = {
 		add_political_power = 25
 	}
 }
+
+country_event = {
+    id = alcoy_confederation.8
+    title = alcoy_confederation.8.t
+    desc = alcoy_confederation.8.d
+    picture = GFX_report_event_generic_sign_treaty2
+
+    is_triggered_only = yes
+
+    trigger = {
+        tag = ALC
+    }
+
+    immediate = {
+        # Cambiar nombre de la facción
+        set_faction_name = "Iberian Confederation"
+
+        # Añadir países liberados a la facción
+        every_country = {
+            limit = {
+                OR = {
+                    tag = ADU
+                    tag = GLC
+                    tag = NAV
+                    tag = ARA
+                }
+                is_in_faction = no
+                is_subject = no
+            }
+            join_faction = ROOT
+        }
+
+        # Dar idea a todos los miembros de la facción
+        every_country = {
+            limit = {
+                is_in_faction_with = ROOT
+            }
+            add_ideas = {
+                ALC_iberic_democracy
+            }
+        }
+    }
+}
+
 # Evento de victoria y paz scripteada
 country_event = {
 	id = alcoy_confederation.100
