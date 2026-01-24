@@ -74,4 +74,9 @@ instant_effect = {
 		progress = 0.5
 		efficiency = 100
 	}
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1
+		amount = 300
+		producer = FRA
+	}
 }

@@ -615,6 +615,12 @@ country_event = {
 		}
 		
 		# España es anexada (desaparece)
+		every_state = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_core_of = CST
+		}
 		CST = {
 			annex_country = {
 				target = SPR

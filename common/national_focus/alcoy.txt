@@ -1723,6 +1723,9 @@ focus = {
 
 		completion_reward = {
 			add_ideas = ALC_oppose_communism
+			1048 = {
+				add_core_of = ROOT
+			}
 		}
 	}
 
@@ -1862,6 +1865,7 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
+					add_core_of = ROOT
 				}
 			}
 			add_stability = 0.05
@@ -2221,6 +2225,115 @@ focus = {
 			MEX = { country_event = { id = alcoy_confederation.7 days = 7 } }
 			
 			set_global_flag = mediterranean_confederation_war
+		}
+	}
+
+	focus = {
+		id = ALC_iberian_confederation
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		relative_position_id = ALC_mediterranean_confederation
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = ALC_mediterranean_confederation
+		}
+	}
+
+	focus = {
+		id = ALC_fragment_castile
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		relative_position_id = ALC_iberian_confederation
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = ALC_iberian_confederation
+		}
+	}
+
+	focus = {
+		id = ALC_more_influence
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		relative_position_id = ALC_iberian_confederation
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = ALC_iberian_confederation
+		}
+	}
+
+	focus = {
+		id = ALC_war_preparation
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		relative_position_id = ALC_iberian_confederation
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = ALC_iberian_confederation
+		}
+	}
+
+	focus = {
+		id = ALC_iberian_integration
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		relative_position_id = ALC_fragment_castile
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = ALC_fragment_castile
+		}
+	}
+
+	focus = {
+		id = ALC_better_iberian_integration
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		relative_position_id = ALC_war_preparation
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = ALC_war_preparation
+			focus = ALC_fragment_castile
+		}
+	}
+
+	focus = {
+		id = ALC_valencian_comunity
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		relative_position_id = ALC_more_influence
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = ALC_more_influence
+		}
+	}
+
+	focus = {
+		id = ALC_war_for_castile
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		relative_position_id = ALC_valencian_comunity
+		x = 3
+		y = 2
+
+		prerequisite = {
+			focus = ALC_valencian_comunity
+		}
+
+		prerequisite = {
+			focus = ALC_iberian_integration
 		}
 	}
 }
