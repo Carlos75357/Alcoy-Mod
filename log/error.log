@@ -1,12 +1,63 @@
-[22:41:43][no_game_date][persistent.cpp:66]: Error: "Unexpected token: thumbnail, near line: 7" in file: "mod/ugc_710273161.mod" near line: 7
-[22:41:48][no_game_date][pdx_entity.cpp:324]: Failed to find entity "ITA_mechanized_vehicle_1_entity" for attachment in vehicle
-[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_tac_bomber_equipment
-[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_strat_bomber_equipment
-[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_iw_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_basic_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_improved_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_advanced_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[22:41:49][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_modern_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[22:41:57][1936.01.01.12][effect.cpp:443]: Invalid effect 'IRQ_kamil_shabib' in history/countries/IRQ - Iraq.txt line : 110
-[22:41:57][1936.01.01.12][effect.cpp:356]: Error: "Unknown effect-type: IRQ_kamil_shabib, near line: 110" in file: "history/countries/IRQ - Iraq.txt" near line: 121
-[22:41:57][1936.01.01.12][equipment_effects.cpp:812]: 'history/countries/GER - Germany.txt:1496: create_equipment_variant': 'Hs 123' - Invalid icon 'GFX_GER_cv_fighter1_medium'.
+[12:33:59][no_game_date][persistent.cpp:66]: Error: "Unexpected token: thumbnail, near line: 7" in file: "mod/ugc_710273161.mod" near line: 7
+[12:33:59][no_game_date][localize.cpp:1639]: Localization file 'localisation/english/new_countries_l_english.yml' should be in in utf-8-bom encoding
+[12:33:59][no_game_date][pdx_localize.cpp:1031]: Missing UTF8 BOM in localisation/english/new_countries_l_english.yml
+[12:34:05][no_game_date][pdx_entity.cpp:324]: Failed to find entity "ITA_mechanized_vehicle_1_entity" for attachment in vehicle
+[12:34:05][no_game_date][countrydatabase.cpp:137]: Duplicate Country Tag - MAL
+[12:34:05][no_game_date][countrydatabase.cpp:137]: Duplicate Country Tag - MEN
+[12:34:05][no_game_date][statetemplate.cpp:238]: State #1054 does not have a category defined.
+[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_tac_bomber_equipment
+[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_strat_bomber_equipment
+[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_iw_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_basic_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_improved_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_advanced_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_modern_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[12:34:13][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/ : File not found
+[12:34:13][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/ : File not found
+[12:34:13][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/ : File not found
+[12:34:13][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/medium/ : File not found
+[12:34:14][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/medium/ : File not found
+[12:34:14][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/medium/ : File not found
+[12:34:14][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/small/ : File not found
+[12:34:14][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/small/ : File not found
+[12:34:14][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/small/ : File not found
+[12:34:15][no_game_date][gameapplication.cpp:841]: The game has loc key collisions. Check logs/text.log for more details
+[12:34:17][1936.01.01.12][effect.cpp:443]: Invalid effect 'IRQ_kamil_shabib' in history/countries/IRQ - Iraq.txt line : 110
+[12:34:17][1936.01.01.12][effect.cpp:356]: Error: "Unknown effect-type: IRQ_kamil_shabib, near line: 110" in file: "history/countries/IRQ - Iraq.txt" near line: 121
+[12:34:17][1936.01.01.12][equipment_effects.cpp:812]: 'history/countries/GER - Germany.txt:1496: create_equipment_variant': 'Hs 123' - Invalid icon 'GFX_GER_cv_fighter1_medium'.
+[12:34:17][1936.01.01.12][country.cpp:6948]: Attempting to set capital state #177 for Mengjiang, they dont own it!
+[12:34:17][1936.01.01.12][country.cpp:6948]: Attempting to set capital state #176 for British Malaya, they dont own it!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6132: map building(Military Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6134: map building(Military Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6135: map building(Military Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6137: map building(Military Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6138: map building(Civilian Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6140: map building(Civilian Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6143: map building(Civilian Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6146: map building(naval_base_spawn) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6148: map building(naval_base_spawn) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6151: map building(Land Fort) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6154: map building(Land Fort) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6158: map building(Coastal Fort) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6160: map building(Coastal Fort) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6165: map building(Anti-Air) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 15557: map building(rocket_site_spawn) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 24114: map building(Supply Hub) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 24117: map building(Supply Hub) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 45413: map building(special_project_facility_spawn) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 45417: map building(special_project_facility_spawn) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 58750: map building(Naval Supply Hub) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 58751: map building(Naval Supply Hub) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 63800: map building(Naval Headquarters) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 63801: map building(Naval Headquarters) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
+[12:34:19][1936.01.01.12][map.cpp:1628]: Province 9945 is setup as coastal but has no port building in the nudger. This will likely crash the game.
+[12:34:19][1936.01.01.12][map.cpp:1628]: Province 12100 is setup as coastal but has no port building in the nudger. This will likely crash the game.
+[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/ : File not found
+[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/ : File not found
+[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/ : File not found
+[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/medium/ : File not found
+[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/medium/ : File not found
+[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/medium/ : File not found
+[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/small/ : File not found
+[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/small/ : File not found
+[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/small/ : File not found

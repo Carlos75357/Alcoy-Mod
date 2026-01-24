@@ -17,6 +17,7 @@ state = {
 
 		owner = SPR
 		add_core_of = SPR
+		add_core_of = MLL
 		add_claim_by = CAT
 
 		buildings = {

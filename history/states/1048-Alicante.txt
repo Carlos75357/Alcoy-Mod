@@ -25,6 +25,9 @@ state = {
 			}
 		}
 		add_core_of = SPR
+		add_claim_by = VAL
+		add_claim_by = CAT
+		
 		1939.1.1 = {
 			owner = ALC
 			add_core_of = ALC

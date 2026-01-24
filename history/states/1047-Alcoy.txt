@@ -13,6 +13,9 @@ state = {
 		owner = ALC
 		add_core_of = ALC
 		add_core_of = SPR
+		add_claim_by = VAL
+		add_claim_by = CAT
+
 		victory_points = {
 			9889 10
 		}

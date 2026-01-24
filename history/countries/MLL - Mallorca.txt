@@ -1,0 +1,47 @@
+capital = 176
+
+oob = "MLL_1936"
+
+set_convoys = 12
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+}
+
+set_stability = 0.35
+set_war_support = 0.15
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.2.16"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 55
+	fascism = 10
+	communism = 30
+	neutrality = 5
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1938.6.12"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	
+	set_popularities = {
+		democratic = 65
+		fascism = 10
+		communism = 20
+		neutrality = 5
+	}
+	
+	set_stability = 0.50
+	set_war_support = 0.25
+}
