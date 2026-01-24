@@ -1,63 +1,131 @@
-[12:33:59][no_game_date][persistent.cpp:66]: Error: "Unexpected token: thumbnail, near line: 7" in file: "mod/ugc_710273161.mod" near line: 7
-[12:33:59][no_game_date][localize.cpp:1639]: Localization file 'localisation/english/new_countries_l_english.yml' should be in in utf-8-bom encoding
-[12:33:59][no_game_date][pdx_localize.cpp:1031]: Missing UTF8 BOM in localisation/english/new_countries_l_english.yml
-[12:34:05][no_game_date][pdx_entity.cpp:324]: Failed to find entity "ITA_mechanized_vehicle_1_entity" for attachment in vehicle
-[12:34:05][no_game_date][countrydatabase.cpp:137]: Duplicate Country Tag - MAL
-[12:34:05][no_game_date][countrydatabase.cpp:137]: Duplicate Country Tag - MEN
-[12:34:05][no_game_date][statetemplate.cpp:238]: State #1054 does not have a category defined.
-[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_tac_bomber_equipment
-[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_strat_bomber_equipment
-[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_iw_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_basic_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_improved_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_advanced_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[12:34:06][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_modern_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
-[12:34:13][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/ : File not found
-[12:34:13][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/ : File not found
-[12:34:13][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/ : File not found
-[12:34:13][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/medium/ : File not found
-[12:34:14][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/medium/ : File not found
-[12:34:14][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/medium/ : File not found
-[12:34:14][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/small/ : File not found
-[12:34:14][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/small/ : File not found
-[12:34:14][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/small/ : File not found
-[12:34:15][no_game_date][gameapplication.cpp:841]: The game has loc key collisions. Check logs/text.log for more details
-[12:34:17][1936.01.01.12][effect.cpp:443]: Invalid effect 'IRQ_kamil_shabib' in history/countries/IRQ - Iraq.txt line : 110
-[12:34:17][1936.01.01.12][effect.cpp:356]: Error: "Unknown effect-type: IRQ_kamil_shabib, near line: 110" in file: "history/countries/IRQ - Iraq.txt" near line: 121
-[12:34:17][1936.01.01.12][equipment_effects.cpp:812]: 'history/countries/GER - Germany.txt:1496: create_equipment_variant': 'Hs 123' - Invalid icon 'GFX_GER_cv_fighter1_medium'.
-[12:34:17][1936.01.01.12][country.cpp:6948]: Attempting to set capital state #177 for Mengjiang, they dont own it!
-[12:34:17][1936.01.01.12][country.cpp:6948]: Attempting to set capital state #176 for British Malaya, they dont own it!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6132: map building(Military Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6134: map building(Military Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6135: map building(Military Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6137: map building(Military Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6138: map building(Civilian Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6140: map building(Civilian Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6143: map building(Civilian Factory) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6146: map building(naval_base_spawn) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6148: map building(naval_base_spawn) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6151: map building(Land Fort) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6154: map building(Land Fort) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6158: map building(Coastal Fort) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6160: map building(Coastal Fort) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 6165: map building(Anti-Air) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 15557: map building(rocket_site_spawn) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 24114: map building(Supply Hub) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 24117: map building(Supply Hub) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 45413: map building(special_project_facility_spawn) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 45417: map building(special_project_facility_spawn) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 58750: map building(Naval Supply Hub) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 58751: map building(Naval Supply Hub) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 63800: map building(Naval Headquarters) location is not within specified state. Supposed to be '290 - Rif' but was '1054 - Melilla'for province 12100. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][mapbuildings.cpp:716]: map/buildings.txt error at line 63801: map building(Naval Headquarters) location is not within specified state. Supposed to be '290 - Rif' but was '1053 - Ceuta'for province 9945. BUILDING IGNORED!
-[12:34:19][1936.01.01.12][map.cpp:1628]: Province 9945 is setup as coastal but has no port building in the nudger. This will likely crash the game.
-[12:34:19][1936.01.01.12][map.cpp:1628]: Province 12100 is setup as coastal but has no port building in the nudger. This will likely crash the game.
-[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/ : File not found
-[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/ : File not found
-[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/ : File not found
-[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/medium/ : File not found
-[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/medium/ : File not found
-[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/medium/ : File not found
-[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country CAS : Ideology democratic : Path gfx/flags/small/ : File not found
-[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country MUR : Ideology democratic : Path gfx/flags/small/ : File not found
-[12:34:21][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country VAL : Ideology democratic : Path gfx/flags/small/ : File not found
+[18:22:57][no_game_date][persistent.cpp:66]: Error: "Unexpected token: thumbnail, near line: 7" in file: "mod/ugc_710273161.mod" near line: 7
+[18:23:04][no_game_date][pdx_entity.cpp:324]: Failed to find entity "ITA_mechanized_vehicle_1_entity" for attachment in vehicle
+[18:23:07][no_game_date][countrydatabase.cpp:137]: Duplicate Country Tag - GRN
+[18:23:07][no_game_date][countrydatabase.cpp:137]: Duplicate Country Tag - RIF
+[18:23:07][no_game_date][statetemplate.cpp:238]: State #1054 does not have a category defined.
+[18:23:07][no_game_date][persistent.cpp:66]: Error: "Unexpected token: aluminum, near line: 10" in file: "history/states/165-Catalonia.txt" near line: 11
+[18:23:08][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_tac_bomber_equipment
+[18:23:08][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_USA_prototype_plane_0_medium", associated with USA jet_strat_bomber_equipment
+[18:23:08][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_iw_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[18:23:08][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_basic_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[18:23:08][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_improved_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[18:23:08][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_advanced_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[18:23:08][no_game_date][equipment_graphic_database.cpp:38]: GFX referenced in equipment graphic database does not exist: "GFX_ARG_modern_small_airframe_medium", associated with AUS cv_small_plane_cas_airframe
+[18:23:12][no_game_date][effect.cpp:443]: Invalid effect 'send_volunteers_to' in events/alcoy_confederation.txt line : 17
+[18:23:12][no_game_date][persistent.cpp:66]: Error: "Unknown effect-type: send_volunteers_to, near line: 17" in file: "events/alcoy_confederation.txt" near line: 17
+[18:23:12][no_game_date][effect.cpp:443]: Invalid effect 'send_volunteers_to' in events/alcoy_confederation.txt line : 85
+[18:23:12][no_game_date][persistent.cpp:66]: Error: "Unknown effect-type: send_volunteers_to, near line: 85" in file: "events/alcoy_confederation.txt" near line: 85
+[18:23:12][no_game_date][effect.cpp:443]: Invalid effect 'send_volunteers_to' in events/alcoy_confederation.txt line : 153
+[18:23:12][no_game_date][persistent.cpp:66]: Error: "Unknown effect-type: send_volunteers_to, near line: 153" in file: "events/alcoy_confederation.txt" near line: 153
+[18:23:12][no_game_date][effect.cpp:443]: Invalid effect 'send_volunteers_to' in events/alcoy_confederation.txt line : 221
+[18:23:12][no_game_date][persistent.cpp:66]: Error: "Unknown effect-type: send_volunteers_to, near line: 221" in file: "events/alcoy_confederation.txt" near line: 221
+[18:23:12][no_game_date][effect.cpp:443]: Invalid effect 'send_volunteers_to' in events/alcoy_confederation.txt line : 285
+[18:23:12][no_game_date][persistent.cpp:66]: Error: "Unknown effect-type: send_volunteers_to, near line: 285" in file: "events/alcoy_confederation.txt" near line: 285
+[18:23:12][no_game_date][effect.cpp:443]: Invalid effect 'send_volunteers_to' in events/alcoy_confederation.txt line : 349
+[18:23:12][no_game_date][persistent.cpp:66]: Error: "Unknown effect-type: send_volunteers_to, near line: 349" in file: "events/alcoy_confederation.txt" near line: 349
+[18:23:12][no_game_date][effect.cpp:443]: Invalid effect 'send_volunteers_to' in events/alcoy_confederation.txt line : 413
+[18:23:12][no_game_date][persistent.cpp:66]: Error: "Unknown effect-type: send_volunteers_to, near line: 413" in file: "events/alcoy_confederation.txt" near line: 413
+[18:23:12][no_game_date][effectimplementation.cpp:14349]: Invalid Decision ID for activate_mission ALC_catalonia_revolt_mission
+[18:23:12][no_game_date][effectimplementation.cpp:14349]: Invalid Decision ID for activate_mission ALC_valencia_revolt_mission
+[18:23:12][no_game_date][effectimplementation.cpp:14349]: Invalid Decision ID for activate_mission ALC_baleares_revolt_mission
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country ARA : Ideology democratic : Path gfx/flags/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country EUS : Ideology democratic : Path gfx/flags/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country GAL : Ideology democratic : Path gfx/flags/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country GEQ : Ideology democratic : Path gfx/flags/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country WSA : Ideology democratic : Path gfx/flags/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country ARA : Ideology democratic : Path gfx/flags/medium/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country EUS : Ideology democratic : Path gfx/flags/medium/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country GAL : Ideology democratic : Path gfx/flags/medium/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country GEQ : Ideology democratic : Path gfx/flags/medium/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country WSA : Ideology democratic : Path gfx/flags/medium/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country ARA : Ideology democratic : Path gfx/flags/small/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country EUS : Ideology democratic : Path gfx/flags/small/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country GAL : Ideology democratic : Path gfx/flags/small/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country GEQ : Ideology democratic : Path gfx/flags/small/ : File not found
+[18:23:16][no_game_date][flagtextureatlas.cpp:524]: Error loading flag for country WSA : Ideology democratic : Path gfx/flags/small/ : File not found
+[18:23:20][1936.01.01.12][effect.cpp:443]: Invalid effect 'IRQ_kamil_shabib' in history/countries/IRQ - Iraq.txt line : 110
+[18:23:20][1936.01.01.12][effect.cpp:356]: Error: "Unknown effect-type: IRQ_kamil_shabib, near line: 110" in file: "history/countries/IRQ - Iraq.txt" near line: 121
+[18:23:20][1936.01.01.12][equipment_effects.cpp:812]: 'history/countries/GER - Germany.txt:1496: create_equipment_variant': 'Hs 123' - Invalid icon 'GFX_GER_cv_fighter1_medium'.
+[18:23:22][1936.01.01.12][mapbuildings.cpp:679]: map/buildings.txt error at line 6171: map building location is not over the land - ignoring instance.
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country ARA : Ideology democratic : Path gfx/flags/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country EUS : Ideology democratic : Path gfx/flags/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country GAL : Ideology democratic : Path gfx/flags/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country GEQ : Ideology democratic : Path gfx/flags/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country WSA : Ideology neutrality : Path gfx/flags/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country ARA : Ideology democratic : Path gfx/flags/medium/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country EUS : Ideology democratic : Path gfx/flags/medium/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country GAL : Ideology democratic : Path gfx/flags/medium/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country GEQ : Ideology democratic : Path gfx/flags/medium/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country WSA : Ideology neutrality : Path gfx/flags/medium/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country ARA : Ideology democratic : Path gfx/flags/small/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country EUS : Ideology democratic : Path gfx/flags/small/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country GAL : Ideology democratic : Path gfx/flags/small/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country GEQ : Ideology democratic : Path gfx/flags/small/ : File not found
+[18:23:24][1936.01.01.12][flagtextureatlas.cpp:524]: Error loading flag for country WSA : Ideology neutrality : Path gfx/flags/small/ : File not found
+[18:23:39][1936.01.01.12][countrytechtreeview.cpp:839]: Found no grid box for tech rangers_tech
+[18:23:39][1936.01.01.12][countrytechtreeview.cpp:839]: Found no grid box for tech rangers_tech2
+[18:23:39][1936.01.01.12][countrytechtreeview.cpp:839]: Found no grid box for tech rangers_tech3
+[18:35:00][1937.02.19.10][effectimplementation.cpp:18276]: common/decisions/PRC.txt:6628: cancel_border_war: no border conflict between Shaanbei and Guyuan
+[18:37:07][1937.05.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:37:20][1937.05.05.01][equipment_effects.cpp:812]: 'common/national_focus/new_zealand.txt:479: create_equipment_variant': 'Bristol Blenheim' - Modular type 'medium_plane_airframe_1' appears to not have been unlocked for NZL as no chassis variant exists. Unlocked the tech before creating any variants to avoid bugs.
+[18:37:55][1937.06.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:38:25][1937.07.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:39:31][1937.08.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:39:38][1937.08.06.16][effectimplementation.cpp:19270]: common/decisions/SPR.txt:11367: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:40:06][1937.09.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:40:55][1937.10.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:41:26][1937.11.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:42:00][1937.12.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:42:33][1938.01.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:43:29][1938.02.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:43:51][1938.02.16.23][gameidler.cpp:1604]: AI tried to post an invalid command: order_set_invasion_source_command
+[18:43:51][1938.02.16.24][gameidler.cpp:1604]: AI tried to post an invalid command: order_set_invasion_source_command
+[18:43:51][1938.02.17.01][gameidler.cpp:1604]: AI tried to post an invalid command: order_set_invasion_source_command
+[18:43:52][1938.02.17.02][gameidler.cpp:1604]: AI tried to post an invalid command: order_set_invasion_source_command
+[18:44:25][1938.03.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:45:06][1938.04.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:45:25][1938.04.16.02][bitmapfont.cpp:1356]: Couldnt find texticon: unit_category_militia_alcoyana_icon_small
+[18:45:29][1938.04.17.01][state_effect_implementation.cpp:541]: common/national_focus/alcoy.txt:72: add_building_construction Incorrect province: 0
+[18:45:47][1938.05.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:46:24][1938.06.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:32][1938.06.09.03][effectimplementation.cpp:19270]: events/LAR_NewsEvents.txt:251: remove_dynamic_modifier modifier does not exist: unplanned_offensive
+[18:46:47][1938.06.10.01][resistance.cpp:608]: called GetOccupationLaw with no occupatin data
+[18:46:47][1938.06.10.01][resistance.cpp:608]: called GetOccupationLaw with no occupatin data
+[18:47:14][1938.07.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:47:53][1938.07.31.16][bitmapfont.cpp:1356]: Couldnt find texticon: unit_category_militia_alcoyana_icon_small
+[18:47:54][1938.07.31.16][bitmapfont.cpp:1356]: Couldnt find texticon: unit_category_militia_alcoyana_icon_small
+[18:47:54][1938.07.31.16][bitmapfont.cpp:1356]: Couldnt find texticon: unit_category_militia_alcoyana_icon_small
+[18:47:57][1938.08.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:48:59][1938.09.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:49:42][1938.10.01.01][effectbase.cpp:1600]: common/on_actions/14_sea_on_actions.txt:2243: random_list: all entries in random_list have 0 chance to happen - no effect is executed.
+[18:51:53][1938.10.24.08][state_effect_implementation.cpp:2008]: common/national_focus/alcoy.txt:2112: add_resistance Islas Baleares does not have resistance
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:1828]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[18:54:30][1938.10.24.08][effectimplementation.cpp:3005]: common/national_focus/alcoy.txt:1903: remove_ideas: Invalid idea: ALC_international_isolation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.

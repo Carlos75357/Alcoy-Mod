@@ -1178,4 +1178,26 @@ opinion_modifiers = {
 	ALC_catching_up_allies_faction = {
 		value = 15
 	}
+
+	ALC_supports_independence = {
+		value = 50
+		months = 60
+		decay = 1
+	}
+
+	ALC_supports_separatism = {
+		value = -75
+		months = 48
+		decay = 1
+	}
+
+	ALC_granted_independence = {
+		value = 100
+		months = 120
+		decay = 1
+	}
+
+	ALC_confederation_member = {
+		value = 75
+	}
 }

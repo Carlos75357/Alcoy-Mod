@@ -160,6 +160,27 @@ focus = {
 		available = {
 			has_global_flag = scw_over
 		}
+
+		completion_reward = {
+			add_victory_points = {
+				province = 9889
+				value = 15
+			}
+			add_resource = {
+				type = steel
+				amount = 2
+				state = 1047
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+
+		}
 	}
 
 	focus = {
@@ -171,6 +192,29 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_industrial_effort_6
+		}
+
+		available = {
+			has_global_flag = scw_over
+		}
+
+		completion_reward = {
+			add_ideas = ALC_military_industrial_complex
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -184,6 +228,29 @@ focus = {
 		prerequisite = {
 			focus = ALC_industrial_effort_6
 		}
+
+		available = {
+			has_global_flag = scw_over
+		}
+
+		completion_reward = {
+			add_ideas = ALC_civilian_industrial_complex
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}	
 
 	focus = {
@@ -195,6 +262,21 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_industrial_effort_6
+		}
+
+		available = {
+			has_global_flag = scw_over
+		}
+
+		completion_reward = {
+			add_ideas = ALC_infrastructure_development
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -212,6 +294,34 @@ focus = {
 		mutually_exclusive = {
 			focus = ALC_industrial_effort_11
 		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALC_military_industrial_complex
+				add_idea = ALC_advanced_metallurgy
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -228,6 +338,34 @@ focus = {
 		mutually_exclusive = {
 			focus = ALC_industrial_effort_10
 		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALC_civilian_industrial_complex
+				add_idea = ALC_chemical_industry
+			}
+			add_tech_bonus = {
+				name = synth_resources_bonus
+				bonus = 1.0
+				uses = 1
+				category = synth_resources
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -239,6 +377,21 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_industrial_effort_9
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALC_infrastructure_development
+				add_idea = ALC_research_facilities
+			}
+			add_research_slot = 1
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -252,6 +405,30 @@ focus = {
 		prerequisite = {
 			focus = ALC_industrial_effort_10
 		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -263,6 +440,29 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_industrial_effort_11
+		}
+
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 1047
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -280,6 +480,40 @@ focus = {
 		prerequisite = {
 			focus = ALC_industrial_effort_12
 		}
+
+		completion_reward = {
+			add_ideas = ALC_industrial_expansion
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -291,6 +525,21 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_industrial_effort_12
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
 		}
 	}
 
@@ -304,6 +553,20 @@ focus = {
 		prerequisite = {
 			focus = ALC_industrial_effort_18
 		}
+
+		completion_reward = {
+			add_ideas = ALC_autarky
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 1047
+			}
+			add_resource = {
+				type = aluminium
+				amount = 2
+				state = 1047
+			}
+		}
 	}
 
 	focus = {
@@ -315,6 +578,30 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_industrial_effort_13
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.75
+				uses = 1
+				category = armor
+			}
 		}
 	}
 
@@ -328,6 +615,25 @@ focus = {
 		prerequisite = {
 			focus = ALC_industrial_effort_18
 		}
+
+		completion_reward = {
+			add_ideas = ALC_modern_industry
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -339,6 +645,29 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_industrial_effort_14
+		}
+
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = 5
+				state = 1047
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -352,6 +681,29 @@ focus = {
 		prerequisite = {
 			focus = ALC_industrial_effort_15
 		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALC_industrial_expansion
+				add_idea = ALC_export_focus
+			}
+			add_political_power = 150
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -364,7 +716,48 @@ focus = {
 		prerequisite = {
 			focus = ALC_industrial_effort_16
 			focus = ALC_industrial_effort_21
-		}		
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus_final
+				bonus = 1.0
+				uses = 3
+				category = industry
+			}
+			add_stability = 0.10
+			add_war_support = 0.10
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	# DESARROLLO MILITAR
@@ -1452,13 +1845,13 @@ focus = {
 		}
 
 		available = {
-			owns_state = 1051
+			owns_state = 1050
 		}
 
 		completion_reward = {
 			if = {
-				limit = { owns_state = 1051 }
-				1051 = {
+				limit = { owns_state = 1050 }
+				1050 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 2
@@ -1545,6 +1938,332 @@ focus = {
 				limit = { has_global_flag = spanish_civil_war_over }
 				add_ideas = ALC_recovering_civil_war
 			}
+		}
+	}
+
+	# INDEPENDENCIA REGIONAL
+	#-----------------------------------------------------------------------------------------------------------------------------------------------------
+	focus = {
+		id = ALC_regional_independence
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		x = 100
+		y = 0
+
+		available = {
+			has_global_flag = scw_over
+			OR = {
+				has_completed_focus = ALC_break_with_the_republic
+				has_completed_focus = ALC_democratic_road_wait
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			SPR = {
+				add_stability = -0.05
+			}
+			custom_effect_tooltip = ALC_regional_independence_tooltip
+		}
+	}
+
+	focus = {
+		id = ALC_support_catalonia
+		icon = GFX_goal_generic_propaganda
+		cost = 8.00
+		x = 96
+		y = 1
+
+		prerequisite = {
+			focus = ALC_regional_independence
+		}
+
+		completion_reward = {
+			activate_mission = ALC_catalonia_revolt_mission
+			custom_effect_tooltip = ALC_support_catalonia_tooltip
+		}
+	}
+
+	focus = {
+		id = ALC_support_valencia
+		icon = GFX_goal_generic_propaganda
+		cost = 8.00
+		x = 100
+		y = 1
+
+		prerequisite = {
+			focus = ALC_regional_independence
+		}
+
+		completion_reward = {
+			activate_mission = ALC_valencia_revolt_mission
+			custom_effect_tooltip = ALC_support_valencia_tooltip
+		}
+	}
+
+	focus = {
+		id = ALC_support_baleares
+		icon = GFX_goal_generic_propaganda
+		cost = 8.00
+		x = 104
+		y = 1
+
+		prerequisite = {
+			focus = ALC_regional_independence
+		}
+
+		completion_reward = {
+			activate_mission = ALC_baleares_revolt_mission
+			custom_effect_tooltip = ALC_support_baleares_tooltip
+		}
+	}
+
+	focus = {
+		id = ALC_catalonia_independence
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		x = 96
+		y = 2
+
+		prerequisite = {
+			focus = ALC_support_catalonia
+		}
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_manpower = 1000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			165 = {
+				add_resistance = 10
+			}
+		}
+	}
+
+	focus = {
+		id = ALC_valencia_independence
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		x = 98
+		y = 2
+
+		prerequisite = {
+			focus = ALC_support_valencia
+		}
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_manpower = 1000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			167 = {
+				add_resistance = 10
+			}
+		}
+	}
+
+	focus = {
+		id = ALC_castellon_independence
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		x = 102
+		y = 2
+
+		prerequisite = {
+			focus = ALC_support_valencia
+		}
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_manpower = 1000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			1049 = {
+				add_resistance = 10
+			}
+		}
+	}
+
+	focus = {
+		id = ALC_mallorca_independence
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		x = 104
+		y = 2
+
+		prerequisite = {
+			focus = ALC_support_baleares
+		}
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_manpower = 1000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			177 = {
+				add_resistance = 10
+			}
+		}
+	}
+
+	focus = {
+		id = ALC_menorca_independence
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		x = 106
+		y = 2
+
+		prerequisite = {
+			focus = ALC_support_baleares
+		}
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_manpower = 1000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			1051 = {
+				add_resistance = 10
+			}
+		}
+	}
+
+	focus = {
+		id = ALC_mediterranean_confederation
+		icon = GFX_goal_generic_alliance
+		cost = 15.00
+		x = 100
+		y = 3
+
+		prerequisite = {
+			focus = ALC_catalonia_independence
+		}
+
+		prerequisite = {
+			focus = ALC_valencia_independence
+		}
+
+		prerequisite = {
+			focus = ALC_castellon_independence
+		}
+
+		prerequisite = {
+			focus = ALC_mallorca_independence
+		}
+
+		prerequisite = {
+			focus = ALC_menorca_independence
+		}
+
+		completion_reward = {
+			# Crear todos los países independientes
+			CAT = {
+				transfer_state = 165
+				add_state_core = 165
+				load_oob = CAT_independence_war
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				add_ideas = ALC_guerrilla_spirit
+			}
+			VAL = {
+				transfer_state = 167
+				add_state_core = 167
+				load_oob = VAL_independence_war
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				add_ideas = ALC_guerrilla_spirit
+			}
+			MLL = {
+				transfer_state = 177
+				add_state_core = 177
+				load_oob = MLL_independence_war
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				add_ideas = ALC_guerrilla_spirit
+			}
+			MNC = {
+				transfer_state = 1051
+				add_state_core = 1051
+				load_oob = MNC_independence_war
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				add_ideas = ALC_guerrilla_spirit
+			}
+			CAS = {
+				transfer_state = 1049
+				add_state_core = 1049
+				load_oob = CAS_independence_war
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				add_ideas = ALC_guerrilla_spirit
+			}
+			MUR = {
+				transfer_state = 168
+				add_state_core = 168
+				load_oob = MUR_independence_war
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				add_ideas = ALC_guerrilla_spirit
+			}
+			RIF = {
+				transfer_state = 290
+				transfer_state = 1053
+				transfer_state = 1054
+				add_state_core = 290
+				add_state_core = 1053
+				add_state_core = 1054
+				load_oob = RIF_independence_war
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_ideas = ALC_guerrilla_spirit
+			}
+			
+			# Alcoy también recibe sus unidades e idea
+			load_oob = ALC_independence_war
+			add_ideas = ALC_guerrilla_spirit
+			
+			# España recibe debuff y unidades
+			SPR = {
+				add_ideas = SPR_post_civil_war_exhaustion
+				load_oob = SPR_independence_war
+			}
+			
+			# Crear la facción
+			create_faction = "Confederación Mediterránea Ibérica"
+			add_to_faction = CAT
+			add_to_faction = VAL
+			add_to_faction = MLL
+			add_to_faction = MNC
+			add_to_faction = CAS
+			add_to_faction = MUR
+			add_to_faction = RIF
+			
+			# Declarar guerra a España
+			declare_war_on = {
+				target = SPR
+				type = annex_everything
+			}
+			CAT = { declare_war_on = { target = SPR type = annex_everything } }
+			VAL = { declare_war_on = { target = SPR type = annex_everything } }
+			MLL = { declare_war_on = { target = SPR type = annex_everything } }
+			MNC = { declare_war_on = { target = SPR type = annex_everything } }
+			CAS = { declare_war_on = { target = SPR type = annex_everything } }
+			MUR = { declare_war_on = { target = SPR type = annex_everything } }
+			RIF = { declare_war_on = { target = SPR type = annex_everything } }
+			
+			# Activar eventos de ayuda internacional
+			FRA = { country_event = { id = alcoy_confederation.1 days = 7 } }
+			ENG = { country_event = { id = alcoy_confederation.2 days = 7 } }
+			CZE = { country_event = { id = alcoy_confederation.3 days = 7 } }
+			CAN = { country_event = { id = alcoy_confederation.4 days = 7 } }
+			NZL = { country_event = { id = alcoy_confederation.5 days = 7 } }
+			AST = { country_event = { id = alcoy_confederation.6 days = 7 } }
+			MEX = { country_event = { id = alcoy_confederation.7 days = 7 } }
+			
+			set_global_flag = mediterranean_confederation_war
 		}
 	}
 }

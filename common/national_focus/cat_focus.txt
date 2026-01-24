@@ -1,0 +1,22 @@
+focus_tree = {
+	id = catalonia_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CAT
+		}
+	}
+	default = no
+	
+	focus = {
+		id = CAT_start
+		icon = GFX_goal_generic_demand_territory
+		x = 5
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+}

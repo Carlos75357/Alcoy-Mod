@@ -1,0 +1,82 @@
+division_template = {
+	name = "División de Infantería Rifeña"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+}
+
+units = {
+	# 11 divisiones de infantería bien entrenadas
+	division = {
+		name = "1ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "2ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "3ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "4ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "5ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "6ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "7ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "8ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "9ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "10ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "11ª División Rifeña"
+		location = 12087
+		division_template = "División de Infantería Rifeña"
+		start_experience_factor = 0.5
+	}
+}

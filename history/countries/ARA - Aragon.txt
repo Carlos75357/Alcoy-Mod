@@ -1,0 +1,31 @@
+capital = 166
+
+oob = "empty"
+
+set_research_slots = 2
+
+set_stability = 0.50
+set_war_support = 0.60
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.2.16"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 60
+	communism = 20
+	fascism = 10
+	neutrality = 10
+}
+
+create_country_leader = {
+	name = "Presidente de Aragón"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}

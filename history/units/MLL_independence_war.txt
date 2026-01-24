@@ -1,0 +1,33 @@
+division_template = {
+	name = "Divisió d'Infanteria Mallorquina"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	# 3 divisiones de infantería regulares
+	division = {
+		name = "1ª Divisió Mallorquina"
+		location = 9793
+		division_template = "Divisió d'Infanteria Mallorquina"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2ª Divisió Mallorquina"
+		location = 9793
+		division_template = "Divisió d'Infanteria Mallorquina"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3ª Divisió Mallorquina"
+		location = 9793
+		division_template = "Divisió d'Infanteria Mallorquina"
+		start_experience_factor = 0.3
+	}
+}

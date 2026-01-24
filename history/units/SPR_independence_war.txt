@@ -1,0 +1,339 @@
+division_template = {
+	name = "División de Infantería Española Elite"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+}
+
+division_template = {
+	name = "División de Infantería Española"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+}
+
+division_template = {
+	name = "División Blindada Española"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+}
+
+units = {
+	# 25 divisiones de infantería bien entrenadas
+	division = {
+		name = "1ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "2ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "3ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "4ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "5ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "6ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "7ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "8ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "9ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "10ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "11ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "12ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "13ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "14ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "15ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "16ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "17ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "18ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "19ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "20ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "21ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "22ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "23ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "24ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "25ª División de Línea"
+		location = 3938
+		division_template = "División de Infantería Española Elite"
+		start_experience_factor = 0.5
+	}
+	
+	# 4 divisiones de tanques
+	division = {
+		name = "1ª División Blindada"
+		location = 3938
+		division_template = "División Blindada Española"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "2ª División Blindada"
+		location = 3938
+		division_template = "División Blindada Española"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "3ª División Blindada"
+		location = 3938
+		division_template = "División Blindada Española"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "4ª División Blindada"
+		location = 3938
+		division_template = "División Blindada Española"
+		start_experience_factor = 0.5
+	}
+	
+	# 20 divisiones poco entrenadas
+	division = {
+		name = "1ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "3ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "4ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "5ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "6ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "7ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "8ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "9ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "10ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "11ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "12ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "13ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "14ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "15ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "16ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "17ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "18ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "19ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "20ª División de Reserva"
+		location = 3938
+		division_template = "División de Infantería Española"
+		start_experience_factor = 0.2
+	}
+}

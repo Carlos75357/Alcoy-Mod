@@ -1,0 +1,254 @@
+l_spanish:
+ # Focuses
+ ALC_regional_independence:0 "Independencia Regional"
+ ALC_regional_independence_desc:0 "Ha llegado el momento de apoyar las aspiraciones de independencia de las regiones mediterráneas. Cataluña, Valencia, Castellón y las Baleares merecen su autodeterminación."
+ ALC_regional_independence_tooltip:0 "Desbloquea opciones para apoyar la independencia regional"
+ 
+ ALC_support_catalonia:0 "Apoyar a Cataluña"
+ ALC_support_catalonia_desc:0 "Cataluña tiene una larga historia de autonomía e identidad propia. Debemos apoyar sus aspiraciones de independencia."
+ 
+ ALC_support_valencia:0 "Apoyar a Valencia"
+ ALC_support_valencia_desc:0 "El Reino de Valencia comparte nuestra cultura mediterránea. Es hora de apoyar su independencia."
+ 
+ ALC_support_baleares:0 "Apoyar a las Baleares"
+ ALC_support_baleares_desc:0 "Las Islas Baleares merecen controlar su propio destino. Apoyaremos su independencia."
+ 
+ ALC_catalonia_independence:0 "Independencia de Cataluña"
+ ALC_catalonia_independence_desc:0 "Es momento de declarar formalmente la independencia de Cataluña y establecer un nuevo estado catalán."
+ 
+ ALC_valencia_independence:0 "Independencia de Valencia"
+ ALC_valencia_independence_desc:0 "Valencia se convertirá en un estado independiente con nuestra ayuda."
+ 
+ ALC_castellon_independence:0 "Independencia de Castellón"
+ ALC_castellon_independence_desc:0 "Castellón merece su propia independencia como estado soberano."
+ 
+ ALC_mallorca_independence:0 "Independencia de Mallorca"
+ ALC_mallorca_independence_desc:0 "Mallorca se separará y formará su propio estado independiente."
+ 
+ ALC_menorca_independence:0 "Independencia de Menorca"
+ ALC_menorca_independence_desc:0 "Menorca también tendrá su independencia y soberanía."
+ 
+ ALC_mediterranean_confederation:0 "Confederación Mediterránea"
+ ALC_mediterranean_confederation_desc:0 "Con todas las regiones independientes, podemos formar una poderosa confederación mediterránea."
+ 
+ # Events
+ alcoy_independence.1.t:0 "Apoyo a la Independencia Catalana"
+ alcoy_independence.1.d:0 "Hemos decidido apoyar públicamente las aspiraciones de independencia de Cataluña. Esto mejorará nuestras relaciones con los catalanes, pero enfurecerá al gobierno español."
+ alcoy_independence.1.a:0 "¡Catalunya lliure!"
+ 
+ alcoy_independence.2.t:0 "Apoyo a la Independencia Valenciana"
+ alcoy_independence.2.d:0 "Valencia y Castellón comparten nuestra cultura mediterránea. Apoyaremos su derecho a la autodeterminación."
+ alcoy_independence.2.a:0 "¡València lliure!"
+ 
+ alcoy_independence.3.t:0 "Apoyo a la Independencia de las Baleares"
+ alcoy_independence.3.d:0 "Las Islas Baleares también merecen su independencia. Apoyaremos su causa."
+ alcoy_independence.3.a:0 "¡Illes lliures!"
+ 
+ alcoy_independence.10.t:0 "¡Cataluña es Independiente!"
+ alcoy_independence.10.d:0 "Cataluña ha declarado su independencia de España. Los territorios catalanes ahora forman un nuevo estado soberano bajo nuestro patrocinio."
+ alcoy_independence.10.a:0 "¡Bienvenida a la familia de naciones libres!"
+ 
+ alcoy_independence.11.t:0 "¡Valencia es Independiente!"
+ alcoy_independence.11.d:0 "Valencia ha declarado su independencia. El antiguo Reino de Valencia renace como estado soberano."
+ alcoy_independence.11.a:0 "¡Visca València!"
+ 
+ alcoy_independence.12.t:0 "¡Castellón es Independiente!"
+ alcoy_independence.12.d:0 "Castellón se ha separado y formado su propio estado independiente."
+ alcoy_independence.12.a:0 "¡Una nueva nación nace!"
+ 
+ alcoy_independence.13.t:0 "¡Mallorca es Independiente!"
+ alcoy_independence.13.d:0 "Mallorca ha declarado su independencia de España y se ha convertido en un estado soberano."
+ alcoy_independence.13.a:0 "¡Las islas son libres!"
+ 
+ alcoy_independence.14.t:0 "¡Menorca es Independiente!"
+ alcoy_independence.14.d:0 "Menorca también ha alcanzado su independencia y soberanía."
+ alcoy_independence.14.a:0 "¡Menorca lliure!"
+ 
+ alcoy_independence.20.t:0 "La Confederación Mediterránea"
+ alcoy_independence.20.d:0 "Con todas las regiones mediterráneas independientes, hemos formado la Confederación Mediterránea. Esta alianza de estados libres será una fuerza poderosa en el Mediterráneo."
+ alcoy_independence.20.a:0 "¡Unidos en la libertad!"
+ 
+ # Ideas
+ ALC_mediterranean_confederation:0 "Confederación Mediterránea"
+ ALC_mediterranean_confederation_desc:0 "Hemos unido a las naciones mediterráneas en una confederación de estados libres e independientes."
+ 
+ ALC_recovering_civil_war:0 "Recuperándose de la Guerra Civil"
+ ALC_recovering_civil_war_desc:0 "Aunque la guerra civil ha terminado, todavía estamos recuperándonos de sus efectos."
+ 
+ # Countries
+ CAT:0 "Cataluña"
+ CAT_DEF:0 "Cataluña"
+ CAT_ADJ:0 "Catalán"
+ 
+ CAT_democratic:0 "República de Cataluña"
+ CAT_democratic_DEF:0 "la República de Cataluña"
+ CAT_communism:0 "República Socialista de Cataluña"
+ CAT_communism_DEF:0 "la República Socialista de Cataluña"
+ CAT_fascism:0 "Estado Catalán"
+ CAT_fascism_DEF:0 "el Estado Catalán"
+ CAT_neutrality:0 "Principado de Cataluña"
+ CAT_neutrality_DEF:0 "el Principado de Cataluña"
+ 
+ # Rif
+ RIF:0 "República del Rif"
+ RIF_DEF:0 "la República del Rif"
+ RIF_ADJ:0 "Rifeño"
+ 
+ RIF_democratic:0 "República del Rif"
+ RIF_democratic_DEF:0 "la República del Rif"
+ RIF_communism:0 "República Socialista del Rif"
+ RIF_communism_DEF:0 "la República Socialista del Rif"
+ RIF_fascism:0 "Estado del Rif"
+ RIF_fascism_DEF:0 "el Estado del Rif"
+ RIF_neutrality:0 "Emirato del Rif"
+ RIF_neutrality_DEF:0 "el Emirato del Rif"
+ 
+ # Post-Civil War Events
+ alcoy_post_scw.1.t:0 "¡Guerra de Independencia!"
+ alcoy_post_scw.1.d:0 "Con la guerra civil española terminada, ha llegado el momento de actuar. Las regiones mediterráneas y el Rif han declarado su independencia de España. Como no hemos apoyado a la República, debemos unirnos a esta guerra de liberación. ¡Es hora de fragmentar España y crear una nueva confederación de estados libres!"
+ alcoy_post_scw.1.a:0 "¡A las armas! ¡Por la libertad!"
+ alcoy_post_scw_war_tooltip:0 "§YTodos los territorios independentistas declararán la guerra a España§!"
+ 
+ alcoy_post_scw.2.t:0 "¡Victoria! España Derrotada"
+ alcoy_post_scw.2.d:0 "España ha sido derrotada en la Guerra de Independencia. Los territorios se redistribuirán según lo acordado:\n\n§Y• Cataluña§! mantiene Barcelona, Girona, Lleida y Tarragona\n§Y• Valencia§! mantiene Valencia\n§Y• Castellón§! mantiene Castellón\n§Y• Baleares§! (Mallorca y Menorca) mantienen las islas\n§Y• Murcia§! obtiene Albacete\n§Y• El Rif§! obtiene el norte de Marruecos\n\n¡La Confederación Mediterránea está lista para nacer!"
+ alcoy_post_scw.2.a:0 "¡Una nueva era comienza!"
+ alcoy_post_scw_peace_tooltip:0 "§YLos territorios serán redistribuidos según el acuerdo de paz§!"
+ 
+ alcoy_post_scw.3.t:0 "El Colapso de España"
+ alcoy_post_scw.3.d:0 "España ha sido derrotada en la Guerra de Independencia. Múltiples regiones se han separado y formado sus propios estados. El sueño de una España unida se ha desvanecido."
+ alcoy_post_scw.3.a:0 "¡Esto es un desastre!"
+ spain_accepts_defeat_tooltip:0 "§REspaña pierde múltiples territorios§!"
+ 
+ alcoy_post_scw.4.t:0 "La Confederación Mediterránea"
+ alcoy_post_scw.4.d:0 "Con todas las regiones mediterráneas independientes y España derrotada, ha llegado el momento de formalizar nuestra alianza. La Confederación Mediterránea unirá a Alcoy, Cataluña, Valencia, Castellón y las Baleares en una poderosa unión de estados libres."
+ alcoy_post_scw.4.a:0 "¡Unidos somos más fuertes!"
+ 
+ # Focus localization
+ ALC_regional_independence_tooltip:0 "§YDesbloquea la posibilidad de apoyar independencias regionales§!"
+ ALC_support_catalonia_tooltip:0 "§YActiva misiones para iniciar revueltas en Cataluña§!"
+ ALC_support_valencia_tooltip:0 "§YActiva misiones para iniciar revueltas en Valencia§!"
+ ALC_support_baleares_tooltip:0 "§YActiva misiones para iniciar revueltas en Baleares§!"
+ 
+ # International aid events
+ alcoy_confederation.1.t:0 "La Confederación Mediterránea solicita ayuda"
+ alcoy_confederation.1.d:0 "La recién formada Confederación Mediterránea Ibérica ha declarado la guerra a España. Francia tiene la oportunidad de apoyar a estos nuevos estados democráticos en su lucha por la libertad."
+ alcoy_confederation.1.a:0 "Enviar voluntarios"
+ alcoy_confederation.1.b:0 "Enviar equipamiento"
+ alcoy_confederation.1.c:0 "Enviar refuerzos de manpower"
+ alcoy_confederation.1.e:0 "No intervenir"
+ 
+ alcoy_confederation.2.t:0 "La Confederación Mediterránea solicita ayuda"
+ alcoy_confederation.2.d:0 "La Confederación Mediterránea Ibérica ha declarado la guerra a España. El Reino Unido puede apoyar a estos nuevos estados democráticos."
+ alcoy_confederation.2.a:0 "Enviar voluntarios"
+ alcoy_confederation.2.b:0 "Enviar equipamiento"
+ alcoy_confederation.2.c:0 "Enviar refuerzos de manpower"
+ alcoy_confederation.2.e:0 "No intervenir"
+ 
+ alcoy_confederation.3.t:0 "La Confederación Mediterránea solicita ayuda"
+ alcoy_confederation.3.d:0 "La Confederación Mediterránea Ibérica lucha por su independencia. Checoslovaquia puede enviar ayuda a estos nuevos estados."
+ alcoy_confederation.3.a:0 "Enviar voluntarios"
+ alcoy_confederation.3.b:0 "Enviar equipamiento"
+ alcoy_confederation.3.c:0 "Enviar refuerzos de manpower"
+ alcoy_confederation.3.e:0 "No intervenir"
+ 
+ alcoy_confederation.4.t:0 "La Confederación Mediterránea solicita ayuda"
+ alcoy_confederation.4.d:0 "Los estados de la Confederación Mediterránea Ibérica luchan por su libertad. Canadá puede enviar ayuda."
+ alcoy_confederation.4.a:0 "Enviar voluntarios"
+ alcoy_confederation.4.b:0 "Enviar equipamiento"
+ alcoy_confederation.4.c:0 "Enviar refuerzos de manpower"
+ alcoy_confederation.4.e:0 "No intervenir"
+ 
+ alcoy_confederation.5.t:0 "La Confederación Mediterránea solicita ayuda"
+ alcoy_confederation.5.d:0 "Nueva Zelanda puede apoyar a la Confederación Mediterránea Ibérica en su guerra de independencia."
+ alcoy_confederation.5.a:0 "Enviar voluntarios"
+ alcoy_confederation.5.b:0 "Enviar equipamiento"
+ alcoy_confederation.5.c:0 "Enviar refuerzos de manpower"
+ alcoy_confederation.5.e:0 "No intervenir"
+ 
+ alcoy_confederation.6.t:0 "La Confederación Mediterránea solicita ayuda"
+ alcoy_confederation.6.d:0 "Australia puede apoyar a la Confederación Mediterránea Ibérica en su lucha por la independencia."
+ alcoy_confederation.6.a:0 "Enviar voluntarios"
+ alcoy_confederation.6.b:0 "Enviar equipamiento"
+ alcoy_confederation.6.c:0 "Enviar refuerzos de manpower"
+ alcoy_confederation.6.e:0 "No intervenir"
+ 
+ alcoy_confederation.7.t:0 "La Confederación Mediterránea solicita ayuda"
+ alcoy_confederation.7.d:0 "México puede apoyar a la Confederación Mediterránea Ibérica en su guerra de independencia contra España."
+ alcoy_confederation.7.a:0 "Enviar voluntarios"
+ alcoy_confederation.7.b:0 "Enviar equipamiento"
+ alcoy_confederation.7.c:0 "Enviar refuerzos de manpower"
+ alcoy_confederation.7.e:0 "No intervenir"
+ 
+ # Victory event
+ alcoy_confederation.100.t:0 "¡Victoria! España Derrotada"
+ alcoy_confederation.100.d:0 "España ha sido derrotada en la Guerra de Independencia. Los territorios se redistribuirán y múltiples nuevas naciones nacerán de las cenizas del imperio español."
+ alcoy_confederation.100.a:0 "¡Una nueva era comienza!"
+ 
+ # New countries
+ ARA:0 "Aragón"
+ ARA_DEF:0 "Aragón"
+ ARA_ADJ:0 "Aragonés"
+ ARA_democratic:0 "República de Aragón"
+ ARA_communism:0 "República Socialista de Aragón"
+ ARA_fascism:0 "Estado Aragonés"
+ ARA_neutrality:0 "Reino de Aragón"
+ 
+ EUS:0 "Euskadi"
+ EUS_DEF:0 "Euskadi"
+ EUS_ADJ:0 "Vasco"
+ EUS_democratic:0 "República de Euskadi"
+ EUS_communism:0 "República Socialista Vasca"
+ EUS_fascism:0 "Estado Vasco"
+ EUS_neutrality:0 "País Vasco"
+ 
+ GRN:0 "Granada"
+ GRN_DEF:0 "Granada"
+ GRN_ADJ:0 "Granadino"
+ GRN_democratic:0 "República de Granada"
+ GRN_communism:0 "República Socialista de Granada"
+ GRN_fascism:0 "Estado de Granada"
+ GRN_neutrality:0 "Emirato de Granada"
+ 
+ GAL:0 "Galicia"
+ GAL_DEF:0 "Galicia"
+ GAL_ADJ:0 "Gallego"
+ GAL_democratic:0 "República de Galicia"
+ GAL_communism:0 "República Socialista de Galicia"
+ GAL_fascism:0 "Estado Gallego"
+ GAL_neutrality:0 "Reino de Galicia"
+ 
+ WSA:0 "Sahara Occidental"
+ WSA_DEF:0 "el Sahara Occidental"
+ WSA_ADJ:0 "Saharaui"
+ WSA_democratic:0 "República Saharaui"
+ WSA_communism:0 "República Socialista Saharaui"
+ WSA_fascism:0 "Estado Saharaui"
+ WSA_neutrality:0 "Sahara Occidental"
+ 
+ GEQ:0 "Guinea Ecuatorial"
+ GEQ_DEF:0 "Guinea Ecuatorial"
+ GEQ_ADJ:0 "Ecuatoguineano"
+ GEQ_democratic:0 "República de Guinea Ecuatorial"
+ GEQ_communism:0 "República Socialista de Guinea"
+ GEQ_fascism:0 "Estado de Guinea"
+ GEQ_neutrality:0 "Guinea Ecuatorial"
+ 
+ # Ideas
+ ALC_guerrilla_spirit:0 "Espíritu Guerrillero"
+ ALC_guerrilla_spirit_desc:0 "Nuestras tropas luchan con el fervor de quienes defienden su libertad y su tierra."
+ 
+ SPR_post_civil_war_exhaustion:0 "Recién Salido de la Guerra Civil"
+ SPR_post_civil_war_exhaustion_desc:0 "España aún no se ha recuperado del devastador conflicto civil que asoló el país."
+ 
+ # Cosmetic tag
+ CAS_crown:0 "Corona de Castilla"
+ CAS_crown_DEF:0 "la Corona de Castilla"
+ 
+ # Corona de Castilla (país CST)
+ CST:0 "Corona de Castilla"
+ CST_DEF:0 "la Corona de Castilla"
+ CST_ADJ:0 "Castellano"
+ CST_democratic:0 "Reino de Castilla"
+ CST_communism:0 "República Popular de Castilla"
+ CST_fascism:0 "Imperio de Castilla"
+ CST_neutrality:0 "Corona de Castilla"

@@ -484,5 +484,220 @@ ideas = {
 				communism_drift = -0.1
 			}
 		}
+
+		ALC_industrial_expansion = {
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+
+		ALC_military_industrial_complex = {
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		ALC_civilian_industrial_complex = {
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				local_resources_factor = 0.10
+			}
+		}
+
+		ALC_advanced_metallurgy = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				local_resources_factor = 0.15
+			}
+		}
+
+		ALC_chemical_industry = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.20
+				local_resources_factor = 0.10
+			}
+		}
+
+		ALC_infrastructure_development = {
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.20
+				local_building_slots_factor = 0.05
+			}
+		}
+
+		ALC_research_facilities = {
+			picture = generic_research_bonus
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.07
+			}
+		}
+
+		ALC_modern_industry = {
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		ALC_export_focus = {
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				min_export = -0.10
+				political_power_gain = 0.15
+			}
+		}
+
+		ALC_autarky = {
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.20
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+
+		ALC_mediterranean_confederation = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.10
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.25
+			}
+		}
+
+		ALC_recovering_civil_war = {
+			picture = generic_disjointed_gov
+
+			allowed = {
+				original_tag = ALC
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				political_power_gain = 0.10
+			}
+		}
+
+		ALC_guerrilla_spirit = {
+			picture = FRA_scw_intervention_nationalists_focus
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+				army_org_factor = 0.10
+			}
+		}
+
+		SPR_post_civil_war_exhaustion = {
+			picture = generic_disjointed_gov
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
 	}
 }
