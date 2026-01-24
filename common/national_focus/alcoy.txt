@@ -1241,7 +1241,6 @@ focus = {
 		x = 61
 		y = 0
 	}
-
 	focus = {
 		id = ALC_break_with_the_republic
 		icon = GFX_goal_generic_allies_build_infantry
@@ -1253,7 +1252,9 @@ focus = {
 			focus = ALC_national_crisis
 		}
 
-		available = {  }
+		available = {
+			always = no
+		}
 
 		mutually_exclusive = {
 			focus = ALC_second_republic_loyalty
@@ -1305,7 +1306,9 @@ focus = {
 			focus = ALC_national_crisis
 		}
 
-		available = { }
+		available = {
+			always = no
+		}
 
 		mutually_exclusive = {
 			focus = ALC_break_with_the_republic
@@ -1359,7 +1362,7 @@ focus = {
 	focus = {
 		id = ALC_democratic_road
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 5.00
 		x = 80
 		y = 2
 
@@ -1376,7 +1379,7 @@ focus = {
 	focus = {
 		id = ALC_democratic_road_republic
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 5.00
 		x = 77
 		y = 3
 
@@ -1392,7 +1395,7 @@ focus = {
 	focus = {
 		id = ALC_democratic_road_republic_1
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 5.00
 		x = 75
 		y = 4
 
@@ -1618,7 +1621,7 @@ focus = {
 	focus = {
 		id = ALC_democratic_road_wait
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 5.00
 		x = 87
 		y = 3
 
@@ -1809,6 +1812,7 @@ focus = {
 					modifier = ALC_catching_up_allies_faction
 				}
 			}
+			set_flag = alcoy_wait_7
 		}
 	}
 
@@ -1830,6 +1834,7 @@ focus = {
 		completion_reward = {
 			# Mantenerse neutral, +200 poder político
 			add_political_power = 200
+			set_flag = alcoy_wait_8
 		}
 	}
 
@@ -1898,13 +1903,18 @@ focus = {
 
 		completion_reward = {
 			# Quitar international_isolation si se ha elegido el 7, reducirlo si se ha elegido el 8
+			add_stability = 0.1
 			if = {
-				limit = { has_completed_focus = ALC_democratic_road_wait_7 }
-				remove_ideas = ALC_international_isolation
+				limit = { has_country_flag = alcoy_wait_7 }
+				remove_ideas = ALC_international_political_isolation
 			}
 			if = {
-				limit = { has_completed_focus = ALC_democratic_road_wait_8 }
+				limit = { has_country_flag = alcoy_wait_8 }
 				add_political_power = 50
+				swap_ideas = {
+					remove_idea = ALC_international_political_isolation
+					add_idea = ALC_international_political_isolation_improved
+				}
 			}
 		}
 	}
@@ -1912,7 +1922,7 @@ focus = {
 	focus = {
 		id = ALC_democratic_road_wait_12
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 5.00
 		x = 89
 		y = 10
 
@@ -1933,11 +1943,9 @@ focus = {
 		}
 
 		completion_reward = {
-			# Solo si se ha terminado la guerra civil, añadir el recuperandose de la guerra civil de soberano
-			if = {
-				limit = { has_global_flag = spanish_civil_war_over }
-				add_ideas = ALC_recovering_civil_war
-			}
+			add_ideas = ALC_recovering_civil_war
+			remove_ideas = ALC_weak_army
+			remove_ideas = ALC_autonomy_under_supervision
 		}
 	}
 
@@ -1946,7 +1954,7 @@ focus = {
 	focus = {
 		id = ALC_regional_independence
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 10.00
+		cost = 4.00
 		x = 100
 		y = 0
 
@@ -1968,65 +1976,14 @@ focus = {
 	}
 
 	focus = {
-		id = ALC_support_catalonia
-		icon = GFX_goal_generic_propaganda
-		cost = 8.00
-		x = 96
-		y = 1
-
-		prerequisite = {
-			focus = ALC_regional_independence
-		}
-
-		completion_reward = {
-			activate_mission = ALC_catalonia_revolt_mission
-			custom_effect_tooltip = ALC_support_catalonia_tooltip
-		}
-	}
-
-	focus = {
-		id = ALC_support_valencia
-		icon = GFX_goal_generic_propaganda
-		cost = 8.00
-		x = 100
-		y = 1
-
-		prerequisite = {
-			focus = ALC_regional_independence
-		}
-
-		completion_reward = {
-			activate_mission = ALC_valencia_revolt_mission
-			custom_effect_tooltip = ALC_support_valencia_tooltip
-		}
-	}
-
-	focus = {
-		id = ALC_support_baleares
-		icon = GFX_goal_generic_propaganda
-		cost = 8.00
-		x = 104
-		y = 1
-
-		prerequisite = {
-			focus = ALC_regional_independence
-		}
-
-		completion_reward = {
-			activate_mission = ALC_baleares_revolt_mission
-			custom_effect_tooltip = ALC_support_baleares_tooltip
-		}
-	}
-
-	focus = {
 		id = ALC_catalonia_independence
 		icon = GFX_goal_generic_military_deal
-		cost = 10.00
+		cost = 3.00
 		x = 96
-		y = 2
+		y = 1
 
 		prerequisite = {
-			focus = ALC_support_catalonia
+			focus = ALC_regional_independence
 		}
 
 		completion_reward = {
@@ -2045,12 +2002,12 @@ focus = {
 	focus = {
 		id = ALC_valencia_independence
 		icon = GFX_goal_generic_military_deal
-		cost = 10.00
+		cost = 3.00
 		x = 98
-		y = 2
+		y = 1
 
 		prerequisite = {
-			focus = ALC_support_valencia
+			focus = ALC_regional_independence
 		}
 
 		completion_reward = {
@@ -2069,12 +2026,12 @@ focus = {
 	focus = {
 		id = ALC_castellon_independence
 		icon = GFX_goal_generic_military_deal
-		cost = 10.00
+		cost = 3.00
 		x = 102
-		y = 2
+		y = 1
 
 		prerequisite = {
-			focus = ALC_support_valencia
+			focus = ALC_regional_independence
 		}
 
 		completion_reward = {
@@ -2093,12 +2050,12 @@ focus = {
 	focus = {
 		id = ALC_mallorca_independence
 		icon = GFX_goal_generic_military_deal
-		cost = 10.00
+		cost = 3.00
 		x = 104
-		y = 2
+		y = 1
 
 		prerequisite = {
-			focus = ALC_support_baleares
+			focus = ALC_regional_independence
 		}
 
 		completion_reward = {
@@ -2117,12 +2074,12 @@ focus = {
 	focus = {
 		id = ALC_menorca_independence
 		icon = GFX_goal_generic_military_deal
-		cost = 10.00
+		cost = 3.00
 		x = 106
-		y = 2
+		y = 1
 
 		prerequisite = {
-			focus = ALC_support_baleares
+			focus = ALC_regional_independence
 		}
 
 		completion_reward = {
@@ -2141,9 +2098,9 @@ focus = {
 	focus = {
 		id = ALC_mediterranean_confederation
 		icon = GFX_goal_generic_alliance
-		cost = 15.00
+		cost = 6.00
 		x = 100
-		y = 3
+		y = 2
 
 		prerequisite = {
 			focus = ALC_catalonia_independence
