@@ -2,27 +2,20 @@
 state={
 	id=165
 	name="STATE_165"
-	manpower = 3036537
+	manpower = 1931324
 
 	resources = {
-		coal = 2 #initial distribution
-		steel = 8
-		aluminum = 4
+		coal = 1 #initial distribution
+		steel = 4
+		aluminium = 2
 	}
 	
 	state_category = large_city
 
 	history={
 		owner = SPR
-		add_core_of = CAT
 		victory_points = {
 			9764 30
-		}
-		victory_points = {
-			6966 1
-		}
-		victory_points = {
-			6927 1
 		}
 		buildings = {
 			infrastructure = 4 #was: 7
@@ -31,13 +24,16 @@ state={
 			air_base = 2
 			9764 = {
 				naval_base = 4
+				land_facility = 1
 			}
 		}
 		add_core_of = SPR
+		add_core_of = CAT
+		add_core_of = BRC
 	}
 
 	provinces={
-		854 872 897 3898 3899 6812 6836 6865 6927 6966 9764 9797 9824 11779 
+		9764 9797 
 	}
 
 	local_supplies=0.0 

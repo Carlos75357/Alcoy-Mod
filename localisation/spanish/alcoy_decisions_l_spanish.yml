@@ -42,10 +42,10 @@
  alcoy_annex_albacete_desc:0 "Albacete nos proporcionará profundidad estratégica y acceso a importantes rutas comerciales hacia el interior de España."
 
  alc_fragment_castile_category:0 "Fragmentar Castilla"
- alc_fragment_castile_category_desc:0 "§YInfluencia de Alcoy en las regiones castellanas§!\n\nAndalucía: §Y[?ADU.andalucia_influence|0]%§!\nLeón: §Y[?LEO.leon_influence|0]%§!\nAsturias: §Y[?ASU.asturias_influence|0]%§!\nCastilla Vieja: §Y[?CVJ.castilla_vieja_influence|0]%§!\nCastilla Nueva: §Y[?CNV.castilla_nueva_influence|0]%§!\nLa Mancha: §Y[?LMN.la_mancha_influence|0]%§!"
+ alc_fragment_castile_category_desc:0 "§YInfluencia de Alcoy en las regiones castellanas§!\n\nAndalucía: §Y[?ANC.andalucia_influence|0]%§!\nLeón: §Y[?LEO.leon_influence|0]%§!\nAsturias: §Y[?ASU.asturias_influence|0]%§!\nCastilla Vieja: §Y[?CVJ.castilla_vieja_influence|0]%§!\nCastilla Nueva: §Y[?CNV.castilla_nueva_influence|0]%§!\nLa Mancha: §Y[?LMN.la_mancha_influence|0]%§!"
 
  cst_resist_fragmentation_category:0 "Resistir Fragmentación"
- cst_resist_fragmentation_category_desc:0 "§YResistir la influencia de Alcoy§!\n\nAndalucía: §Y[?ADU.andalucia_influence|0]%§!\nLeón: §Y[?LEO.leon_influence|0]%§!\nAsturias: §Y[?ASU.asturias_influence|0]%§!\nCastilla Vieja: §Y[?CVJ.castilla_vieja_influence|0]%§!\nCastilla Nueva: §Y[?CNV.castilla_nueva_influence|0]%§!\nLa Mancha: §Y[?LMN.la_mancha_influence|0]%§!"
+ cst_resist_fragmentation_category_desc:0 "§YResistir la influencia de Alcoy§!\n\nAndalucía: §Y[?ANC.andalucia_influence|0]%§!\nLeón: §Y[?LEO.leon_influence|0]%§!\nAsturias: §Y[?ASU.asturias_influence|0]%§!\nCastilla Vieja: §Y[?CVJ.castilla_vieja_influence|0]%§!\nCastilla Nueva: §Y[?CNV.castilla_nueva_influence|0]%§!\nLa Mancha: §Y[?LMN.la_mancha_influence|0]%§!"
 
  alc_increase_andalucia_influence:0 "Aumentar Influencia en Andalucía"
  alc_increase_andalucia_influence_desc:0 "Enviar propaganda y agentes a Andalucía para aumentar nuestra influencia en la región."

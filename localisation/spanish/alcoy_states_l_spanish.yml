@@ -1,5 +1,7 @@
 ﻿l_spanish:
-#  STATE_290:0 "Rif"
+ STATE_290:0 "Rif"
+ STATE_165:0 "Barcelona"
+ STATE_177:0 "Mallorca"
  STATE_1047:0 "Alcoy"
  STATE_1048:0 "Alicante"
  STATE_1049:0 "CastellÃ³n"
@@ -8,3 +10,6 @@
  STATE_1052:0 "Albacete"
  STATE_1053:0 "Ceuta"
  STATE_1054:0 "Melilla"
+ STATE_1055:0 "Tarragona"
+ STATE_1056:0 "Girona"
+ STATE_1057:0 "Lleida"

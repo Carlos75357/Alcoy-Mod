@@ -103,12 +103,12 @@ alc_independence_support_category = {
 		available = {
 			has_completed_focus = ALC_support_catalonia
 			NOT = { has_completed_focus = ALC_catalonia_independence }
-			CAT = { exists = no }
+			BRC = { exists = no }
 		}
 		
 		visible = {
 			has_completed_focus = ALC_support_catalonia
-			CAT = { exists = no }
+			BRC = { exists = no }
 		}
 		
 		cost = 25
@@ -215,7 +215,7 @@ alc_independence_support_category = {
 		available = {
 			has_completed_focus = ALC_regional_independence
 			OR = {
-				CAT = { exists = yes }
+				BRC = { exists = yes }
 				VAL = { exists = yes }
 				CAS = { exists = yes }
 				MLL = { exists = yes }
@@ -240,8 +240,8 @@ alc_independence_support_category = {
 		remove_effect = {
 			add_political_power = 50
 			if = {
-				limit = { CAT = { exists = yes } }
-				CAT = {
+				limit = { BRC = { exists = yes } }
+				BRC = {
 					add_opinion_modifier = {
 						target = ROOT
 						modifier = medium_increase
@@ -300,7 +300,7 @@ alc_fragment_castile_category = {
 		}
 
 		available = {
-			ALC = { NOT = { has_country_flag = andalucia_influence_lost } }
+			ALC = { NOT = { has_country_flag = andalucia_influence_won } }
 			CST = { NOT = { has_country_flag = andalucia_influence_lost } }
 		}
 
@@ -343,13 +343,12 @@ alc_fragment_castile_category = {
 		}
 		
 		available = {
-			LEO = { check_variable = { var = leon_influence value = 100 compare = less_than } }
-			LEO = { check_variable = { var = leon_influence value = 0 compare = greater_than } }
-			ALC = { NOT = { has_country_flag = leon_influence_lost } }
+			ALC = { NOT = { has_country_flag = leon_influence_won } }
+			CST = { NOT = { has_country_flag = leon_influence_lost } }
 		}
 		
 		cancel_trigger = {
-			OR = {
+			CST = {
 				has_country_flag = leon_influence_lost
 			}
 		}
@@ -387,13 +386,12 @@ alc_fragment_castile_category = {
 		}
 
 		available = {
-			ASU = { check_variable = { var = asturias_influence value = 100 compare = less_than } }
-			ASU = { check_variable = { var = asturias_influence value = 0 compare = greater_than } }
-			ALC = { NOT = { has_country_flag = asturias_influence_lost } }
+			ALC = { NOT = { has_country_flag = asturias_influence_won } }
+			CST = { NOT = { has_country_flag = asturias_influence_lost } }
 		}
 
 		cancel_trigger = {
-			OR = {
+			CST = {
 				has_country_flag = asturias_influence_lost
 			}
 		}
@@ -429,13 +427,12 @@ alc_fragment_castile_category = {
 		}
 		
 		available = {
-			CVJ = { check_variable = { var = castilla_vieja_influence value = 100 compare = less_than } }
-			CVJ = { check_variable = { var = castilla_vieja_influence value = 0 compare = greater_than } }
-			ALC = { NOT = { has_country_flag = castilla_vieja_influence_lost } }
+			ALC = { NOT = { has_country_flag = castilla_vieja_influence_won } }
+			CST = { NOT = { has_country_flag = castilla_vieja_influence_lost } }
 		}
 		
 		cancel_trigger = {
-			OR = {
+			CST = {
 				has_country_flag = castilla_vieja_influence_lost
 			}
 		}
@@ -472,13 +469,12 @@ alc_fragment_castile_category = {
 		}
 		
 		available = {
-			CNV = { check_variable = { var = castilla_nueva_influence value = 100 compare = less_than } }
-			CNV = { check_variable = { var = castilla_nueva_influence value = 0 compare = greater_than } }
-			ALC = { NOT = { has_country_flag = castilla_nueva_influence_lost } }
+			ALC = { NOT = { has_country_flag = castilla_nueva_influence_won } }
+			CST = { NOT = { has_country_flag = castilla_nueva_influence_lost } }
 		}
 		
 		cancel_trigger = {
-			OR = {
+			CST = {
 				has_country_flag = castilla_nueva_influence_lost
 			}
 		}
@@ -515,13 +511,12 @@ alc_fragment_castile_category = {
 		}
 		
 		available = {
-			LMN = { check_variable = { var = la_mancha_influence value = 100 compare = less_than } }
-			LMN = { check_variable = { var = la_mancha_influence value = 0 compare = greater_than } }
-			ALC = { NOT = { has_country_flag = la_mancha_influence_lost } }
+			ALC = { NOT = { has_country_flag = la_mancha_influence_won } }
+			CST = { NOT = { has_country_flag = la_mancha_influence_lost } }
 		}
 		
 		cancel_trigger = {
-			OR = {
+			CST = {
 				has_country_flag = la_mancha_influence_lost
 			}
 		}
@@ -556,16 +551,13 @@ cst_resist_fragmentation_category = {
 	cst_resist_andalucia_influence = {
 		icon = GFX_decision_generic_ignite_civil_war
 		
-		available = {
-			ALC = { has_country_flag = fragmenting_castile }
-			tag = CST
-			ADU = { check_variable = { var = andalucia_influence value = 0 compare = greater_than } }
-			ADU = { check_variable = { var = andalucia_influence value = 100 compare = less_than_or_equals } }
-			ALC = { NOT = { has_country_flag = andalucia_influence_won } }
-		}
-		
 		visible = {
 			ALC = { has_country_flag = fragmenting_castile }
+		}
+
+		available = {
+			ALC = { NOT = { has_country_flag = andalucia_influence_won } }
+			CST = { NOT = { has_country_flag = andalucia_influence_lost } }
 		}
 		
 		cost = 50
@@ -573,7 +565,7 @@ cst_resist_fragmentation_category = {
 		fire_only_once = no
 		
 		cancel_trigger = {
-			OR = {
+			ALC = {
 				has_country_flag = andalucia_influence_won
 			}
 		}
@@ -584,11 +576,11 @@ cst_resist_fragmentation_category = {
 		}
 		
 		remove_effect = {
-			ADU = { subtract_from_variable = { var = andalucia_influence value = 10 } }
+			ANC = { subtract_from_variable = { var = andalucia_influence value = 10 } }
 			
 			if = {
-				limit = { ADU = { check_variable = { var = andalucia_influence value = 0 compare = less_than_or_equals } } }
-				ADU = { 
+				limit = { ANC = { check_variable = { var = andalucia_influence value = 0 compare = less_than_or_equals } } }
+				ANC = { 
 					set_variable = { var = andalucia_influence value = 0 }
 					set_country_flag = andalucia_influence_lost
 				}
@@ -602,11 +594,8 @@ cst_resist_fragmentation_category = {
 		icon = GFX_decision_generic_ignite_civil_war
 		
 		available = {
-			ALC = { has_country_flag = fragmenting_castile }
-			tag = CST
-			LEO = { check_variable = { var = leon_influence value = 0 compare = greater_than } }
-			LEO = { check_variable = { var = leon_influence value = 100 compare = less_than_or_equals } }
-			NOT = { has_country_flag = leon_influence_won }
+			ALC = { NOT = { has_country_flag = leon_influence_won } }
+			CST = { NOT = { has_country_flag = leon_influence_lost } }
 		}
 		
 		visible = {
@@ -614,7 +603,7 @@ cst_resist_fragmentation_category = {
 		}
 
 		cancel_trigger = {
-			OR = {
+			ALC = {
 				has_country_flag = leon_influence_won
 			}
 		}
@@ -647,11 +636,8 @@ cst_resist_fragmentation_category = {
 		icon = GFX_decision_generic_ignite_civil_war
 		
 		available = {
-			ALC = { has_country_flag = fragmenting_castile }
-			tag = CST
-			ASU = { check_variable = { var = asturias_influence value = 0 compare = greater_than } }
-			ASU = { check_variable = { var = asturias_influence value = 100 compare = less_than_or_equals } }
-			NOT = { has_country_flag = asturias_influence_won }
+			ALC = { NOT = { has_country_flag = asturias_influence_won } }
+			CST = { NOT = { has_country_flag = asturias_influence_lost } }
 		}
 		
 		visible = {
@@ -659,7 +645,7 @@ cst_resist_fragmentation_category = {
 		}
 		
 		cancel_trigger = {
-			OR = {
+			ALC = {
 				has_country_flag = asturias_influence_won
 			}
 		}
@@ -692,10 +678,8 @@ cst_resist_fragmentation_category = {
 		icon = GFX_decision_generic_ignite_civil_war
 		
 		available = {
-			ALC = { has_country_flag = fragmenting_castile }
-			tag = CST
-			CVJ = { check_variable = { var = castilla_vieja_influence value = 0 compare = greater_than } }
-			CVJ = { check_variable = { var = castilla_vieja_influence value = 100 compare = less_than_or_equals } }
+			ALC = { NOT = { has_country_flag = castilla_vieja_influence_won } }
+			CST = { NOT = { has_country_flag = castilla_vieja_influence_lost } }
 		}
 		
 		visible = {
@@ -709,6 +693,12 @@ cst_resist_fragmentation_category = {
 		ai_will_do = { factor = 2 }
 		
 		complete_effect = {
+		}
+		
+		cancel_trigger = {
+			ALC = {
+				has_country_flag = castilla_vieja_influence_won
+			}
 		}
 		
 		remove_effect = {
@@ -730,11 +720,8 @@ cst_resist_fragmentation_category = {
 		icon = GFX_decision_generic_ignite_civil_war
 		
 		available = {
-			ALC = { has_country_flag = fragmenting_castile }
-			tag = CST
-			CNV = { check_variable = { var = castilla_nueva_influence value = 0 compare = greater_than } }
-			CNV = { check_variable = { var = castilla_nueva_influence value = 100 compare = less_than_or_equals } }
-			NOT = { has_country_flag = castilla_nueva_influence_won }
+			ALC = { NOT = { has_country_flag = castilla_nueva_influence_won } }
+			CST = { NOT = { has_country_flag = castilla_nueva_influence_lost } }
 		}
 		
 		visible = {
@@ -775,11 +762,8 @@ cst_resist_fragmentation_category = {
 		icon = GFX_decision_generic_ignite_civil_war
 		
 		available = {
-			ALC = { has_country_flag = fragmenting_castile }
-			tag = CST
-			LMN = { check_variable = { var = la_mancha_influence value = 0 compare = greater_than } }
-			LMN = { check_variable = { var = la_mancha_influence value = 100 compare = less_than_or_equals } }
-			NOT = { has_country_flag = la_mancha_influence_won }
+			ALC = { NOT = { has_country_flag = la_mancha_influence_won } }
+			CST = { NOT = { has_country_flag = la_mancha_influence_lost } }
 		}
 		
 		visible = {
@@ -787,7 +771,7 @@ cst_resist_fragmentation_category = {
 		}
 		
 		cancel_trigger = {
-			OR = {
+			ALC = {
 				has_country_flag = la_mancha_influence_won
 			}
 		}

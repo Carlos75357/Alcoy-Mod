@@ -2128,10 +2128,31 @@ focus = {
 
 		completion_reward = {
 			# Crear todos los países independientes
-			CAT = {
+			BRC = {
 				transfer_state = 165
 				add_state_core = 165
-				load_oob = CAT_independence_war
+				load_oob = BRC_independence_war
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				add_ideas = ALC_guerrilla_spirit
+			}
+			TAR  = {
+				transfer_state = 1055
+				add_state_core = 1055
+				load_oob = TAR_independence_war
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				add_ideas = ALC_guerrilla_spirit
+			}
+			GIR = {
+				transfer_state = 1056
+				add_state_core = 1056
+				load_oob = GIR_independence_war
+				set_politics = { ruling_party = democratic elections_allowed = yes }
+				add_ideas = ALC_guerrilla_spirit
+			}
+			LLE = {
+				transfer_state = 1057
+				add_state_core = 1057
+				load_oob = LLE_independence_war
 				set_politics = { ruling_party = democratic elections_allowed = yes }
 				add_ideas = ALC_guerrilla_spirit
 			}
@@ -2190,11 +2211,44 @@ focus = {
 			SPR = {
 				add_ideas = SPR_post_civil_war_exhaustion
 				load_oob = SPR_independence_war
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 2500
+					producer = SPR
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_0
+					amount = 250
+					variant_name = "Leichttraktor"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 100
+					variant_name = "Panzer I Ausf. A"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_2
+					amount = 50
+					variant_name = "Panzer II Ausf. A"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_0
+					amount = 350
+					variant_name = "Fiat 3000"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_0
+					amount = 100
+					variant_name = "Fiat 3000B"
+				}
 			}
 			
 			# Crear la facción
 			create_faction = "Confederación Mediterránea Ibérica"
-			add_to_faction = CAT
+			add_to_faction = BRC
+			add_to_faction = TAR
+			add_to_faction = LLE
+			add_to_faction = GIR
 			add_to_faction = VAL
 			add_to_faction = MLL
 			add_to_faction = MNC
@@ -2207,13 +2261,232 @@ focus = {
 				target = SPR
 				type = annex_everything
 			}
-			CAT = { declare_war_on = { target = SPR type = annex_everything } }
-			VAL = { declare_war_on = { target = SPR type = annex_everything } }
-			MLL = { declare_war_on = { target = SPR type = annex_everything } }
-			MNC = { declare_war_on = { target = SPR type = annex_everything } }
-			CAS = { declare_war_on = { target = SPR type = annex_everything } }
-			MUR = { declare_war_on = { target = SPR type = annex_everything } }
-			RIF = { declare_war_on = { target = SPR type = annex_everything } }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -5000
+			}
+
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_0
+				amount = 100
+				variant_name = "FT Char Cannon série A"
+			}
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis_0
+				amount = 180
+				variant_name = "SOMUA S35"
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 80
+				variant_name = "LT vz. 35"
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 200
+				variant_name = "M1 Combat Car"
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 150
+				variant_name = "M2A2"
+			}
+
+			BRC = { 
+				declare_war_on = { 
+					target = SPR type = annex_everything 
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_0
+					amount = 100
+					variant_name = "FT Char Cannon série A"
+				}
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis_0
+					amount = 180
+					variant_name = "SOMUA S35"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 80
+					variant_name = "LT vz. 35"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 200
+					variant_name = "M1 Combat Car"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 150
+					variant_name = "M2A2"
+				}
+			}
+			TAR = { 
+				declare_war_on = { 
+					target = SPR type = annex_everything 
+				} 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = TAR
+				}
+			}
+			LLE = { 
+				declare_war_on = { 
+					target = SPR type = annex_everything 
+				} 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = LLE
+				}
+			}
+			GIR = { 
+				declare_war_on = { 
+					target = SPR type = annex_everything 
+				} 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = GIR
+				}
+			}
+			VAL = { 
+				declare_war_on = { 
+					target = SPR type = annex_everything 
+				} 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = VAL
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_0
+					amount = 100
+					variant_name = "FT Char Cannon série A"
+				}
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis_0
+					amount = 180
+					variant_name = "SOMUA S35"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 80
+					variant_name = "LT vz. 35"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 200
+					variant_name = "M1 Combat Car"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 150
+					variant_name = "M2A2"
+				}
+			}
+			MLL = { 
+				declare_war_on = { 
+					target = SPR type = annex_everything 
+				} 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = MLL
+				}
+			}
+			MNC = { 
+				declare_war_on = { 
+					target = SPR type = annex_everything 
+				} 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = MNC
+				}
+			}
+			CAS = { 
+				declare_war_on = { 
+					target = SPR type = annex_everything 
+				} 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = CAS
+				}
+			}
+			MUR = { 
+				declare_war_on = { 
+					target = SPR type = annex_everything 
+				} 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = MUR
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_0
+					amount = 100
+					variant_name = "FT Char Cannon série A"
+				}
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis_0
+					amount = 180
+					variant_name = "SOMUA S35"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 80
+					variant_name = "LT vz. 35"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 200
+					variant_name = "M1 Combat Car"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 150
+					variant_name = "M2A2"
+				}
+			}
+			RIF = { 
+				declare_war_on = { 
+					target = SPR type = annex_everything 
+				} 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = RIF
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_0
+					amount = 100
+					variant_name = "FT Char Cannon série A"
+				}
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis_0
+					amount = 180
+					variant_name = "SOMUA S35"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 80
+					variant_name = "LT vz. 35"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 200
+					variant_name = "M1 Combat Car"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 150
+					variant_name = "M2A2"
+				}
+			}
 			
 			# Activar eventos de ayuda internacional
 			FRA = { country_event = { id = alcoy_confederation.1 days = 7 } }

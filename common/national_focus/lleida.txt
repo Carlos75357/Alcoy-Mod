@@ -1,16 +1,16 @@
 focus_tree = {
-	id = andalucia_focus
+	id = lleida_focus
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = ANC
+			tag = LLE
 		}
 	}
 	default = no
 	
 	focus = {
-		id = ANC_start
+		id = LLE_start
 		icon = GFX_goal_generic_demand_territory
 		x = 5
 		y = 0

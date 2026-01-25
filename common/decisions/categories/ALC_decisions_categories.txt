@@ -25,12 +25,12 @@ alc_fragment_castile_category = {
     }
 
     custom_icon = {
-        tag = ADU                       
+        tag = ANC                       
         value = andalucia_influence      
         desc = alc_andalucia_influence_breakdown
 
         visible = {
-            country_exists = ADU
+            country_exists = ANC
         }
     }
 

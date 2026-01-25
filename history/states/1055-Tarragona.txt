@@ -1,0 +1,38 @@
+state = {
+    id = 1055
+    name = "STATE_1055"
+    manpower = 348993
+    
+    resources = {
+        coal = 1
+        steel = 2
+        aluminum = 1
+    }
+    
+    state_category = city
+    
+    history = {
+        owner = SPR
+
+        victory_points = {
+            6966 1
+        }
+
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 1
+            air_base = 1
+            6966 = {
+                naval_base = 2
+            }
+        }
+
+        add_core_of = CAT
+        add_core_of = TAR
+        add_core_of = SPR
+    }
+
+    provinces = {
+        6966 6812 6836
+    }
+}

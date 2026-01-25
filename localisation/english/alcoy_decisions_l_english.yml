@@ -42,12 +42,12 @@
  alcoy_annex_albacete_desc:0 "Albacete will provide us with strategic depth and access to important trade routes to the interior of Spain."
 
  alc_fragment_castile_category:0 "Fragment Castile"
- alc_fragment_castile_category_desc:0 "§YAlcoy's Influence in Castilian Regions§!\n\nAndalusia: §Y[?ADU.andalucia_influence|0]%§!\nLeón: §Y[?LEO.leon_influence|0]%§!\nAsturias: §Y[?ASU.asturias_influence|0]%§!\nOld Castile: §Y[?CVJ.castilla_vieja_influence|0]%§!\nNew Castile: §Y[?CNV.castilla_nueva_influence|0]%§!\nLa Mancha: §Y[?LMN.la_mancha_influence|0]%§!"
+ alc_fragment_castile_category_desc:0 "§YAlcoy's Influence in Castilian Regions§!\n\nAndalusia: §Y[?ANC.andalucia_influence|0]%§!\nLeón: §Y[?LEO.leon_influence|0]%§!\nAsturias: §Y[?ASU.asturias_influence|0]%§!\nOld Castile: §Y[?CVJ.castilla_vieja_influence|0]%§!\nNew Castile: §Y[?CNV.castilla_nueva_influence|0]%§!\nLa Mancha: §Y[?LMN.la_mancha_influence|0]%§!"
 
  cst_resist_fragmentation_category:0 "Resist Fragmentation"
- cst_resist_fragmentation_category_desc:0 "§YResist Alcoy's Influence§!\n\nAndalusia: §Y[?ADU.andalucia_influence|0]%§!\nLeón: §Y[?LEO.leon_influence|0]%§!\nAsturias: §Y[?ASU.asturias_influence|0]%§!\nOld Castile: §Y[?CVJ.castilla_vieja_influence|0]%§!\nNew Castile: §Y[?CNV.castilla_nueva_influence|0]%§!\nLa Mancha: §Y[?LMN.la_mancha_influence|0]%§!"
+ cst_resist_fragmentation_category_desc:0 "§YResist Alcoy's Influence§!\n\nAndalusia: §Y[?ANC.andalucia_influence|0]%§!\nLeón: §Y[?LEO.leon_influence|0]%§!\nAsturias: §Y[?ASU.asturias_influence|0]%§!\nOld Castile: §Y[?CVJ.castilla_vieja_influence|0]%§!\nNew Castile: §Y[?CNV.castilla_nueva_influence|0]%§!\nLa Mancha: §Y[?LMN.la_mancha_influence|0]%§!"
 
- alc_andalucia_influence_breakdown:0 "Andalusia Influence: [?ADU.andalucia_influence|0]%"
+ alc_andalucia_influence_breakdown:0 "Andalusia Influence: [?ANC.andalucia_influence|0]%"
  alc_leon_influence_breakdown:0 "León Influence: [?LEO.leon_influence|0]%"
  alc_asturias_influence_breakdown:0 "Asturias Influence: [?ASU.asturias_influence|0]%"
  alc_castilla_vieja_influence_breakdown:0 "Old Castile Influence: [?CVJ.castilla_vieja_influence|0]%"
