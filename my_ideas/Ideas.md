@@ -8,111 +8,6 @@ En 1936, aún vasallo de facto de la Segunda República Española, mantiene una 
 
 El objetivo inicial del país será afianzarse frente a la guerra civil española mientras lucha por su autonomía total.
 
-## 🎭 Ideologías iniciales
-
-| Ideología | Personaje propuesto | Notas |
-|-----------|---------------------|-------|
-| Fascista | Inventado / inspirar en figuras falangistas locales | Si se toma el control por FET-JONS tras 1939 |
-| Comunista | Inspirado en CNT-FAI local / Comité Revolucionario | En 1936 existía un fuerte control anarquista |
-| Democrática | Alcalde ficticio democrático post-República | Ideal para ruta liberal postguerra |
-| No alineada | Regente de facto (Consejo obrero / Junta autónoma) | Situación inicial: estado autónomo bajo tutela republicana |
-
-## 💡 Ideas nacionales iniciales (buffs/debuffs)
-
-### "Autonomía bajo vigilancia"
-
-🟨 **-10% estabilidad nacional, +5% ganancia de apoyo comunista, +5% ganancia de apoyo democrático**
-
-El país empieza como un vasallo ideológicamente dividido, con presión desde Madrid.
-
-### "Red sindical autogestionada"
-
-🟩 **+10% construcción de fábricas civiles, -5% organización del ejército**
-
-Bonus industrial por gestión obrera, pero menor eficiencia militar.
-
-### "Tradición textil alcoyana"
-
-🟦 **+15% producción de equipo de apoyo, +5% velocidad de construcción**
-
-Refleja la importancia del sector textil y la industria ligera.
-
-### "Aislamiento político internacional"
-
-🟥 **-50 relación con grandes potencias, -20% justificación de guerra recibida**
-
-Alcoy no es reconocido diplomáticamente pero tampoco es percibido como amenaza inmediata.
-
-## 🧭 Evento histórico central inicial
-
-**Evento: "Columna de voluntarios rumbo a Córdoba" (4 de agosto de 1936)**
-
-🎯 **Decisión desbloqueada: "Apoyar al Frente de Córdoba"**
-
-- 🟢 Bonus temporal a apoyo republicano y militar
-- 🔴 Si se elige no participar: +5% apoyo comunista / +estabilidad
-
-## 🗓️ Línea de eventos por año
-
-### 1936
-
-- 🏫 **Junio**: Construcción de la Escuela Industrial
-- ⚔️ **Julio**: Inicio de la Guerra Civil
-- 🪖 **Agosto**: Salida de la columna de voluntarios a Córdoba
-- 🛡️ **Diciembre**: Decisión para construir refugios antiaéreos
-- 🔥 **Destrucción de iglesias** → +apoyo comunista / -estabilidad
-
-### 1937
-
-- ☠️ **Enero**: Muerte de Fernando Cabrera Cantó
-- 🪖 **Batallón "Ruesca-Taino"** parte hacia Teruel
-- 🏥 **Inauguración del Hospital Suecia-Noruega**
-- ⏰ **El reloj de Santa María** se traslada al Ayuntamiento
-- 💧 **Construcción del segundo depósito de aguas**
-
-### 1938
-
-- ☠️ **Febrero**: Aniquilación del Batallón "Ruesca-Taino"
-- 🏚️ **Construcción de 10 refugios antiaéreos**
-- 📜 **Primer reglamento de seguro de enfermedad y vejez**
-- ✈️ **Bombardeos aéreos** (20, 22, 23 septiembre; 16 octubre)
-
-Cada bombardeo tendrá eventos con:
-- Bajas civiles
-- Penalizaciones de estabilidad
-- Posibilidad de activar decisiones de propaganda o ayuda
-
-### 1939
-
-- ✈️ **Bombardeos finales**: 24 enero, 9 febrero, 11 febrero
-- 🎉 **Evento: Fin de la Guerra Civil** (1 de abril)
-  - 🔓 Se desbloquean decisiones de independencia o alineamiento ideológico definitivo
-- 🎓 **Reinstauración del Colegio de las Carmelitas**
-- 🍼 **Fundación del Auxilio Social** (si gana FET y JONS)
-
-### 1940
-
-- ⛪ **3 abril**: Colocación de la nueva piedra de Santa María
-- 👁️ **ONCE llega a Alcoy**
-- 👶 **Fundación de la guardería infantil Nazaret-Hogar del Niño**
-- 🧵 **Fundaciones de empresas industriales**: Hilaturas Jordá, Transportes Pascual, Carpintería Picó
-
-## 🎉 Decisión anual: "Celebrar las Fiestas de Sant Jordi"
-
-**📅 Cada abril**
-
-🎁 **Efectos posibles:**
-- +estabilidad
-- +unidad nacional
-- +apoyo ideológico (según el partido gobernante)
-
-🏰 Las Fiestas de Moros y Cristianos en Alcoy se celebran desde 1276, pero en su forma moderna desde siglo XIX. En el mod puedes justificarla como evento institucionalizado desde antes de 1936.
-
-## 🔜 Próximos pasos sugeridos
-
-Hacer que el gobierno se rompa y sea una junta autónoma la que dirija, no se si definido, desde un foco, evento o devisión.
-Añadir nuevas leyes - nueva de manpower que de 0.5 del manpower nacional y otra que de mas de 25% del manpower nacional, un 30% y que solo la pueda tener Alcoy o sus aliados.
-
 # Eventos Guerra Independencia fase 1
 
 - Termina la guerra civil española:
@@ -203,10 +98,6 @@ Añadir nuevas leyes - nueva de manpower que de 0.5 del manpower nacional y otra
   - Alcoy: “Aumentar influencia sobre [país]” → reduce estabilidad u otros recursos.  
   - País objetivo: “Resistir influencia de Alcoy” → aumenta estabilidad, apoyo popular, recursos, etc.  
 
-  - **Apoyo popular / ideología**  
-    - Alcoy solo puede vasallizar si el apoyo a la ideología gobernante ≤ 20%.  
-    - El país objetivo puede incrementarlo para resistir.  
-
   - **Economía / recursos**  
     - Alcoy no puede vasallizar si el país tiene recursos críticos o fábricas ≥ X.  
     - El país objetivo puede mejorar su economía para resistir.  
@@ -218,12 +109,7 @@ Añadir nuevas leyes - nueva de manpower que de 0.5 del manpower nacional y otra
   - **Eventos pasados / decisiones previas**  
     - Si Alcoy presionó demasiado o cometió errores diplomáticos, el país se vuelve más resistente.  
 
-  - **Posición geopolítica / alianzas**  
-    - Alcoy solo puede vasallizar si el país no tiene aliados fuertes (`is_in_faction_with = OTHER_TAG` o relaciones diplomáticas altas).  
-
   - **Condición primaria**: estabilidad ≤ 15% → vasallización.  
-  - **Condiciones secundarias**:  
-    - Apoyo popular ≤ 20%  
 
 ## Preparación de guerra
 
@@ -249,3 +135,76 @@ Añadir nuevas leyes - nueva de manpower que de 0.5 del manpower nacional y otra
 
 - Este foco depende de "Comunidad Valenciana" y "Integración ibérica"
 - Con los paises que hayan llegado a tener core en el territorio de castilla se revelan como vasallos de Alcoy, se unen a la coalición.
+
+# ERRORES A SOLUCIONAR
+
+- **Stocks**:
+  - Arreglar los stocks al iniciar la guerra de independecia, tanques, equipo de infanteria, motorizada, dar aviones...
+- **Decisiones**
+  - Arreglar las decisiones, ahora mismo siempre se pueden hacer aunque los eventos ya han pasado, hay que añadir al visible y available.
+
+# TODO
+- **Banderas**:
+  - Condados de cataluña
+  - Castilla
+  - Aragon
+  - Valencia
+  - Mallorca
+  - Menorca
+  - Murcia
+  - Reinos dentro de castilla
+- **Focos Alcoy**
+  - Terminar con los focos simples
+  - Hacer el foco de guerra con castilla
+- **Cataluña**
+  - Cada condado tiene su historia:
+   - **Barcelona** es el núcleo, este país será el que pueda formar en la ruta historica Cataluña
+   - **Tarragona** tiene su camino historico, cuando Barcelona llega para unificar cataluña, Tarragona puede aceptarlo o rechazarlo, depende de con quien se lleve mejor Alcoy y el resto se apoyan o se unen en contra de Barcelona, todo esto es despues de formar la Unión Ibérica.
+   - **Girona** tiene su camino historico, cuando Barcelona llega para unificar cataluña, Girona puede aceptarlo o rechazarlo, depende de con quien se lleve mejor Alcoy y el resto se apoyan o se unen en contra de Barcelona, todo esto es despues de formar la Unión Ibérica.
+   - **Lleida** tiene su camino historico, cuando Barcelona llega para unificar cataluña, Lleida puede aceptarlo o rechazarlo, depende de con quien se lleve mejor Alcoy y el resto se apoyan o se unen en contra de Barcelona, todo esto es despues de formar la Unión Ibérica.
+- **Aragón**
+  - La ruta historica de Aragon es la de industrializar el tanto el país como apoyar a la Unión Ibérica, formar una democracia que permita proteger a Iberia.
+  - **WIP**
+- **Murcia**
+  - Dar core en Albacete coño
+  - **WIP**
+- **Castilla**
+  - Ruta historica de la Corona de Castilla:
+    - Idea nada mas aparecer:
+      - Idea que reduce la poblacion mensual en un 5%
+      - Idea que reduce la poblacion reclutable en un 1%
+      - Idea que añade debuffos a las construcciones y produccion e investigaciones
+      - Idea que reduce la estabilidad en un 0.5% semanal
+    - Impedir la influencia de Alcoy sobre los reinos dentro de castilla.
+    - Restaurar la casa real portuguesa.
+    - Buscar una unión matrimonial con Portugal.
+    - Sentar a un miembro de la monarquia portuguesa en el trono de castilla.
+    - **Focos**
+      - El primer foco de todos lo que añadirá es una idea que será cambiar la idea de destruidos por las guerras a recuperacion tras guerra de independencia.
+      - El segundo foco será remilitarizar las zonas desmilitarizadas.
+      - Se dividirá en tres ramas, Industria, Economía y Militar.
+        - **Rama Industria**:
+          - **CST_industrial_1**: Activa decisiones para recuperarse:
+            - 
+          - **CST_industrial_2**: Idea que da bono a reparaciones y construccion.
+          - **CST_industrial_3**: Da 5 fábricas entre civiles y militares y quita el debuff de las fábricas y la construcción.
+          - Compartido con Economia: 
+            - **CST_industrial_economia_1**: Da una idea que da research speed y bono de investigaciones a la parte de Industria
+            - **CST_industrial_economia_2**: Mejora la idea subiendo el research speed y añadiendo monthly_population
+        - **Rama Economía**:
+          - **CST_economia_1**: Construye infraestructura en 4 estados y da 100 de poder politico
+          - **CST_economia_2**: Idea que da bono a la población reclutable y elimina el debuff de poblacion mensual y reclutable
+        - **Rama Militar**: 
+          - **CST_militar_1**: Dar 25 de experiencia a army, naval y air, esta se divide en 3 ramas, Naval, Aire y Tierra
+          - **Naval**:
+            - **CST_militar_naval_1**: Bono a las investigaciones de barcos
+            - **CST_militar_naval_2**: Crea una pequeña flota llamada "Fuerza de tarea Alfonso X"
+            - **CST_militar_naval_3**: Construye astilleros y bases navales
+          - **Aire**:
+            - **CST_militar_aire_1**: Bono a las investigaciones de aviones.
+            - **CST_militar_aire_2**: Crea 100 aviones.
+            - **CST_militar_aire_3**: Construye 4 bases aereas y da bono a los aviones.
+          - **Tierra**:
+            - **CST_militar_tierra_1**: Bono a las investigaciones de tierra, 1 para infanteria, 1 para motorizada, 1 para tanques y una para artilleria.
+            - **CST_militar_tierra_2**: Crea 5 divisiones de una plantilla buena.
+            - **CST_militar_tierra_3**: Construye fuertes en algunas fronteras y quita el debuffo de menos ataque y da uno que da bono al ataque y denfensa.
