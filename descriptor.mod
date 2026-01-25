@@ -4,5 +4,6 @@ tags={
 }
 name="Alcoy"
 supported_version="1.17.*"
-path="mod/alcoy_c"
+picture="thumbnail.jpg"
+path="D:/Documentos/Paradox Interactive/Hearts of Iron IV/mod/alcoy_c"
 remote_file_id="3484391424"
