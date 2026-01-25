@@ -460,47 +460,51 @@ country_event = {
 	}
 }
 
+# Evento de formación de la Confederación Ibérica
 country_event = {
-    id = alcoy_confederation.8
-    title = alcoy_confederation.8.t
-    desc = alcoy_confederation.8.d
-    picture = GFX_report_event_generic_sign_treaty2
+	id = alcoy_confederation.8
+	title = alcoy_confederation.8.t
+	desc = alcoy_confederation.8.d
+	picture = GFX_report_event_generic_sign_treaty2
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    trigger = {
-        tag = ALC
-    }
+	trigger = {
+		tag = ALC
+	}
 
-    immediate = {
-        # Cambiar nombre de la facción
-        set_faction_name = "Iberian Confederation"
+	option = {
+		name = alcoy_confederation.8.a
+		
+		# Cambiar nombre de la facción
+		set_faction_name = "Iberian Confederation"
 
-        # Añadir países liberados a la facción
-        every_country = {
-            limit = {
-                OR = {
-                    tag = ADU
-                    tag = GLC
-                    tag = NAV
-                    tag = ARA
-                }
-                is_in_faction = no
-                is_subject = no
-            }
-            join_faction = ROOT
-        }
+		# Añadir países liberados a la facción explícitamente
+		if = {
+			limit = { ADU = { exists = yes is_in_faction = no is_subject = no } }
+			add_to_faction = ADU
+		}
+		if = {
+			limit = { GLC = { exists = yes is_in_faction = no is_subject = no } }
+			add_to_faction = GLC
+		}
+		if = {
+			limit = { NAV = { exists = yes is_in_faction = no is_subject = no } }
+			add_to_faction = NAV
+		}
+		if = {
+			limit = { ARA = { exists = yes is_in_faction = no is_subject = no } }
+			add_to_faction = ARA
+		}
 
-        # Dar idea a todos los miembros de la facción
-        every_country = {
-            limit = {
-                is_in_faction_with = ROOT
-            }
-            add_ideas = {
-                ALC_iberic_democracy
-            }
-        }
-    }
+		# Dar idea a todos los miembros de la facción
+		every_country = {
+			limit = {
+				is_in_faction_with = ROOT
+			}
+			add_ideas = ALC_iberic_democracy
+		}
+	}
 }
 
 # Evento de victoria y paz scripteada
@@ -552,7 +556,7 @@ country_event = {
 		}
 		
 		# Alcoy obtiene estado 783
-		transfer_state = 783
+		ALC = { transfer_state = 783 }
 		
 		# ===============================
 		# CREACIÓN DE NUEVOS ESTADOS

@@ -1,0 +1,1 @@
+ASU = "countries/Asturias.txt"

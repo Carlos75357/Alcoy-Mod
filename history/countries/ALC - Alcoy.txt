@@ -37,6 +37,7 @@ set_popularities = {
 	neutrality = 0
 }
 
+
 recruit_character = ALC_evaristo_botella
 recruit_character = ALC_severino_albaracin_2
 recruit_character = ALC_san_mauro

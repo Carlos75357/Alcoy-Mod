@@ -14,3 +14,87 @@ alc_independence_support_category = {
         has_completed_focus = ALC_regional_independence
     }
 }
+
+alc_fragment_castile_category = {
+    icon = GFX_decision_category_generic_propaganda
+    allowed = {
+        original_tag = ALC
+    }
+    visible = {
+        has_completed_focus = ALC_fragment_castile
+    }
+
+    custom_icon = {
+        tag = ADU                       
+        value = andalucia_influence      
+        desc = alc_andalucia_influence_breakdown
+
+        visible = {
+            country_exists = ADU
+        }
+    }
+
+    custom_icon = {
+        tag = LEO                        
+        value = leon_influence           
+        desc = alc_leon_influence_breakdown
+
+        visible = {
+            country_exists = LEO
+        }
+    }
+
+    custom_icon = {
+        tag = ASU                        
+        value = asturias_influence       
+        desc = alc_asturias_influence_breakdown
+
+        visible = {
+            country_exists = ASU
+        }
+    }
+
+    custom_icon = {
+        tag = CVJ
+        value = castilla_vieja_influence
+        desc = alc_castilla_vieja_influence_breakdown
+
+        visible = {
+            country_exists = CVJ
+        }
+    }
+
+    custom_icon = {
+        tag = CNV
+        value = castilla_nueva_influence
+        desc = alc_castilla_nueva_influence_breakdown
+
+        visible = {
+            country_exists = CNV
+        }
+    }
+
+    custom_icon = {
+        tag = LMN
+        value = la_mancha_influence
+        desc = alc_la_mancha_influence_breakdown
+
+        visible = {
+            country_exists = LMN
+        }
+    }
+
+    visible_when_empty = yes
+}
+
+cst_resist_fragmentation_category = {
+    icon = GFX_decision_category_generic_crisis
+    allowed = {
+        original_tag = CST
+    }
+    visible = {
+        ALC = { has_country_flag = fragmenting_castile }
+    }
+
+    visible_when_empty = yes
+}

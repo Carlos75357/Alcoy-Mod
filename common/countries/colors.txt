@@ -35,6 +35,36 @@ ARA = {
 	color_ui = rgb { 255 215 0 }
 }
 
+ANC = {
+	color = rgb { 34 139 34 }
+	color_ui = rgb { 34 139 34 }
+}
+
+CVJ = {
+	color = rgb { 139 69 19 }
+	color_ui = rgb { 139 69 19 }
+}
+
+CNV = {
+	color = rgb { 210 105 30 }
+	color_ui = rgb { 210 105 30 }
+}
+
+ASU = {
+	color = rgb { 70 130 180 }
+	color_ui = rgb { 70 130 180 }
+}
+
+LEO = {
+	color = rgb { 255 215 0}
+	color_ui = rgb { 255 215 0}	
+}
+
+LMN = {
+	color = rgb { 255 165 0 }
+	color_ui = rgb { 255 165 0 }
+}
+
 MUR = {
 	color = rgb { 34 139 34 }
 	color_ui = rgb { 34 139 34 }

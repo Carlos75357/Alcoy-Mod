@@ -14,7 +14,6 @@
  ALC_improve_infrastructure:0 "Improve Infrastructure"
  ALC_improve_infrastructure_desc:0 "The mountainous geography of Alcoy makes communications difficult. Improving our infrastructure will facilitate the transport of goods and troops, strengthening both our economy and our defensive capacity."
  
- # Territorial Annexation Decisions
  alcoy_annexation_decisions:0 "Alcoy Territorial Expansion"
  alcoy_annexation_decisions_desc:0 "Decisions to expand Alcoy's territory through the annexation of neighboring provinces."
  
@@ -41,3 +40,58 @@
  
  alcoy_annex_albacete:0 "Annex Albacete"
  alcoy_annex_albacete_desc:0 "Albacete will provide us with strategic depth and access to important trade routes to the interior of Spain."
+
+ alc_fragment_castile_category:0 "Fragment Castile"
+ alc_fragment_castile_category_desc:0 "§YAlcoy's Influence in Castilian Regions§!\n\nAndalusia: §Y[?ADU.andalucia_influence|0]%§!\nLeón: §Y[?LEO.leon_influence|0]%§!\nAsturias: §Y[?ASU.asturias_influence|0]%§!\nOld Castile: §Y[?CVJ.castilla_vieja_influence|0]%§!\nNew Castile: §Y[?CNV.castilla_nueva_influence|0]%§!\nLa Mancha: §Y[?LMN.la_mancha_influence|0]%§!"
+
+ cst_resist_fragmentation_category:0 "Resist Fragmentation"
+ cst_resist_fragmentation_category_desc:0 "§YResist Alcoy's Influence§!\n\nAndalusia: §Y[?ADU.andalucia_influence|0]%§!\nLeón: §Y[?LEO.leon_influence|0]%§!\nAsturias: §Y[?ASU.asturias_influence|0]%§!\nOld Castile: §Y[?CVJ.castilla_vieja_influence|0]%§!\nNew Castile: §Y[?CNV.castilla_nueva_influence|0]%§!\nLa Mancha: §Y[?LMN.la_mancha_influence|0]%§!"
+
+ alc_andalucia_influence_breakdown:0 "Andalusia Influence: [?ADU.andalucia_influence|0]%"
+ alc_leon_influence_breakdown:0 "León Influence: [?LEO.leon_influence|0]%"
+ alc_asturias_influence_breakdown:0 "Asturias Influence: [?ASU.asturias_influence|0]%"
+ alc_castilla_vieja_influence_breakdown:0 "Old Castile Influence: [?CVJ.castilla_vieja_influence|0]%"
+ alc_castilla_nueva_influence_breakdown:0 "New Castile Influence: [?CNV.castilla_nueva_influence|0]%"
+ alc_la_mancha_influence_breakdown:0 "La Mancha Influence: [?LMN.la_mancha_influence|0]%"
+
+ alc_increase_andalucia_influence:0 "Increase Influence in Andalusia"
+ alc_increase_andalucia_influence_desc:0 "Send propaganda and agents to Andalusia to increase our influence in the region."
+ alc_increase_leon_influence:0 "Increase Influence in León"
+ alc_increase_leon_influence_desc:0 "Send propaganda and agents to León to increase our influence in the region."
+ alc_increase_asturias_influence:0 "Increase Influence in Asturias"
+ alc_increase_asturias_influence_desc:0 "Send propaganda and agents to Asturias to increase our influence in the region."
+ alc_increase_castilla_vieja_influence:0 "Increase Influence in Old Castile"
+ alc_increase_castilla_vieja_influence_desc:0 "Send propaganda and agents to Old Castile to increase our influence in the region."
+ alc_increase_castilla_nueva_influence:0 "Increase Influence in New Castile"
+ alc_increase_castilla_nueva_influence_desc:0 "Send propaganda and agents to New Castile to increase our influence in the region."
+ alc_increase_la_mancha_influence:0 "Increase Influence in La Mancha"
+ alc_increase_la_mancha_influence_desc:0 "Send propaganda and agents to La Mancha to increase our influence in the region."
+
+ cst_resist_andalucia_influence:0 "Resist in Andalusia"
+ cst_resist_andalucia_influence_desc:0 "Counter Alcoy's propaganda in Andalusia."
+ cst_resist_leon_influence:0 "Resist in León"
+ cst_resist_leon_influence_desc:0 "Counter Alcoy's propaganda in León."
+ cst_resist_asturias_influence:0 "Resist in Asturias"
+ cst_resist_asturias_influence_desc:0 "Counter Alcoy's propaganda in Asturias."
+ cst_resist_castilla_vieja_influence:0 "Resist in Old Castile"
+ cst_resist_castilla_vieja_influence_desc:0 "Counter Alcoy's propaganda in Old Castile."
+ cst_resist_castilla_nueva_influence:0 "Resist in New Castile"
+ cst_resist_castilla_nueva_influence_desc:0 "Counter Alcoy's propaganda in New Castile."
+ cst_resist_la_mancha_influence:0 "Resist in La Mancha"
+ cst_resist_la_mancha_influence_desc:0 "Counter Alcoy's propaganda in La Mancha."
+
+ andalucia_core_achieved_tooltip:0 "§GWe have won the battle for Andalusia. Andalusian states are now cores of Andalusia.§!"
+ leon_core_achieved_tooltip:0 "§GWe have won the battle for León. Leonese states are now cores of León.§!"
+ asturias_core_achieved_tooltip:0 "§GWe have won the battle for Asturias. The Asturian state is now a core of Asturias.§!"
+ castilla_vieja_core_achieved_tooltip:0 "§GWe have won the battle for Old Castile. Old Castilian states are now cores of Old Castile.§!"
+ castilla_nueva_core_achieved_tooltip:0 "§GWe have won the battle for New Castile. New Castilian states are now cores of New Castile.§!"
+ la_mancha_core_achieved_tooltip:0 "§GWe have won the battle for La Mancha. The Manchegan state is now a core of La Mancha.§!"
+
+ andalucia_resistance_won_tooltip:0 "§RCastile has successfully resisted in Andalusia. We have lost all influence in the region.§!"
+ leon_resistance_won_tooltip:0 "§RCastile has successfully resisted in León. We have lost all influence in the region.§!"
+ asturias_resistance_won_tooltip:0 "§RCastile has successfully resisted in Asturias. We have lost all influence in the region.§!"
+ castilla_vieja_resistance_won_tooltip:0 "§RCastile has successfully resisted in Old Castile. We have lost all influence in the region.§!"
+ castilla_nueva_resistance_won_tooltip:0 "§RCastile has successfully resisted in New Castile. We have lost all influence in the region.§!"
+ la_mancha_resistance_won_tooltip:0 "§RCastile has successfully resisted in La Mancha. We have lost all influence in the region.§!"
+
+ ALC_fragment_castile_tooltip:0 "We begin our campaign to fragment Castile and gain influence in its regions."

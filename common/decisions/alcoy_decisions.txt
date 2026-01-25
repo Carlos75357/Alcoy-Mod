@@ -287,3 +287,531 @@ alc_independence_support_category = {
 		}
 	}
 }
+
+# Categoría para fragmentar Castilla - Decisiones de Alcoy
+alc_fragment_castile_category = {
+	# Andalucía
+	alc_increase_andalucia_influence = {
+		icon = GFX_decision_generic_propaganda
+		
+		visible = {
+			has_completed_focus = ALC_fragment_castile
+			ALC = { NOT = { has_country_flag = ALC_castile_war } }
+		}
+
+		available = {
+			ALC = { NOT = { has_country_flag = andalucia_influence_lost } }
+			CST = { NOT = { has_country_flag = andalucia_influence_lost } }
+		}
+
+		cancel_trigger = {
+			CST = {
+				has_country_flag = andalucia_influence_lost
+			}
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			ANC = { add_to_variable = { var = andalucia_influence value = 10 } }
+
+			if = {
+				limit = { ANC = { check_variable = { var = andalucia_influence value = 100 compare = greater_than_or_equals } } }
+				ANC = { set_variable = { var = andalucia_influence value = 100 } }
+				789 = { add_core_of = ANC }
+				169 = { add_core_of = ANC }
+				118 = { add_core_of = ANC }
+				set_country_flag = andalucia_influence_won
+				custom_effect_tooltip = andalucia_core_achieved_tooltip
+			}
+		}
+	}
+
+	# León
+	alc_increase_leon_influence = {
+		icon = GFX_decision_generic_propaganda
+		
+		visible = {
+			has_completed_focus = ALC_fragment_castile
+		}
+		
+		available = {
+			LEO = { check_variable = { var = leon_influence value = 100 compare = less_than } }
+			LEO = { check_variable = { var = leon_influence value = 0 compare = greater_than } }
+			ALC = { NOT = { has_country_flag = leon_influence_lost } }
+		}
+		
+		cancel_trigger = {
+			OR = {
+				has_country_flag = leon_influence_lost
+			}
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			LEO = { add_to_variable = { var = leon_influence value = 10 } }
+			
+			if = {
+				limit = { LEO = { check_variable = { var = leon_influence value = 100 compare = greater_than_or_equals } } }
+				LEO = { set_variable = { var = leon_influence value = 100 } }
+				174 = { add_core_of = LEO }
+				788 = { add_core_of = LEO }
+				170 = { add_core_of = LEO }
+				set_country_flag = leon_influence_won
+				custom_effect_tooltip = leon_core_achieved_tooltip
+			}
+		}
+	}
+
+	# Asturias
+	alc_increase_asturias_influence = {
+		icon = GFX_decision_generic_propaganda
+				
+		visible = {
+			has_completed_focus = ALC_fragment_castile
+		}
+
+		available = {
+			ASU = { check_variable = { var = asturias_influence value = 100 compare = less_than } }
+			ASU = { check_variable = { var = asturias_influence value = 0 compare = greater_than } }
+			ALC = { NOT = { has_country_flag = asturias_influence_lost } }
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_country_flag = asturias_influence_lost
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			ASU = { add_to_variable = { var = asturias_influence value = 10 } }
+			
+			if = {
+				limit = { ASU = { check_variable = { var = asturias_influence value = 100 compare = greater_than_or_equals } } }
+				ASU = { set_variable = { var = asturias_influence value = 100 } }
+				790 = { add_core_of = ASU }
+				set_country_flag = asturias_influence_won
+				custom_effect_tooltip = asturias_core_achieved_tooltip
+			}
+		}
+	}
+
+	# Castilla Vieja
+	alc_increase_castilla_vieja_influence = {
+		icon = GFX_decision_generic_propaganda
+		
+		visible = {
+			has_completed_focus = ALC_fragment_castile
+		}
+		
+		available = {
+			CVJ = { check_variable = { var = castilla_vieja_influence value = 100 compare = less_than } }
+			CVJ = { check_variable = { var = castilla_vieja_influence value = 0 compare = greater_than } }
+			ALC = { NOT = { has_country_flag = castilla_vieja_influence_lost } }
+		}
+		
+		cancel_trigger = {
+			OR = {
+				has_country_flag = castilla_vieja_influence_lost
+			}
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			CVJ = { add_to_variable = { var = castilla_vieja_influence value = 10 } }
+			
+			if = {
+				limit = { CVJ = { check_variable = { var = castilla_vieja_influence value = 100 compare = greater_than_or_equals } } }
+				CVJ = { set_variable = { var = castilla_vieja_influence value = 100 } }
+				791 = { add_core_of = CVJ }
+				176 = { add_core_of = CVJ }
+				set_country_flag = castilla_vieja_influence_won
+				custom_effect_tooltip = castilla_vieja_core_achieved_tooltip
+			}
+		}
+	}
+
+	# Castilla Nueva
+	alc_increase_castilla_nueva_influence = {
+		icon = GFX_decision_generic_propaganda
+		
+		visible = {
+			has_completed_focus = ALC_fragment_castile
+		}
+		
+		available = {
+			CNV = { check_variable = { var = castilla_nueva_influence value = 100 compare = less_than } }
+			CNV = { check_variable = { var = castilla_nueva_influence value = 0 compare = greater_than } }
+			ALC = { NOT = { has_country_flag = castilla_nueva_influence_lost } }
+		}
+		
+		cancel_trigger = {
+			OR = {
+				has_country_flag = castilla_nueva_influence_lost
+			}
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			CNV = { add_to_variable = { var = castilla_nueva_influence value = 10 } }
+			
+			if = {
+				limit = { CNV = { check_variable = { var = castilla_nueva_influence value = 100 compare = greater_than_or_equals } } }
+				CNV = { set_variable = { var = castilla_nueva_influence value = 100 } }
+				41 = { add_core_of = CNV }
+				793 = { add_core_of = CNV }
+				set_country_flag = castilla_nueva_influence_won
+				custom_effect_tooltip = castilla_nueva_core_achieved_tooltip
+			}
+		}
+	}
+
+	# La Mancha
+	alc_increase_la_mancha_influence = {
+		icon = GFX_decision_generic_propaganda
+		
+		visible = {
+			has_completed_focus = ALC_fragment_castile
+		}
+		
+		available = {
+			LMN = { check_variable = { var = la_mancha_influence value = 100 compare = less_than } }
+			LMN = { check_variable = { var = la_mancha_influence value = 0 compare = greater_than } }
+			ALC = { NOT = { has_country_flag = la_mancha_influence_lost } }
+		}
+		
+		cancel_trigger = {
+			OR = {
+				has_country_flag = la_mancha_influence_lost
+			}
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			LMN = { add_to_variable = { var = la_mancha_influence value = 10 } }
+			
+			if = {
+				limit = { LMN = { check_variable = { var = la_mancha_influence value = 100 compare = greater_than_or_equals } } }
+				LMN = { set_variable = { var = la_mancha_influence value = 100 } }
+				175 = { add_core_of = LMN }
+				set_country_flag = la_mancha_influence_won
+				custom_effect_tooltip = la_mancha_core_achieved_tooltip
+			}
+		}
+	}
+}
+
+# Categoría para que Castilla resista la fragmentación
+cst_resist_fragmentation_category = {
+
+	# Resistir en Andalucía
+	cst_resist_andalucia_influence = {
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+			ALC = { has_country_flag = fragmenting_castile }
+			tag = CST
+			ADU = { check_variable = { var = andalucia_influence value = 0 compare = greater_than } }
+			ADU = { check_variable = { var = andalucia_influence value = 100 compare = less_than_or_equals } }
+			ALC = { NOT = { has_country_flag = andalucia_influence_won } }
+		}
+		
+		visible = {
+			ALC = { has_country_flag = fragmenting_castile }
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		cancel_trigger = {
+			OR = {
+				has_country_flag = andalucia_influence_won
+			}
+		}
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			ADU = { subtract_from_variable = { var = andalucia_influence value = 10 } }
+			
+			if = {
+				limit = { ADU = { check_variable = { var = andalucia_influence value = 0 compare = less_than_or_equals } } }
+				ADU = { 
+					set_variable = { var = andalucia_influence value = 0 }
+					set_country_flag = andalucia_influence_lost
+				}
+				custom_effect_tooltip = andalucia_resistance_won_tooltip
+			}
+		}
+	}
+
+	# Resistir en León
+	cst_resist_leon_influence = {
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+			ALC = { has_country_flag = fragmenting_castile }
+			tag = CST
+			LEO = { check_variable = { var = leon_influence value = 0 compare = greater_than } }
+			LEO = { check_variable = { var = leon_influence value = 100 compare = less_than_or_equals } }
+			NOT = { has_country_flag = leon_influence_won }
+		}
+		
+		visible = {
+			ALC = { has_country_flag = fragmenting_castile }
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_country_flag = leon_influence_won
+			}
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			LEO = { subtract_from_variable = { var = leon_influence value = 10 } }
+			
+			if = {
+				limit = { LEO = { check_variable = { var = leon_influence value = 0 compare = less_than_or_equals } } }
+				LEO = { 
+					set_variable = { var = leon_influence value = 0 }
+					set_country_flag = leon_influence_lost
+				}
+				custom_effect_tooltip = leon_resistance_won_tooltip
+			}
+		}
+	}
+
+	# Resistir en Asturias
+	cst_resist_asturias_influence = {
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+			ALC = { has_country_flag = fragmenting_castile }
+			tag = CST
+			ASU = { check_variable = { var = asturias_influence value = 0 compare = greater_than } }
+			ASU = { check_variable = { var = asturias_influence value = 100 compare = less_than_or_equals } }
+			NOT = { has_country_flag = asturias_influence_won }
+		}
+		
+		visible = {
+			ALC = { has_country_flag = fragmenting_castile }
+		}
+		
+		cancel_trigger = {
+			OR = {
+				has_country_flag = asturias_influence_won
+			}
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			ASU = { subtract_from_variable = { var = asturias_influence value = 10 } }
+			
+			if = {
+				limit = { ASU = { check_variable = { var = asturias_influence value = 0 compare = less_than_or_equals } } }
+				ASU = { 
+					set_variable = { var = asturias_influence value = 0 }
+					set_country_flag = asturias_influence_lost
+				}
+				custom_effect_tooltip = asturias_resistance_won_tooltip
+			}
+		}
+	}
+
+	# Resistir en Castilla Vieja
+	cst_resist_castilla_vieja_influence = {
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+			ALC = { has_country_flag = fragmenting_castile }
+			tag = CST
+			CVJ = { check_variable = { var = castilla_vieja_influence value = 0 compare = greater_than } }
+			CVJ = { check_variable = { var = castilla_vieja_influence value = 100 compare = less_than_or_equals } }
+		}
+		
+		visible = {
+			ALC = { has_country_flag = fragmenting_castile }
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			CVJ = { subtract_from_variable = { var = castilla_vieja_influence value = 10 } }
+			
+			if = {
+				limit = { CVJ = { check_variable = { var = castilla_vieja_influence value = 0 compare = less_than_or_equals } } }
+				CVJ = { 
+					set_variable = { var = castilla_vieja_influence value = 0 }
+					set_country_flag = castilla_vieja_influence_lost
+				}
+				custom_effect_tooltip = castilla_vieja_resistance_won_tooltip
+			}
+		}
+	}
+
+	# Resistir en Castilla Nueva
+	cst_resist_castilla_nueva_influence = {
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+			ALC = { has_country_flag = fragmenting_castile }
+			tag = CST
+			CNV = { check_variable = { var = castilla_nueva_influence value = 0 compare = greater_than } }
+			CNV = { check_variable = { var = castilla_nueva_influence value = 100 compare = less_than_or_equals } }
+			NOT = { has_country_flag = castilla_nueva_influence_won }
+		}
+		
+		visible = {
+			ALC = { has_country_flag = fragmenting_castile }
+		}
+		
+		cancel_trigger = {
+			ALC = {
+				has_country_flag = castilla_nueva_influence_won
+			}
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			CNV = { subtract_from_variable = { var = castilla_nueva_influence value = 10 } }
+			
+			if = {
+				limit = { CNV = { check_variable = { var = castilla_nueva_influence value = 0 compare = less_than_or_equals } } }
+				CNV = { 
+					set_variable = { var = castilla_nueva_influence value = 0 }
+					set_country_flag = castilla_nueva_influence_lost
+				}
+				custom_effect_tooltip = castilla_nueva_resistance_won_tooltip
+			}
+		}
+	}
+
+	# Resistir en La Mancha
+	cst_resist_la_mancha_influence = {
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+			ALC = { has_country_flag = fragmenting_castile }
+			tag = CST
+			LMN = { check_variable = { var = la_mancha_influence value = 0 compare = greater_than } }
+			LMN = { check_variable = { var = la_mancha_influence value = 100 compare = less_than_or_equals } }
+			NOT = { has_country_flag = la_mancha_influence_won }
+		}
+		
+		visible = {
+			ALC = { has_country_flag = fragmenting_castile }
+		}
+		
+		cancel_trigger = {
+			OR = {
+				has_country_flag = la_mancha_influence_won
+			}
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		
+		ai_will_do = { factor = 2 }
+		
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			LMN = { subtract_from_variable = { var = la_mancha_influence value = 10 } }
+			
+			if = {
+				limit = { LMN = { check_variable = { var = la_mancha_influence value = 0 compare = less_than_or_equals } } }
+				LMN = { 
+					set_variable = { var = la_mancha_influence value = 0 }
+					set_country_flag = la_mancha_influence_lost
+				}
+				custom_effect_tooltip = la_mancha_resistance_won_tooltip
+			}
+		}
+	}
+}

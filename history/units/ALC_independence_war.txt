@@ -56,9 +56,21 @@ units = {
 		division_template = "División de Infantería Alcoy"
 		start_experience_factor = 0.5
 	}
-	# 1 división de tanques
+	division = {
+		name = "6ª División de Alcoy"
+		location = 9889
+		division_template = "División de Infantería Alcoy"
+		start_experience_factor = 0.5
+	}
+	# 2 divisiones de tanques
 	division = {
 		name = "1ª División Blindada de Alcoy"
+		location = 9889
+		division_template = "División Blindada Alcoy"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "2ª División Blindada de Alcoy"
 		location = 9889
 		division_template = "División Blindada Alcoy"
 		start_experience_factor = 0.5

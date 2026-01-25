@@ -2256,6 +2256,11 @@ focus = {
 		prerequisite = {
 			focus = ALC_iberian_confederation
 		}
+
+		completion_reward = {	
+			set_country_flag = fragmenting_castile
+			custom_effect_tooltip = ALC_fragment_castile_tooltip
+		}
 	}
 
 	focus = {
