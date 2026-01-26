@@ -1,0 +1,159 @@
+division_template = {
+    name = "División de Infantería"
+    
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+        artillery = { x = 2 y = 0 }
+        artillery = { x = 2 y = 1 }
+    }
+
+    support = {
+        artillery = {}
+    }
+}
+
+division_template = {
+    name = "División Tanque Ligera"
+
+    regiments = {
+        light_armor = { x = 0 y = 0 }
+        light_armor = { x = 0 y = 1 }
+        light_armor = { x = 0 y = 2 }
+        light_armor = { x = 1 y = 0 }
+        motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+        motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+        motorized = { x = 2 y = 2 }
+    }
+}
+
+division_template = {
+    name = "División Tanque Acorazada"
+
+    regiments = {
+        heavy_armor = {x = 0 y = 0}
+        heavy_armor = {x = 0 y = 1}
+        heavy_armor = {x = 0 y = 2}
+        light_armor = { x = 1 y = 0 }
+        light_armor = { x = 1 y = 1 }
+        motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+        motorized = { x = 2 y = 2 }
+        motorized = { x = 3 y = 0 }
+        motorized = { x = 3 y = 1 }
+        motorized = { x = 3 y = 2 }
+    }
+}
+
+units = {
+    division = {
+        name = "1ª División Infanteria"
+        location = 3938
+        division_template = "División de Infantería"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "2ª División Infanteria"
+        location = 11825
+        division_template = "División de Infantería"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "3ª División Infanteria"
+        location = 875
+        division_template = "División de Infantería"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "4ª División Infanteria"
+        location = 794
+        division_template = "División de Infantería"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "5ª División Infanteria"
+        location = 7183
+        division_template = "División de Infantería"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "6ª División Infanteria"
+        location = 11707
+        division_template = "División de Infantería"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "7ª División Infanteria"
+        location = 3938
+        division_template = "División de Infantería"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+
+    division = {
+        name = "1ª División Tanque Ligera"
+        location = 7183
+        division_template = "División Tanque Ligera"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+
+    division = {
+        name = "2ª División Tanque Ligera"
+        location = 885
+        division_template = "División Tanque Ligera"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+
+    division = {
+        name = "3ª División Tanque Ligera"
+        location = 3938
+        division_template = "División Tanque Ligera"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+
+    division = {
+        name = "1ª División Tanque Acorazada"
+        location = 3938
+        division_template = "División Tanque Acorazada"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+
+    division = {
+        name = "1ª División Tanque Acorazada"
+        location = 885
+        division_template = "División Tanque Acorazada"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+}

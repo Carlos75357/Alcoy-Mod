@@ -372,15 +372,363 @@ focus_tree = {
 
 		prerequisite = { focus = CST_militar_naval_2 }
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+        			is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+        			is_coastal = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CST_militar_aereo_1
+		icon = GFX_goal_generic_air_fighter
+		cost = 3.0
+
+		relative_position_id = CST_militar_1
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = CST_militar_1 }
+		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1.0
-				uses = 2
-				category = dd_tech
+				uses = 1
+				category = air_doctrine
 			}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
-				category = cl_tech
+				category = plane_modules_tech
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = medium_air
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
+		}
+	}
+
+	focus = {
+		id = CST_militar_aereo_2
+		icon = GFX_goal_generic_air_fighter
+		cost = 3.0
+
+		relative_position_id = CST_militar_aereo_1
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = CST_militar_aereo_1 }
+		completion_reward = {
+			set_technology = {
+				early_bombs = 1
+				aa_lmg = 1
+				engines_1 = 1
+				iw_small_airframe = 1
+				iw_medium_airframe = 1
+			}
+
+			create_equipment_variant = {
+				name = "Custom Fighter"
+				type = small_plane_airframe_0
+
+				modules = {
+					fixed_main_weapon_slot = light_mg_2x
+					engine_type_slot = engine_1_1x
+					special_type_slot_1 = empty
+				}
+			}
+
+			create_equipment_variant = {
+				name = "Custom Fighter CV"
+				type = cv_small_plane_airframe_0
+
+				modules = {
+					fixed_main_weapon_slot = light_mg_2x
+					engine_type_slot = engine_1_1x
+					special_type_slot_1 = empty
+				}
+			}
+
+			create_equipment_variant = {
+				name = "Custom Medium"
+				type = medium_plane_airframe_0
+
+				modules = {
+					fixed_main_weapon_slot = medium_bomb_bay
+					engine_type_slot = engine_1_2x
+					special_type_slot_1 = empty
+				}
+				icon = GFX_ENG_early_bomber_medium
+			}
+
+			load_oob = "CST_air"
+		}
+	}
+
+	focus = {
+		id = CST_militar_aereo_3
+		icon = GFX_goal_generic_air_fighter
+		cost = 3.0
+
+		relative_position_id = CST_militar_aereo_2
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = CST_militar_aereo_2 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = { CST_air_development }
+		}
+	}
+
+	focus = {
+		id = CST_militar_land_1
+		icon = GFX_goal_generic_army_tanks
+		cost = 3.0
+
+		relative_position_id = CST_militar_1
+
+		x = 3
+		y = 1
+
+		prerequisite = { focus = CST_militar_1 }
+		completion_reward = {
+			set_technology = {
+				gwtank_chassis = 1
+				basic_light_tank_chassis = 1
+				basic_heavy_tank_chassis = 1
+				tech_trucks = 1
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = mio_cat_tech_all_armor_and_modules
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = CST_militar_land_2
+		icon = GFX_goal_generic_army_tanks
+		cost = 3.0
+
+		relative_position_id = CST_militar_land_1
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = CST_militar_land_1 }
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Custom Tank"
+				type = light_tank_chassis_1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_cannon
+					turret_type_slot = tank_light_one_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+				}
+				icon = GFX_TEX_basic_light_tank_medium
+				upgrades = {
+					tank_nsb_armor_upgrade = 3
+					tank_nsb_engine_upgrade = 4
+				}
+			}
+
+			create_equipment_variant = {
+				name = "Custom Heavy Tank"
+				type = heavy_tank_chassis_1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_cannon
+					turret_type_slot = tank_heavy_two_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_2 = secondary_turret_hmg
+					special_type_slot_3 = secondary_turret_hmg
+				}
+				icon = GFX_TEX_basic_light_tank_medium
+				upgrades = {
+					tank_nsb_armor_upgrade = 3
+					tank_nsb_engine_upgrade = 4
+				}
+			}
+
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 100
+				variant_name = "Custom Tank"
+			}
+
+			add_equipment_to_stockpile = {
+				type = heavy_tank_chassis_1
+				amount = 50
+				variant_name = "Custom Heavy Tank"
+			}
+
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 850
+			}
+
+			load_oob = "CST_land"
+		}
+	}
+
+	focus = {
+		id = CST_militar_land_3
+		icon = GFX_goal_generic_army_tanks
+		cost = 3.0
+
+		relative_position_id = CST_militar_land_2
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = CST_militar_land_2 }
+		completion_reward = {
+			# Construir fuertes en provincias fronterizas
+			790 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			176 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			169 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			789 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			175 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			174 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			793 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			
+			swap_ideas = {
+				remove_idea = CST_terrorist_organizations
+				add_idea = CST_terrorist_organizations_improve
 			}
 		}
 	}

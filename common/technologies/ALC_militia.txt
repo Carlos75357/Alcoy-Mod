@@ -8,8 +8,8 @@ technologies = {
         }
 
         category_militia_alcoyana = {
-            max_strength = 0.05
-            max_organisation = 5
+            max_strength = 0.2
+            max_organisation = 8
             default_morale = 0.05
             soft_attack = 0.05
             defense = 0.05
@@ -25,7 +25,11 @@ technologies = {
 		}
 
         ai_will_do = {
-            factor = 1
+            factor = 5
+            modifier = {
+                factor = 0
+                NOT = { has_country_tag = ALC }
+            }
         }
     }
 
@@ -45,8 +49,8 @@ technologies = {
         }
 
         category_militia_alcoyana = {
-            max_strength = 0.05
-            max_organisation = 5
+            max_strength = 0.15
+            max_organisation = 7
             default_morale = 0.05
             soft_attack = 0.05
             defense = 0.05
@@ -58,7 +62,11 @@ technologies = {
 
 
         ai_will_do = {
-            factor = 1
+            factor = 5
+            modifier = {
+                factor = 0
+                NOT = { has_country_tag = ALC }
+            }
         }
     }
 
@@ -83,7 +91,11 @@ technologies = {
         }
         
         ai_will_do = {
-            factor = 1
+            factor = 5
+            modifier = {
+                factor = 0
+                NOT = { has_country_tag = ALC }
+            }
         }
     }
 }

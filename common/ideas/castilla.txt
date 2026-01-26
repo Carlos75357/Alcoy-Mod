@@ -119,6 +119,25 @@ ideas = {
             }
         }
 
+        CST_terrorist_organizations_improve = {
+            picture = generic_production_bonus
+
+            allowed = {
+                original_tag = CST
+            }
+
+            removal_cost = -1  
+
+            modifier = {
+                army_attack_factor = 0.1
+                army_defence_factor = 0.1
+                army_org_factor = 0.05
+
+                navy_attack_factor = 0.05
+                navy_defence_factor = 0.05
+            }                     
+        }
+
         CST_reconstruction_bonus = {
             picture = generic_production_bonus
 
@@ -192,6 +211,23 @@ ideas = {
                 stability_factor = -0.05
                 training_time_army_factor = 0.15
                 army_org_factor = -0.05
+            }
+        }
+
+        CST_air_development = {
+            picture = generic_production_bonus
+
+            allowed = {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                air_attack_factor = 0.1
+                air_defence_factor = 0.1
+                air_agility_factor = 0.1
+                air_visibility_factor = 0.1
             }
         }
     }

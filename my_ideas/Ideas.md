@@ -8,64 +8,11 @@ En 1936, aún vasallo de facto de la Segunda República Española, mantiene una 
 
 El objetivo inicial del país será afianzarse frente a la guerra civil española mientras lucha por su autonomía total.
 
-# Eventos Guerra Independencia fase 1
+# **Hoja de Ruta**
 
-- Termina la guerra civil española:
-    - Se preparan las independencias, no por eventos, si no por focos
-    - Los focos iran de esta manera:
-        - ALC_regional_independence: Tiene que haber terminado la guerra civil española y que se haya elegido dar la espalda a la republica, da 100 de poder politico y baja la estabilidad de españa en un 5%
-        - ALC_support_catalonia: requiere de ALC_regional_independence, activa misión para iniciar revueltas
-        - ALC_support_valencia: requiere de ALC_regional_independence, activa misión para iniciar revueltas
-        - ALC_support_baleares: requiere de ALC_regional_independence, activa misión para iniciar revueltas
-        - ALC_catalonia_independece: requiere de ALC_support_catalonia, da 10% de war support a Alcoy y da 1000 fusiles y 1000 de manpower a Alcoy y aumena la resistencia en el estado de cataluña en un 10%
-        - ALC_valencia_independece: requiere de ALC_support_valencia, da 10% de war support a Alcoy y da 1000 fusiles y 1000 de manpower a Alcoy y aumena la resistencia en el estado de valencia en un 10%
-        - ALC_mallorca_independece: requiere de ALC_support_baleares, da 10% de war support a Alcoy y da 1000 fusiles y 1000 de manpower a Alcoy y aumena la resistencia en el estado de baleares en un 10%
-        - ALC_menorca_independece: requiere de ALC_support_baleares, da 10% de war support a Alcoy y da 1000 fusiles y 1000 de manpower a Alcoy y aumena la resistencia en el estado de menorca en un 10%
-        - ALC_mediterranean_confederation: requiere de ALC_mallorca_independece y ALC_menorca_independece, ALC_valencia_independece, ALC_catalonia_independece, ALC_castellon_independece, hace que se independicen con los siguientes estados estos paises:
-          - Cataluña: state 165
-          - Valencia: state 167
-          - Mallorca: state 177
-          - Menorca: state 1051
-          - Castellón: state 1049
-          - Murcia: state 168
-          - Republica del Rif: state 290, 1053, 1054
-        - Todos se meten en un facción llamada Confederación Mediterránea Ibérica
-        - Al igual que en la guerra civil hacemos spawn de unidades de evento para tanto un bando como el otro:
-          - España: 25 divisiones extra bien entrenadas que tienen 6 batallones de infanteria y uno de artilleria, 4 divisiones de tanques con 3 batallones de tanques y 4 de motorizada, de equipamiento modelos panzer I y T-26, intenta coger los modelos prehechos de alemania y la URSS, 20 divisiones de infanteria poco entrenadas que tienen 5 batallones de infanteria y uno de artilleria
-          - Alcoy: 5 divisiones de infanteria bien entrenadas que tienen 6 batallones de infanteria y uno de artilleria, 1 division de tanques con 3 batallones de tanques y 4 de motorizada, de equipamiento modelos FT-17, intenta coger los modelos prehechos de francia
-          - Catalunya: 13 divisiones de infanteria bien entrenadas que tienen 6 batallones de infanteria y uno de artilleria
-          - Valencia: 6 divisiones de infanteria bien entrenadas que tienen 6 batallones de infanteria y uno de artilleria, 2 divisiones de tanques con 3 batallones de tanques y 4 de motorizada, de equipamiento modelos T-26, intenta coger los modelos prehechos de la URSS
-          - Mallorca: 3 divisiones de infanteria regulares que tienen 6 batallones de infanteria
-          - Menorca: 2 divisiones de infanteria regulares que tienen 3 batallones de infanteria
-          - Castellón: 5 divisiones de infanteria bien entrenadas que tienen 6 batallones de infanteria y uno de artilleria
-          - Murcia: 6 divisiones de infanteria bien entrenadas que tienen 6 batallones de infanteria y uno de artilleria
-          - Republica del Rif: 11 divisiones de infanteria bien entrenadas que tienen 6 batallones de infanteria y uno de artilleria
-        - Idea nacional para todos los de la coalicion, espiritu guerrillero que da: 10% de ataque, 10% de defensa, 10% organizacion
-        - Idea nacional para España, Recien salido de guerra civil: -5% de ataque, -5% de defensa, -5% organizacion
-        - Francia, Checoslovaquia, Reino Unido, Canada, Nueva Zelanda, Australia, Mexico envian ayuda a la coalicion, que sea un evento que les salga y puedan o enviar voluntarios, enviar manpower o enviar equipamiento, a cada una de las naciones se le da un evento diferente y lo hacen para cada pais de la coalicion:
-          - Francia: Mas propensa la ia a enviar voluntarios
-          - Checoslovaquia: Mas propensa la ia a enviar equipamiento
-          - Reino Unido: Mas propensa la ia a enviar equipamiento
-          - Canada: Mas propensa la ia a enviar manpower
-          - Nueva Zelanda: Mas propensa la ia a enviar manpower
-          - Australia: Mas propensa la ia a enviar manpower
-          - Mexico: Mas propensa la ia a enviar equipamiento - manpower - voluntarios, misma probabilidad para cada uno
-        - La paz sera scripted, ocurrirá lo siguiente:
-          - Murcia se queda con la provincia de Albacete (state 1052)
-          - Se independiza Aragón con los estados 166 y 794
-          - Se independiza el pais vasco con los estados 792 y 172
-          - Se independiza Granada con el estado 173
-          - Se independiza Galicia con el estado 171
-          - Se independiza el Sahara occidental con el estado 699
-          - Alcoy se queda con el estado 783
-          - Se independiza Guinea equatorial con el estado 297
-          - España desaparece y se convierte en la Corona de Castilla con debuffos explicados en otro momento (WIP) y un arbol de focos nuevo, si el jugador es el que controla España que pase a controlar este pais
-          - La provincias de Castilla se convierten en zona desmilitarizada:
-           - Sevilla, Cordoba, Ciudad Real, Guadalajara, Burgos, Asturias y León (state 169, 789, 175, 793, 176, 790, 174)
+## Focos post-guerra
 
-# Focos post-guerra
-
-## Más influencia
+### Más influencia
 
 - Este foco depende de "Confederación Ibérica"
 - Aumentará la influencia que tiene Alcoy sobre los paises en la confederación ibérica, paises como Mallorca o Menorca no opondrán mucha resistencia, pero otros como Cataluña sí, serán decisiones para al final llegar a hacerlos vasallos.
@@ -93,27 +40,27 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
 
   - **Condición primaria**: estabilidad ≤ 15% → vasallización.  
 
-## Preparación de guerra
+### Preparación de guerra
 
 - Este foco depende de "Confederación Ibérica"
 - Dará un poco de bufo a la producción de barcos y tanques, dará un bufo al manpower conseguido y un poco de research speed para lo militar
 
-## Comunidad Valenciana
+### Comunidad Valenciana
 
 - Este foco depende de "Mas Influencia"
 - Da dos decisiones para llegar a integrar Valencia y Castellón, ya sea como vasallo o anexarlos, depende de lo que la ia decida, da core si se anexa
 
-## Integración ibérica
+### Integración ibérica
 
 - Este foco depende de "Fragmentar Castilla"
 - Más poder politico, más apoyo a los paises de la confederación, una idea que les de un pequeño bufo a la estabilidad.
 
-## Guerra con Castilla
+### Guerra con Castilla
 
 - Este foco depende de "Comunidad Valenciana" y "Integración ibérica"
 - Con los paises que hayan llegado a tener core en el territorio de castilla se revelan como vasallos de Alcoy, se unen a la coalición.
 
-# ERRORES A SOLUCIONAR
+## ERRORES A SOLUCIONAR
 
 - **Stocks**:
   - Arreglar los stocks al iniciar la guerra de independecia, tanques, equipo de infanteria, motorizada, dar aviones...
@@ -126,7 +73,7 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
 - **Guerra civil española**
   - Chetar un poco más a la españa nacionalista que con los cambios de las provincias la republica está demasiado fuerte.
 
-# TODO
+## TODO
 - **Banderas**:
   - Condados de cataluña
   - Castilla
@@ -169,7 +116,7 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
       - Se dividirá en tres ramas, Industria, Economía y Militar.
         - **Rama Industria**:
           - **CST_industrial_1**: Activa decisiones para recuperarse:
-            - 
+            - ***WIP***
           - **CST_industrial_2**: Idea que da bono a reparaciones y construccion.
           - **CST_industrial_3**: Da 5 fábricas entre civiles y militares y quita el debuff de las fábricas y la construcción.
           - Compartido con Economia: 
@@ -181,7 +128,7 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
         - **Rama Militar**: 
           - **CST_militar_1**: Dar 25 de experiencia a army, naval y air, esta se divide en 3 ramas, Naval, Aire y Tierra.
           - **Naval**:
-            - **CST_militar_naval_1**: Bono a las investigaciones de barcos.
+            - **CST_militar_naval_1**: Bono a las investigaciones de barcos y construye un astillero.
             - **CST_militar_naval_2**: Crea una pequeña flota llamada "Fuerza de tarea Alfonso X".
             - **CST_militar_naval_3**: Construye astilleros y bases navales.
           - **Aire**:

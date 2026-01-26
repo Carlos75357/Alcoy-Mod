@@ -191,7 +191,7 @@ units = {
 
 
             ship = {
-                name = "Test 20"
+                name = "Test 16"
                 definition = battle_cruiser
                 start_experience_factor = 0.50
                 equipment = {
@@ -203,7 +203,7 @@ units = {
                 }
             }
             ship = {
-                name = "Test 21"
+                name = "Test 17"
                 definition = battle_cruiser
                 start_experience_factor = 0.50
                 equipment = {
@@ -215,7 +215,7 @@ units = {
                 }
             }
             ship = {
-                name = "Test 22"
+                name = "Test 18"
                 definition = battle_cruiser
                 start_experience_factor = 0.50
                 equipment = {
@@ -227,7 +227,7 @@ units = {
                 }
             }
             ship = {
-                name = "Test 23"
+                name = "Test 19"
                 definition = battle_cruiser
                 start_experience_factor = 0.50
                 equipment = {
@@ -239,7 +239,7 @@ units = {
                 }
             }
             ship = {
-                name = "Test 24"
+                name = "Test 20
                 definition = battle_cruiser
                 start_experience_factor = 0.50
                 equipment = {

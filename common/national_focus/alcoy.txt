@@ -2220,26 +2220,31 @@ focus = {
 					type = light_tank_chassis_0
 					amount = 250
 					variant_name = "Leichttraktor"
+					producer = GER
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					amount = 100
 					variant_name = "Panzer I Ausf. A"
+					producer = GER
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_2
 					amount = 50
 					variant_name = "Panzer II Ausf. A"
+					producer = GER
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_0
 					amount = 350
 					variant_name = "Fiat 3000"
+					producer = ITA
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_0
 					amount = 100
 					variant_name = "Fiat 3000B"
+					producer = ITA
 				}
 			}
 			
@@ -2270,26 +2275,31 @@ focus = {
 				type = light_tank_chassis_0
 				amount = 100
 				variant_name = "FT Char Cannon série A"
+				producer = FRA
 			}
 			add_equipment_to_stockpile = {
 				type = medium_tank_chassis_0
 				amount = 180
 				variant_name = "SOMUA S35"
+				producer = FRA
 			}
 			add_equipment_to_stockpile = {
 				type = light_tank_chassis_1
 				amount = 80
 				variant_name = "LT vz. 35"
+				producer = CZE
 			}
 			add_equipment_to_stockpile = {
 				type = light_tank_chassis_1
 				amount = 200
 				variant_name = "M1 Combat Car"
+				producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = light_tank_chassis_1
 				amount = 150
 				variant_name = "M2A2"
+				producer = USA
 			}
 
 			BRC = { 

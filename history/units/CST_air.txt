@@ -1,0 +1,19 @@
+air_wings = {
+    41 = {
+        small_plane_airframe_0 = {
+            amount = 100
+            owner = CST
+            version_name = "Custom Fighter"
+        }
+        cv_small_plane_airframe_0 = {
+            amount = 100
+            owner = CST
+            version_name = "Custom Fighter CV"
+        }
+        medium_plane_airframe_0 = {
+            amount = 50
+            owner = CST
+            version_name = "Custom Medium"
+        }
+    }
+}
