@@ -1,0 +1,198 @@
+ideas = {
+    country = {
+        CST_population_down_1 =  {
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = CST
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -0.05
+			}            
+        }
+
+        CST_reclutable_factor = {
+            picture = generic_production_bonus
+            
+            allowed = {
+                original_tag = CST
+            }
+            
+            removal_cost = -1
+            
+            modifier = {
+                conscription = -0.02
+            }
+        }
+
+        CST_destroyed_country_1 = {
+            picture = generic_production_bonus
+
+            allowed= {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_buildings_factor = -0.25
+                production_factory_start_efficiency_factor = -0.3
+                production_factory_max_efficiency_factor = -0.2
+                production_factory_efficiency_gain_factor = -0.3
+                research_speed_factor = -0.3
+                local_resources_factor = -0.3
+            }
+        }
+
+        CST_destroyed_country_2 = {
+            picture = generic_production_bonus
+
+            allowed= {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_buildings_factor = -0.1
+                production_factory_start_efficiency_factor = -0.1
+                production_factory_max_efficiency_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.05
+                research_speed_factor = -0.1
+                local_resources_factor = -0.15
+            }
+        }
+
+        CST_zero_trust = {
+            picture = generic_production_bonus
+
+            allowed = {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_weekly_factor = -0.005   
+            }
+        }
+
+        CST_factions = {
+            picture = generic_production_bonus
+
+            allowed = {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                ai_get_ally_desire_factor = -0.5
+                join_faction_tension = 0.3
+            }
+        }
+
+        CST_terrorist_organizations = {
+            picture = generic_production_bonus
+
+            allowed = {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+                army_strength_factor = -0.1
+                army_org_factor = -0.2
+                planning_speed = -0.2
+
+                navy_attack_factor = -0.1
+                navy_defence_factor = -0.1
+
+                air_attack_factor = -0.1
+                air_defence_factor = -0.1
+            }
+        }
+
+        CST_reconstruction_bonus = {
+            picture = generic_production_bonus
+
+            allowed = {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                industry_free_repair_factor = 0.2
+                production_speed_buildings_factor = 0.12
+                local_resources = 0.1
+            }
+        }
+        
+        CST_research_bonus_1 = {
+            picture = generic_production_bonus
+
+            allowed = {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+
+        CST_research_bonus_2 = {
+            picture = generic_production_bonus
+
+            allowed = {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                research_speed_factor = 0.1
+                monthly_population = 0.05
+            }
+        }
+
+        CST_economic_development = {
+            picture = generic_production_bonus
+
+            allowed = {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                conscription = 0.012
+            }
+        }
+        
+        CST_military_development = {
+            picture = generic_production_bonus
+
+            allowed = {
+                original_tag = CST
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                weekly_manpower = 4000
+                stability_factor = -0.05
+                training_time_army_factor = 0.15
+                army_org_factor = -0.05
+            }
+        }
+    }
+}

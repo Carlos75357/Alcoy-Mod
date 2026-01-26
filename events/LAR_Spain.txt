@@ -7039,6 +7039,10 @@ country_event = {
 						controls_state = 165
 						controls_state = 794
 						controls_state = 166
+						controls_state = 1049
+						controls_state = 1055
+						controls_state = 1056
+						controls_state = 1057
 					}
 				}
 				every_state = {
@@ -7047,6 +7051,10 @@ country_event = {
 							state = 165
 							state = 794
 							state = 166
+							state = 1049
+							state = 1055
+							state = 1056
+							state = 1057
 						}
 						is_capital = no
 						is_controlled_by = ROOT
@@ -7063,6 +7071,10 @@ country_event = {
 									controls_state = 165
 									controls_state = 794
 									controls_state = 166
+									controls_state = 1049
+									controls_state = 1055
+									controls_state = 1056
+									controls_state = 1057
 								}
 							}
 						}
@@ -7078,6 +7090,10 @@ country_event = {
 									state = 165
 									state = 794
 									state = 166
+									state = 1049
+									state = 1055
+									state = 1056
+									state = 1057
 								}
 								is_owned_by = SPC
 							}
@@ -7106,6 +7122,10 @@ country_event = {
 									state = 794
 									state = 166
 									state = 167
+									state = 1049
+									state = 1055
+									state = 1056
+									state = 1057
 								}
 							}
 							has_state_flag = SPR_core_of_spain_flag
@@ -7124,6 +7144,10 @@ country_event = {
 									state = 794
 									state = 166
 									state = 167
+									state = 1049
+									state = 1055
+									state = 1056
+									state = 1057
 								}
 							}
 							has_state_flag = SPR_core_of_spain_flag
@@ -7187,6 +7211,10 @@ country_event = {
 								state = 177
 								state = 178
 								state = 1051
+								state = 1049
+								state = 1055
+								state = 1056
+								state = 1057
 							}
 						}
 						SPC = { set_capital = { state = PREV } }

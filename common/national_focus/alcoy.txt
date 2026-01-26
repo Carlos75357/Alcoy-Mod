@@ -1909,11 +1909,11 @@ focus = {
 			# Quitar international_isolation si se ha elegido el 7, reducirlo si se ha elegido el 8
 			add_stability = 0.1
 			if = {
-				limit = { has_country_flag = alcoy_wait_7 }
+				ALC = { has_country_flag = alcoy_wait_7 }
 				remove_ideas = ALC_international_political_isolation
 			}
 			if = {
-				limit = { has_country_flag = alcoy_wait_8 }
+				ALC = { has_country_flag = alcoy_wait_8 }
 				add_political_power = 50
 				swap_ideas = {
 					remove_idea = ALC_international_political_isolation

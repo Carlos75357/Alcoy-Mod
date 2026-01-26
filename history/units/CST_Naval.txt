@@ -1,0 +1,255 @@
+units = {
+    fleet = {
+        name = "Fuerza de Tarea Alfonso X"
+        naval_base = 11707 # Asturias Oviedo
+
+        task_force = {
+            location = 11707
+            ship = { 
+                name = "Test 1" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 2" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 3" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 4" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 5" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 6" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 7" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 8" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 9" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 10" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 11" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+            ship = { 
+                name = "Test 12" 
+                definition = destroyer 
+                start_experience_factor = 0.50 
+                equipment = { 
+                    ship_hull_light_1 = { 
+                        amount = 1 
+                        owner = CST 
+                        version_name = "Custom Destroyer" 
+                    } 
+                } 
+            }
+
+            ship = {
+                name = "Test 13"
+                definition = carrier
+                start_experience_factor = 0.50
+                equipment = {
+                    ship_hull_carrier_conversion_bb = {
+                        amount = 1
+                        owner = CST
+                        version_name = "Custom Carrier"
+                    }
+                }
+            }
+
+            ship = {
+                name = "Test 14"
+                definition = battleship
+                start_experience_factor = 0.50
+                equipment = {
+                    ship_hull_heavy_1 = {
+                        amount = 1
+                        owner = CST
+                        version_name = "Custom Battleship"
+                    }
+                }
+            }
+
+            ship = {
+                name = "Test 15"
+                definition = battleship
+                start_experience_factor = 0.50
+                equipment = {
+                    ship_hull_heavy_1 = {
+                        amount = 1
+                        owner = CST
+                        version_name = "Custom Battleship"
+                    }
+                }
+            }
+
+
+            ship = {
+                name = "Test 20"
+                definition = battle_cruiser
+                start_experience_factor = 0.50
+                equipment = {
+                    ship_hull_cruiser_1 = {
+                        amount = 1
+                        owner = CST
+                        version_name = "Custom Cruiser"
+                    }
+                }
+            }
+            ship = {
+                name = "Test 21"
+                definition = battle_cruiser
+                start_experience_factor = 0.50
+                equipment = {
+                    ship_hull_cruiser_1 = {
+                        amount = 1
+                        owner = CST
+                        version_name = "Custom Cruiser"
+                    }
+                }
+            }
+            ship = {
+                name = "Test 22"
+                definition = battle_cruiser
+                start_experience_factor = 0.50
+                equipment = {
+                    ship_hull_cruiser_1 = {
+                        amount = 1
+                        owner = CST
+                        version_name = "Custom Cruiser"
+                    }
+                }
+            }
+            ship = {
+                name = "Test 23"
+                definition = battle_cruiser
+                start_experience_factor = 0.50
+                equipment = {
+                    ship_hull_cruiser_1 = {
+                        amount = 1
+                        owner = CST
+                        version_name = "Custom Cruiser"
+                    }
+                }
+            }
+            ship = {
+                name = "Test 24"
+                definition = battle_cruiser
+                start_experience_factor = 0.50
+                equipment = {
+                    ship_hull_cruiser_1 = {
+                        amount = 1
+                        owner = CST
+                        version_name = "Custom Cruiser"
+                    }
+                }
+            }
+        }
+    }
+}

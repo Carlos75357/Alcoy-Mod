@@ -65,24 +65,6 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
 
 # Focos post-guerra
 
-## Confederación Ibérica
-
-- Este foco cambiará el nombre de la coalición a Confederación Ibérica y añadirá a los paises ibericos que han sido liberados a la coalición, ademas le meterá una idea que de +0.15 de apoyo democratico a cada miembro, que podrá ser contrarestado por los focos de ellos si tiran por otra rama.
-
-## Fragmentar Castilla
-
-- Este foco depende de "Confederación Ibérica"
-- Meterá decisiones para crear los estados en los que se podrá fragmentar castilla, no los independizará, solo les dara el core a cada uno, castilla podrá intentar impedirlo o reducir los impactos.
-
-  - Esta decision la veamos los dos paises, Castilla y Alcoy, con una decision puedo aumentar un numero que, como lo de alemania e inglaterra con paises bajos, va subiendo, para cada pais por separado, pero cuando haya llegado a 100 se le ponga el core, yo tendre decisiones para subirlo y castilla para bajarlo, empezará en 50, si llega a 0 se pierde y no se puede subir y si llega a 100 se consigue y ya no se puede bajar ni quitar el core
-  - Los paises son: 
-    - Andalucia (789, 169, 118 (este es gibraltar, no lo conseguira pero si quiero que tenga core))
-    - Leon: (174, 788, 170)
-    - Asturias (790)
-    - Castilla Vieja (791, 176)
-    - Castilla Nueva (41, 793)
-    - La mancha (175)
-
 ## Más influencia
 
 - Este foco depende de "Confederación Ibérica"
@@ -116,11 +98,6 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
 - Este foco depende de "Confederación Ibérica"
 - Dará un poco de bufo a la producción de barcos y tanques, dará un bufo al manpower conseguido y un poco de research speed para lo militar
 
-## Mejor integración iberica
-
-- Este foco depende de "Fragmentar Castilla" y "Preparación de guerra"
-- Da un poco de manpower, ademas de que da población civil a la provincia de Alcoy
-
 ## Comunidad Valenciana
 
 - Este foco depende de "Mas Influencia"
@@ -142,6 +119,12 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
   - Arreglar los stocks al iniciar la guerra de independecia, tanques, equipo de infanteria, motorizada, dar aviones...
 - **Decisiones**
   - Arreglar las decisiones, ahora mismo siempre se pueden hacer aunque los eventos ya han pasado, hay que añadir al visible y available.
+- **Eventos**
+  - Arreglar los eventos, ahora mismo los eventos que lanza a los paises la guerra de independecia no van, sen_volunteers o dar equipamiento.
+- **Arnarquistas**
+  - Arreglar que provincias obtiene, ahora solo coge tres y son Aragon, Barcelona y la otra entre el resto de la comunidad valenciana o cataluña, tiene que obtener toda cataluña minimo.
+- **Guerra civil española**
+  - Chetar un poco más a la españa nacionalista que con los cambios de las provincias la republica está demasiado fuerte.
 
 # TODO
 - **Banderas**:
@@ -171,10 +154,11 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
 - **Castilla**
   - Ruta historica de la Corona de Castilla:
     - Idea nada mas aparecer:
-      - Idea que reduce la poblacion mensual en un 5%
-      - Idea que reduce la poblacion reclutable en un 1%
-      - Idea que añade debuffos a las construcciones y produccion e investigaciones
-      - Idea que reduce la estabilidad en un 0.5% semanal
+      - Idea que reduce la poblacion mensual en un 5%.
+      - Idea que reduce la poblacion reclutable en un 1%.
+      - Idea que añade debuffos a las construcciones y produccion e investigaciones.
+      - Idea que reduce la estabilidad en un 0.5% semanal.
+      - Idea que da debuffos al ejercito terrestre, aereo y naval.
     - Impedir la influencia de Alcoy sobre los reinos dentro de castilla.
     - Restaurar la casa real portuguesa.
     - Buscar una unión matrimonial con Portugal.
@@ -189,17 +173,17 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
           - **CST_industrial_2**: Idea que da bono a reparaciones y construccion.
           - **CST_industrial_3**: Da 5 fábricas entre civiles y militares y quita el debuff de las fábricas y la construcción.
           - Compartido con Economia: 
-            - **CST_industrial_economia_1**: Da una idea que da research speed y bono de investigaciones a la parte de Industria
-            - **CST_industrial_economia_2**: Mejora la idea subiendo el research speed y añadiendo monthly_population
+            - **CST_industrial_economia_1**: Da una idea que da research speed y bono de investigaciones a la parte de Industria.
+            - **CST_industrial_economia_2**: Mejora la idea subiendo el research speed y añadiendo monthly_population.
         - **Rama Economía**:
-          - **CST_economia_1**: Construye infraestructura en 4 estados y da 100 de poder politico
-          - **CST_economia_2**: Idea que da bono a la población reclutable y elimina el debuff de poblacion mensual y reclutable
+          - **CST_economia_1**: Construye infraestructura en 4 estados y da 100 de poder politico.
+          - **CST_economia_2**: Idea que da bono a la población reclutable y elimina el debuff de poblacion mensual y reclutable.
         - **Rama Militar**: 
-          - **CST_militar_1**: Dar 25 de experiencia a army, naval y air, esta se divide en 3 ramas, Naval, Aire y Tierra
+          - **CST_militar_1**: Dar 25 de experiencia a army, naval y air, esta se divide en 3 ramas, Naval, Aire y Tierra.
           - **Naval**:
-            - **CST_militar_naval_1**: Bono a las investigaciones de barcos
-            - **CST_militar_naval_2**: Crea una pequeña flota llamada "Fuerza de tarea Alfonso X"
-            - **CST_militar_naval_3**: Construye astilleros y bases navales
+            - **CST_militar_naval_1**: Bono a las investigaciones de barcos.
+            - **CST_militar_naval_2**: Crea una pequeña flota llamada "Fuerza de tarea Alfonso X".
+            - **CST_militar_naval_3**: Construye astilleros y bases navales.
           - **Aire**:
             - **CST_militar_aire_1**: Bono a las investigaciones de aviones.
             - **CST_militar_aire_2**: Crea 100 aviones.

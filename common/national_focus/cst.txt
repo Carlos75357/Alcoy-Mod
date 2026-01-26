@@ -12,20 +12,24 @@ focus_tree = {
 	focus = {
 		id = CST_start
 		icon = GFX_goal_generic_demand_territory
-		x = 5
+		cost = 3.0
+		x = 20
 		y = 0
-		cost = 10
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = CST_destroyed_country_1
+				add_idea = CST_destroyed_country_2
+			}
 		}
 	}
 	
 	focus = {
 		id = CST_demilitarize_border
 		icon = GFX_goal_generic_military_deal
-		x = 5
+		cost = 3.0
+		relative_position_id = CST_start
+		x = 0
 		y = 1
-		cost = 10
 		prerequisite = { focus = CST_start }
 		completion_reward = {
 			# Desmilitarizar estados fronterizos
@@ -38,6 +42,346 @@ focus_tree = {
 			790 = { set_demilitarized_zone = no }
 			174 = { set_demilitarized_zone = no }
 			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = CST_industrial_1
+		icon = GFX_goal_generic_industry
+		cost = 3.0
+
+		relative_position_id = CST_demilitarize_border
+
+		x = -4
+		y = 1
+
+		prerequisite = { focus = CST_demilitarize_border }
+		completion_reward = {
+			# Activa decisiones que no existen todavia
+			add_political_power = 200
+		}
+	}
+
+	focus = {
+		id = CST_industrial_2
+		icon = GFX_goal_generic_industry
+		cost = 3.0
+
+		relative_position_id = CST_industrial_1
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = CST_industrial_1 }
+		completion_reward = {
+			add_ideas = { CST_reconstruction_bonus }
+		}
+	}
+
+	focus = {
+		id = CST_industrial_3
+		icon = GFX_goal_generic_industry
+		cost = 3.0
+
+		relative_position_id = CST_industrial_2
+
+		x = -2
+		y = 1
+
+		prerequisite = { focus = CST_industrial_2 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			remove_ideas = { CST_destroyed_country_2 }	
+		}
+	}
+
+	focus = {
+		id = CST_industrial_economia_1
+		icon = GFX_goal_generic_construction
+		cost = 3.0
+
+		relative_position_id = CST_industrial_1
+
+		x = 2
+		y = 2
+
+		prerequisite = { 
+			focus = CST_economia_1 
+			focus = CST_industrial_1
+		}
+		completion_reward = {
+			add_ideas = { CST_research_bonus_1 }
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = CST_industrial_economia_2
+		icon = GFX_goal_generic_construction
+		cost = 3.0
+
+		relative_position_id = CST_industrial_economia_1
+
+		x = 0
+		y = 2
+
+		prerequisite = { focus = CST_industrial_economia_1 }
+		completion_reward = {
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = CST_research_bonus_1
+				add_idea = CST_research_bonus_2
+			}
+		}
+	}
+
+	focus = {
+		id = CST_economia_1
+		icon = GFX_goal_generic_construction
+		cost = 3.0
+
+		relative_position_id = CST_demilitarize_border
+
+		x = 0
+		y = 2
+
+		prerequisite = { focus = CST_demilitarize_border }
+		completion_reward = {
+			add_political_power = 100
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CST_economia_2
+		icon = GFX_goal_generic_construction
+		cost = 3.0
+
+		relative_position_id = CST_economia_1
+
+		x = 0
+		y = 2
+
+		prerequisite = { focus = CST_economia_1 }
+		completion_reward = {
+			add_ideas = { CST_economic_development }
+			remove_ideas = {
+				CST_reclutable_factor
+				CST_population_down_1
+			}
+		}
+	}
+
+	focus = {
+		id = CST_militar_1
+		icon = GFX_goal_generic_military_sphere
+		cost = 3.0
+
+		relative_position_id = CST_demilitarize_border
+
+		x = 6
+		y = 1
+
+		prerequisite = { focus = CST_demilitarize_border }
+		completion_reward = {
+			army_experience = 25
+			naval_experience = 25
+			air_experience = 25
+			add_timed_idea = {
+				idea = CST_military_development
+				days = 180
+			}
+		}
+	}
+
+	focus = {
+		id = CST_militar_naval_1
+		icon = GFX_goal_generic_naval_effort
+		cost = 3.0
+
+		relative_position_id = CST_militar_1
+
+		x = -3
+		y = 1
+
+		prerequisite = { focus = CST_militar_1 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = naval_equipment
+			}
+			790 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CST_militar_naval_2
+		icon = GFX_goal_generic_naval_effort
+		cost = 3.0
+
+		relative_position_id = CST_militar_naval_1
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = CST_militar_naval_1 }
+		completion_reward = {
+			set_technology = {
+				early_ship_hull_heavy = 1  
+				early_ship_hull_cruiser = 1
+				early_ship_hull_light = 1
+				early_ship_hull_carrier = 1
+				basic_battery = 1
+				sonar = 1
+			}
+			
+			create_equipment_variant = {
+				name = "Custom Heavy Ship"
+				type = ship_hull_heavy_1
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_anti_air_slot = empty
+					fixed_ship_fire_control_system_slot = empty
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+					front_1_custom_slot = empty
+					mid_1_custom_slot = ship_secondaries_1
+					mid_2_custom_slot = empty
+					rear_1_custom_slot = ship_heavy_battery_1
+				}
+			}
+
+			create_equipment_variant = {
+				name = "Custom Cruiser"
+				type = ship_hull_cruiser_1
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_medium_battery_1
+					fixed_ship_fire_control_system_slot = ship_sonar_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = cruiser_ship_engine_1
+					fixed_ship_armor_slot = ship_armor_cruiser_1
+					fixed_ship_secondaries_slot = empty
+					mid_1_custom_slot = empty
+					mid_2_custom_slot = empty
+					rear_1_custom_slot = empty
+				}
+			}
+
+			create_equipment_variant = {
+				name = "Custom Destroyer"
+				type = ship_hull_light_1
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_1
+					fixed_ship_anti_air_slot = empty
+					fixed_ship_fire_control_system_slot = empty
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_1
+					fixed_ship_torpedo_slot = empty
+					mid_1_custom_slot = empty
+					rear_1_custom_slot = empty
+				}
+			}
+
+			create_equipment_variant = {
+				name = "Custom Carrier"
+				type = ship_hull_carrier_conversion_bb
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = empty
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = empty
+					mid_1_custom_slot = empty
+				}
+			}
+
+			load_oob = "CST_Naval"
+		}
+	}
+
+	focus = {
+		id = CST_militar_naval_3
+		icon = GFX_goal_generic_naval_effort
+		cost = 3.0
+
+		relative_position_id = CST_militar_naval_2
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = CST_militar_naval_2 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = cl_tech
+			}
 		}
 	}
 }
