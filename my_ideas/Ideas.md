@@ -40,20 +40,10 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
 
   - **Condición primaria**: estabilidad ≤ 15% → vasallización.  
 
-### Preparación de guerra
-
-- Este foco depende de "Confederación Ibérica"
-- Dará un poco de bufo a la producción de barcos y tanques, dará un bufo al manpower conseguido y un poco de research speed para lo militar
-
 ### Comunidad Valenciana
 
 - Este foco depende de "Mas Influencia"
 - Da dos decisiones para llegar a integrar Valencia y Castellón, ya sea como vasallo o anexarlos, depende de lo que la ia decida, da core si se anexa
-
-### Integración ibérica
-
-- Este foco depende de "Fragmentar Castilla"
-- Más poder politico, más apoyo a los paises de la confederación, una idea que les de un pequeño bufo a la estabilidad.
 
 ### Guerra con Castilla
 
@@ -62,27 +52,10 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
 
 ## ERRORES A SOLUCIONAR
 
-- **Stocks**:
-  - Arreglar los stocks al iniciar la guerra de independecia, tanques, equipo de infanteria, motorizada, dar aviones...
 - **Decisiones**
   - Arreglar las decisiones, ahora mismo siempre se pueden hacer aunque los eventos ya han pasado, hay que añadir al visible y available.
-- **Eventos**
-  - Arreglar los eventos, ahora mismo los eventos que lanza a los paises la guerra de independecia no van, sen_volunteers o dar equipamiento.
-- **Arnarquistas**
-  - Arreglar que provincias obtiene, ahora solo coge tres y son Aragon, Barcelona y la otra entre el resto de la comunidad valenciana o cataluña, tiene que obtener toda cataluña minimo.
-- **Guerra civil española**
-  - Chetar un poco más a la españa nacionalista que con los cambios de las provincias la republica está demasiado fuerte.
 
 ## TODO
-- **Banderas**:
-  - Condados de cataluña
-  - Castilla
-  - Aragon
-  - Valencia
-  - Mallorca
-  - Menorca
-  - Murcia
-  - Reinos dentro de castilla
 - **Focos Alcoy**
   - Terminar con los focos simples
   - Hacer el foco de guerra con castilla
@@ -110,32 +83,3 @@ El objetivo inicial del país será afianzarse frente a la guerra civil español
     - Restaurar la casa real portuguesa.
     - Buscar una unión matrimonial con Portugal.
     - Sentar a un miembro de la monarquia portuguesa en el trono de castilla.
-    - **Focos**
-      - El primer foco de todos lo que añadirá es una idea que será cambiar la idea de destruidos por las guerras a recuperacion tras guerra de independencia.
-      - El segundo foco será remilitarizar las zonas desmilitarizadas.
-      - Se dividirá en tres ramas, Industria, Economía y Militar.
-        - **Rama Industria**:
-          - **CST_industrial_1**: Activa decisiones para recuperarse:
-            - ***WIP***
-          - **CST_industrial_2**: Idea que da bono a reparaciones y construccion.
-          - **CST_industrial_3**: Da 5 fábricas entre civiles y militares y quita el debuff de las fábricas y la construcción.
-          - Compartido con Economia: 
-            - **CST_industrial_economia_1**: Da una idea que da research speed y bono de investigaciones a la parte de Industria.
-            - **CST_industrial_economia_2**: Mejora la idea subiendo el research speed y añadiendo monthly_population.
-        - **Rama Economía**:
-          - **CST_economia_1**: Construye infraestructura en 4 estados y da 100 de poder politico.
-          - **CST_economia_2**: Idea que da bono a la población reclutable y elimina el debuff de poblacion mensual y reclutable.
-        - **Rama Militar**: 
-          - **CST_militar_1**: Dar 25 de experiencia a army, naval y air, esta se divide en 3 ramas, Naval, Aire y Tierra.
-          - **Naval**:
-            - **CST_militar_naval_1**: Bono a las investigaciones de barcos y construye un astillero.
-            - **CST_militar_naval_2**: Crea una pequeña flota llamada "Fuerza de tarea Alfonso X".
-            - **CST_militar_naval_3**: Construye astilleros y bases navales.
-          - **Aire**:
-            - **CST_militar_aire_1**: Bono a las investigaciones de aviones.
-            - **CST_militar_aire_2**: Crea 100 aviones.
-            - **CST_militar_aire_3**: Construye 4 bases aereas y da bono a los aviones.
-          - **Tierra**:
-            - **CST_militar_tierra_1**: Bono a las investigaciones de tierra, 1 para infanteria, 1 para motorizada, 1 para tanques y una para artilleria.
-            - **CST_militar_tierra_2**: Crea 5 divisiones de una plantilla buena.
-            - **CST_militar_tierra_3**: Construye fuertes en algunas fronteras y quita el debuffo de menos ataque y da uno que da bono al ataque y denfensa.

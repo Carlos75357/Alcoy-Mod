@@ -14,7 +14,12 @@ country_event = {
 		name = alcoy_confederation.1.a
 		ai_chance = { factor = 50 }
 		
-		send_volunteers_to = ALC
+		ALC = {
+			add_manpower = 5000
+			army_experience = 10
+			country_event = { id = alcoy_confederation.50 }
+		}
+		add_manpower = -5000
 		add_political_power = -50
 		add_opinion_modifier = {
 			target = ALC
@@ -36,6 +41,7 @@ country_event = {
 				type = artillery_equipment
 				amount = 200
 			}
+			country_event = { id = alcoy_confederation.51 }
 		}
 		add_political_power = -25
 		add_opinion_modifier = {
@@ -51,6 +57,7 @@ country_event = {
 		
 		ALC = {
 			add_manpower = 5000
+			country_event = { id = alcoy_confederation.52 }
 		}
 		add_manpower = -5000
 		add_political_power = -25
@@ -65,6 +72,7 @@ country_event = {
 		name = alcoy_confederation.1.e
 		ai_chance = { factor = 10 }
 		add_political_power = 25
+		ALC = { country_event = { id = alcoy_confederation.53 } }
 	}
 }
 
@@ -82,7 +90,12 @@ country_event = {
 		name = alcoy_confederation.2.a
 		ai_chance = { factor = 20 }
 		
-		send_volunteers_to = ALC
+		ALC = {
+			add_manpower = 5000
+			army_experience = 10
+			country_event = { id = alcoy_confederation.50 }
+		}
+		add_manpower = -5000
 		add_political_power = -50
 		add_opinion_modifier = {
 			target = ALC
@@ -104,6 +117,7 @@ country_event = {
 				type = artillery_equipment
 				amount = 300
 			}
+			country_event = { id = alcoy_confederation.51 }
 		}
 		add_political_power = -25
 		add_opinion_modifier = {
@@ -119,6 +133,7 @@ country_event = {
 		
 		ALC = {
 			add_manpower = 3000
+			country_event = { id = alcoy_confederation.52 }
 		}
 		add_manpower = -3000
 		add_political_power = -25
@@ -133,6 +148,7 @@ country_event = {
 		name = alcoy_confederation.2.e
 		ai_chance = { factor = 15 }
 		add_political_power = 25
+		ALC = { country_event = { id = alcoy_confederation.53 } }
 	}
 }
 
@@ -150,7 +166,12 @@ country_event = {
 		name = alcoy_confederation.3.a
 		ai_chance = { factor = 15 }
 		
-		send_volunteers_to = ALC
+		ALC = {
+			add_manpower = 5000
+			army_experience = 10
+			country_event = { id = alcoy_confederation.50 }
+		}
+		add_manpower = -5000
 		add_political_power = -50
 		add_opinion_modifier = {
 			target = ALC
@@ -172,6 +193,7 @@ country_event = {
 				type = artillery_equipment
 				amount = 250
 			}
+			country_event = { id = alcoy_confederation.51 }
 		}
 		add_political_power = -25
 		add_opinion_modifier = {
@@ -187,6 +209,7 @@ country_event = {
 		
 		ALC = {
 			add_manpower = 2000
+			country_event = { id = alcoy_confederation.52 }
 		}
 		add_manpower = -2000
 		add_political_power = -25
@@ -201,6 +224,7 @@ country_event = {
 		name = alcoy_confederation.3.e
 		ai_chance = { factor = 15 }
 		add_political_power = 25
+		ALC = { country_event = { id = alcoy_confederation.53 } }
 	}
 }
 
@@ -218,7 +242,12 @@ country_event = {
 		name = alcoy_confederation.4.a
 		ai_chance = { factor = 20 }
 		
-		send_volunteers_to = ALC
+		ALC = {
+			add_manpower = 5000
+			army_experience = 10
+			country_event = { id = alcoy_confederation.50 }
+		}
+		add_manpower = -5000
 		add_political_power = -50
 		add_opinion_modifier = {
 			target = ALC
@@ -236,6 +265,7 @@ country_event = {
 				type = infantry_equipment
 				amount = 1500
 			}
+			country_event = { id = alcoy_confederation.51 }
 		}
 		add_political_power = -25
 		add_opinion_modifier = {
@@ -251,6 +281,7 @@ country_event = {
 		
 		ALC = {
 			add_manpower = 8000
+			country_event = { id = alcoy_confederation.52 }
 		}
 		add_manpower = -8000
 		add_political_power = -25
@@ -265,6 +296,7 @@ country_event = {
 		name = alcoy_confederation.4.e
 		ai_chance = { factor = 15 }
 		add_political_power = 25
+		ALC = { country_event = { id = alcoy_confederation.53 } }
 	}
 }
 
@@ -282,7 +314,12 @@ country_event = {
 		name = alcoy_confederation.5.a
 		ai_chance = { factor = 20 }
 		
-		send_volunteers_to = ALC
+		ALC = {
+			add_manpower = 5000
+			army_experience = 10
+			country_event = { id = alcoy_confederation.50 }
+		}
+		add_manpower = -5000
 		add_political_power = -50
 		add_opinion_modifier = {
 			target = ALC
@@ -300,6 +337,7 @@ country_event = {
 				type = infantry_equipment
 				amount = 1000
 			}
+			country_event = { id = alcoy_confederation.51 }
 		}
 		add_political_power = -25
 		add_opinion_modifier = {
@@ -315,6 +353,7 @@ country_event = {
 		
 		ALC = {
 			add_manpower = 5000
+			country_event = { id = alcoy_confederation.52 }
 		}
 		add_manpower = -5000
 		add_political_power = -25
@@ -329,6 +368,7 @@ country_event = {
 		name = alcoy_confederation.5.e
 		ai_chance = { factor = 15 }
 		add_political_power = 25
+		ALC = { country_event = { id = alcoy_confederation.53 } }
 	}
 }
 
@@ -346,7 +386,12 @@ country_event = {
 		name = alcoy_confederation.6.a
 		ai_chance = { factor = 20 }
 		
-		send_volunteers_to = ALC
+		ALC = {
+			add_manpower = 5000
+			army_experience = 10
+			country_event = { id = alcoy_confederation.50 }
+		}
+		add_manpower = -5000
 		add_political_power = -50
 		add_opinion_modifier = {
 			target = ALC
@@ -364,6 +409,7 @@ country_event = {
 				type = infantry_equipment
 				amount = 1500
 			}
+			country_event = { id = alcoy_confederation.51 }
 		}
 		add_political_power = -25
 		add_opinion_modifier = {
@@ -379,6 +425,7 @@ country_event = {
 		
 		ALC = {
 			add_manpower = 7000
+			country_event = { id = alcoy_confederation.52 }
 		}
 		add_manpower = -7000
 		add_political_power = -25
@@ -393,6 +440,7 @@ country_event = {
 		name = alcoy_confederation.6.e
 		ai_chance = { factor = 15 }
 		add_political_power = 25
+		ALC = { country_event = { id = alcoy_confederation.53 } }
 	}
 }
 
@@ -410,7 +458,12 @@ country_event = {
 		name = alcoy_confederation.7.a
 		ai_chance = { factor = 30 }
 		
-		send_volunteers_to = ALC
+		ALC = {
+			add_manpower = 5000
+			army_experience = 10
+			country_event = { id = alcoy_confederation.50 }
+		}
+		add_manpower = -5000
 		add_political_power = -50
 		add_opinion_modifier = {
 			target = ALC
@@ -428,6 +481,7 @@ country_event = {
 				type = infantry_equipment
 				amount = 2000
 			}
+			country_event = { id = alcoy_confederation.51 }
 		}
 		add_political_power = -25
 		add_opinion_modifier = {
@@ -443,6 +497,7 @@ country_event = {
 		
 		ALC = {
 			add_manpower = 5000
+			country_event = { id = alcoy_confederation.52 }
 		}
 		add_manpower = -5000
 		add_political_power = -25
@@ -457,6 +512,7 @@ country_event = {
 		name = alcoy_confederation.7.e
 		ai_chance = { factor = 15 }
 		add_political_power = 25
+		ALC = { country_event = { id = alcoy_confederation.53 } }
 	}
 }
 
@@ -507,179 +563,116 @@ country_event = {
 	}
 }
 
-# Evento de victoria y paz scripteada
+# Evento de victoria - Notificación para Alcoy (triggered por on_actions)
 country_event = {
-	id = alcoy_confederation.100
-	title = alcoy_confederation.100.t
-	desc = alcoy_confederation.100.d
+	id = alcoy_confederation.101
+	title = alcoy_confederation.101.t
+	desc = alcoy_confederation.101.d
 	picture = GFX_report_event_generic_sign_treaty2
 	
-	fire_only_once = yes
-	is_triggered_only = no
+	is_triggered_only = yes
 	
-	trigger = {
-		has_global_flag = mediterranean_confederation_war
-		SPR = {
+	option = {
+		name = alcoy_confederation.101.a
+		
+		# Evento para formar la Confederación Ibérica
+		country_event = { id = alcoy_confederation.8 days = 3 }
+	}
+}
+
+# News Event - La Confederación Mediterránea derrota a España
+news_event = {
+	id = alcoy_confederation.102
+	title = alcoy_confederation.102.t
+	desc = alcoy_confederation.102.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = alcoy_confederation.102.a
+		trigger = {
 			OR = {
-				has_capitulated = yes
-				surrender_progress > 0.8
-				exists = no
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	immediate = {
-		# 🔴 FIN REAL DE LA GUERRA (ejecuta SOLO el vencedor)
-		ALC = {
-			end_war = {
-				target = SPR
-				result = victory
+				original_tag = ALC
+				is_in_faction_with = ALC
 			}
 		}
 	}
 	
 	option = {
-		name = alcoy_confederation.100.a
-		
-		# ===============================
-		# REDISTRIBUCIÓN TERRITORIAL
-		# ===============================
-		
-		# Murcia obtiene Albacete (1052)
-		if = {
-			limit = { MUR = { exists = yes } }
-			MUR = { transfer_state = 1052 }
-		}
-		
-		# Alcoy obtiene estado 783
-		ALC = { transfer_state = 783 }
-		
-		# ===============================
-		# CREACIÓN DE NUEVOS ESTADOS
-		# ===============================
-		
-		# Aragón (166, 794)
-		release = ARA
-		ARA = {
-			transfer_state = 166
-			transfer_state = 794
-			add_state_core = 166
-			add_state_core = 794
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
+		name = alcoy_confederation.102.b
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = ALC
+					is_in_faction_with = ALC
+				}
 			}
 		}
-		add_to_faction = ARA
-		
-		# País Vasco (792, 172)
-		release = NAV
-		NAV = {
-			transfer_state = 792
-			transfer_state = 172
-			add_state_core = 792
-			add_state_core = 172
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
-		}
-		add_to_faction = NAV
-		
-		# Granada (173)
-		release = ADU
-		ADU = {
-			transfer_state = 173
-			add_state_core = 173
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
-		}
-		add_to_faction = ADU
-		
-		# Galicia (171)
-		release = GLC
-		GLC = {
-			transfer_state = 171
-			add_state_core = 171
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
-		}
-		add_to_faction = GLC
-		
-		# Sáhara Occidental (699)
-		release = WES
-		WES = {
-			transfer_state = 699
-			add_state_core = 699
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
-		}
-		add_to_faction = WES
-		
-		# Guinea Ecuatorial (297)
-		release = EQG
-		EQG = {
-			transfer_state = 297
-			add_state_core = 297
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
-		}
-		add_to_faction = EQG
-		
-		# ===============================
-		# ZONAS DESMILITARIZADAS
-		# ===============================
-		
-		169 = { set_demilitarized_zone = yes } # Sevilla
-		789 = { set_demilitarized_zone = yes } # Córdoba
-		175 = { set_demilitarized_zone = yes } # Ciudad Real
-		793 = { set_demilitarized_zone = yes } # Guadalajara
-		176 = { set_demilitarized_zone = yes } # Burgos
-		790 = { set_demilitarized_zone = yes } # Asturias
-		174 = { set_demilitarized_zone = yes } # León
-		
-		# ===============================
-		# POSTGUERRA - España desaparece, nace Corona de Castilla
-		# ===============================
-		
-		# CST hereda todos los estados restantes de España
-		every_state = {
-			limit = {
-				is_owned_by = SPR
-			}
-			CST = { transfer_state = PREV }
-		}
-		
-		# España es anexada (desaparece)
-		every_state = {
-			limit = {
-				is_core_of = SPR
-			}
-			add_core_of = CST
-		}
-		CST = {
-			annex_country = {
-				target = SPR
-				transfer_troops = yes
-			}
-		}
-		
-		clr_global_flag = mediterranean_confederation_war
-		set_global_flag = mediterranean_confederation_victory
-		
-		add_political_power = 200
-		add_stability = 0.15
+	}
+}
+
+# ============================================================================
+# EVENTOS DE NOTIFICACIÓN DE AYUDA PARA ALCOY
+# ============================================================================
+
+# Notificación: País envía voluntarios
+country_event = {
+	id = alcoy_confederation.50
+	title = alcoy_confederation.50.t
+	desc = alcoy_confederation.50.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = alcoy_confederation.50.a
+		add_war_support = 0.02
+	}
+}
+
+# Notificación: País envía equipamiento
+country_event = {
+	id = alcoy_confederation.51
+	title = alcoy_confederation.51.t
+	desc = alcoy_confederation.51.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = alcoy_confederation.51.a
+		add_war_support = 0.01
+	}
+}
+
+# Notificación: País envía manpower
+country_event = {
+	id = alcoy_confederation.52
+	title = alcoy_confederation.52.t
+	desc = alcoy_confederation.52.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = alcoy_confederation.52.a
+		add_war_support = 0.01
+	}
+}
+
+# Notificación: País rechaza ayudar
+country_event = {
+	id = alcoy_confederation.53
+	title = alcoy_confederation.53.t
+	desc = alcoy_confederation.53.d
+	picture = GFX_report_event_generic_diplomacy
+
+	is_triggered_only = yes
+
+	option = {
+		name = alcoy_confederation.53.a
+		add_stability = -0.01
 	}
 }

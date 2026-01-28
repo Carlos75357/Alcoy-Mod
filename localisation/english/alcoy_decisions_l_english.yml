@@ -95,3 +95,38 @@
  la_mancha_resistance_won_tooltip:0 "§RCastile has successfully resisted in La Mancha. We have lost all influence in the region.§!"
 
  ALC_fragment_castile_tooltip:0 "We begin our campaign to fragment Castile and gain influence in its regions."
+
+ # More Influence System - Iberian Confederation
+ alc_more_influence_decisions:0 "Influence over the Confederation"
+ alc_more_influence_decisions_desc:0 "§YInfluence System over the Iberian Confederation§!\n\nUse these decisions to increase your influence over allied countries in the confederation. When their stability falls below §R15%§!, you can vassalize them.\n\n§YNote:§! Countries can resist your influence by increasing their stability. If they reach §G90%§! stability, they will consolidate their power."
+
+ alc_increase_influence:0 "Increase Influence over [FROM.GetName]"
+ alc_increase_influence_desc:0 "Send agents and propaganda to [FROM.GetName] to weaken their government and increase our influence.\n\n§RWill reduce their stability by 8%.§!\n§YCurrent stability of [FROM.GetName]: [FROM.GetStability|%0]§!"
+
+ alc_economic_sabotage:0 "Economic Sabotage in [FROM.GetName]"
+ alc_economic_sabotage_desc:0 "Conduct economic sabotage operations in [FROM.GetName] to destabilize their government.\n\n§RWill reduce their stability by 12% and war support by 5%.§!\n§YOnly available if their stability is below 50%.§!"
+
+ alc_vassalize_country:0 "Vassalize [FROM.GetName]"
+ alc_vassalize_country_desc:0 "The government of [FROM.GetName] is so weakened that we can force their submission as a vassal state.\n\n§GConditions:§!\n- Stability of [FROM.GetName] < 16%\n- Military factories < 10\n- Army < 50,000 men"
+
+ alc_soft_diplomacy:0 "Soft Diplomacy with [FROM.GetName]"
+ alc_soft_diplomacy_desc:0 "Use subtle diplomatic channels to influence [FROM.GetName]. Less effective but improves relations.\n\n§RWill reduce their stability by 4%.§!\n§GWill improve relations.§!"
+
+ alc_influence_extra_effect_tt:0 "§RCountry very weakened: -2% additional stability§!"
+ ALC_more_influence_tooltip:0 "Unlocks decisions to increase your influence over Iberian Confederation countries and eventually vassalize them."
+
+ # Resistance Decisions for Confederation Countries
+ confederation_resist_influence_decisions:0 "Resist Alcoy's Influence"
+ confederation_resist_influence_decisions_desc:0 "§YResist Alcoy's Influence§!\n\nAlcoy is trying to weaken your government to turn you into a vassal state. Use these decisions to strengthen your position.\n\n§YYour current stability: [ROOT.GetStability|%0]§!\n\n§RDanger of vassalization if stability < 15%§!\n§GIf you reach 90% stability, you can consolidate your power.§!"
+
+ resist_alcoy_influence:0 "Resist Alcoy's Influence"
+ resist_alcoy_influence_desc:0 "Organize campaigns against Alcoy's propaganda and strengthen government support.\n\n§GWill increase stability by 8% and war support by 3%.§!"
+
+ strengthen_economy:0 "Strengthen the Economy"
+ strengthen_economy_desc:0 "Invest in the economy to resist economic sabotage and demonstrate the viability of the independent state.\n\n§GWill increase stability by 10%.§!\n§GWill build a civilian factory.§!"
+
+ national_unity_campaign:0 "National Unity Campaign"
+ national_unity_campaign_desc:0 "Launch a major national unity campaign to mobilize the population against foreign influence.\n\n§GWill increase stability by 20% and war support by 10%.§!\n§YCan only be used once.§!"
+
+ consolidate_power:0 "Consolidate Power"
+ consolidate_power_desc:0 "With such high stability, we can definitively consolidate our power and permanently reject Alcoy's ambitions.\n\n§GPermanently blocks vassalization.§!\n§YRequires stability > 85%.§!"

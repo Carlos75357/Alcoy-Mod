@@ -179,10 +179,15 @@ l_spanish:
  alcoy_confederation.7.c:0 "Enviar refuerzos de manpower"
  alcoy_confederation.7.e:0 "No intervenir"
  
- # Victory event
- alcoy_confederation.100.t:0 "¡Victoria! España Derrotada"
- alcoy_confederation.100.d:0 "España ha sido derrotada en la Guerra de Independencia. Los territorios se redistribuirán y múltiples nuevas naciones nacerán de las cenizas del imperio español."
- alcoy_confederation.100.a:0 "¡Una nueva era comienza!"
+ # Victory events (on_actions system)
+ alcoy_confederation.101.t:0 "¡Victoria Total!"
+ alcoy_confederation.101.d:0 "España ha capitulado. La guerra ha terminado y la Confederación Mediterránea ha triunfado. Los territorios han sido redistribuidos y múltiples nuevas naciones nacen de las cenizas del imperio español. Es hora de consolidar nuestra victoria y formar oficialmente la Confederación Ibérica."
+ alcoy_confederation.101.a:0 "¡Una nueva era comienza!"
+ 
+ alcoy_confederation.102.t:0 "España Capitula ante la Confederación"
+ alcoy_confederation.102.d:0 "En un giro histórico de los acontecimientos, España ha sido derrotada por la Confederación Mediterránea liderada por Alcoy. El antiguo reino se fragmenta en múltiples estados independientes. La Corona de Castilla es todo lo que queda del otrora poderoso imperio español."
+ alcoy_confederation.102.a:0 "¡Gloria a la Confederación!"
+ alcoy_confederation.102.b:0 "Interesante desarrollo..."
  
  # New countries
  ARA:0 "Aragón"

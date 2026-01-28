@@ -232,7 +232,7 @@ focus_tree = {
 		prerequisite = { focus = CST_demilitarize_border }
 		completion_reward = {
 			army_experience = 25
-			naval_experience = 25
+			navy_experience = 25
 			air_experience = 25
 			add_timed_idea = {
 				idea = CST_military_development

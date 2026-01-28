@@ -1,0 +1,164 @@
+on_actions = {
+
+	on_capitulation_immediate = {
+		effect = {
+			# ALC derrota a SPR en la guerra de la Confederación
+			if = {
+				limit = {
+					FROM = { original_tag = ALC }
+					ROOT = { original_tag = SPR }
+					has_global_flag = mediterranean_confederation_war
+				}
+				
+				# Paz blanca inmediata
+				ALC = { white_peace = SPR }
+				
+				# ===============================
+				# REDISTRIBUCIÓN TERRITORIAL
+				# ===============================
+				
+				# Murcia obtiene Albacete (1052)
+				if = {
+					limit = { MUR = { exists = yes } }
+					MUR = { transfer_state = 1052 }
+				}
+				
+				# Alcoy obtiene estado 783
+				ALC = { transfer_state = 783 }
+				
+				# ===============================
+				# CREACIÓN DE NUEVOS ESTADOS
+				# ===============================
+				
+				# Aragón (166, 794)
+				ALC = { release = ARA }
+				ARA = {
+					transfer_state = 166
+					transfer_state = 794
+					add_state_core = 166
+					add_state_core = 794
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				ALC = { add_to_faction = ARA }
+				
+				# País Vasco (792, 172)
+				ALC = { release = NAV }
+				NAV = {
+					transfer_state = 792
+					transfer_state = 172
+					add_state_core = 792
+					add_state_core = 172
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				ALC = { add_to_faction = NAV }
+				
+				# Granada (173)
+				ALC = { release = ADU }
+				ADU = {
+					transfer_state = 173
+					add_state_core = 173
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				ALC = { add_to_faction = ADU }
+				
+				# Galicia (171)
+				ALC = { release = GLC }
+				GLC = {
+					transfer_state = 171
+					add_state_core = 171
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				ALC = { add_to_faction = GLC }
+				
+				# Sáhara Occidental (699)
+				ALC = { release = WES }
+				WES = {
+					transfer_state = 699
+					add_state_core = 699
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+				}
+				ALC = { add_to_faction = WES }
+				
+				# Guinea Ecuatorial (297)
+				ALC = { release = EQG }
+				EQG = {
+					transfer_state = 297
+					add_state_core = 297
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				ALC = { add_to_faction = EQG }
+				
+				# ===============================
+				# ZONAS DESMILITARIZADAS
+				# ===============================
+				
+				169 = { set_demilitarized_zone = yes }
+				789 = { set_demilitarized_zone = yes }
+				175 = { set_demilitarized_zone = yes }
+				793 = { set_demilitarized_zone = yes }
+				176 = { set_demilitarized_zone = yes }
+				790 = { set_demilitarized_zone = yes }
+				174 = { set_demilitarized_zone = yes }
+				
+				# ===============================
+				# POSTGUERRA - España -> Corona de Castilla
+				# ===============================
+				
+				every_state = {
+					limit = {
+						is_owned_by = SPR
+					}
+					CST = { transfer_state = PREV }
+				}
+				
+				every_state = {
+					limit = {
+						is_core_of = SPR
+					}
+					add_core_of = CST
+				}
+				
+				CST = {
+					annex_country = {
+						target = SPR
+						transfer_troops = yes
+					}
+					set_equipment_fraction = 0
+				}
+				
+				# Limpiar flags
+				clr_global_flag = mediterranean_confederation_war
+				set_global_flag = mediterranean_confederation_victory
+				
+				# Recompensas para Alcoy
+				ALC = {
+					add_political_power = 200
+					add_stability = 0.15
+					country_event = { id = alcoy_confederation.101 days = 1 }
+				}
+				
+				# News event para el mundo
+				news_event = { id = alcoy_confederation.102 days = 2 }
+			}
+		}
+	}
+
+}

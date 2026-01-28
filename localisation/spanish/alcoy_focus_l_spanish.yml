@@ -27,3 +27,18 @@
  ALC_technical_training:0 "FormaciÃ³n TÃ©cnica"
  ALC_technical_training_desc:0 "Estableciendo programas de formaciÃ³n tÃ©cnica, podemos mejorar las habilidades de nuestra fuerza laboral y preparar personal especializado para nuestro ejÃ©rcito."
  underground_shelters_tooltip:0 "Â§GMejora la defensa contra grandes potencias y la velocidad de construcciÃ³n de bÃºnkeresÂ§!"
+
+ # Focos de Integración Ibérica
+ ALC_more_influence:0 "Más Influencia"
+ ALC_more_influence_desc:0 "Debemos aumentar nuestra influencia sobre los países de la Confederación Ibérica para consolidar nuestro liderazgo."
+ 
+ ALC_valencian_comunity:0 "Comunidad Valenciana"
+ ALC_valencian_comunity_desc:0 "Valencia y Castellón comparten nuestra cultura mediterránea. Es hora de integrarlos completamente en nuestra esfera de influencia."
+ 
+ ALC_iberian_integration:0 "Integración Ibérica"
+ ALC_iberian_integration_desc:0 "Con la Confederación Ibérica consolidada, debemos prepararnos para la integración completa de todos los territorios ibéricos bajo nuestro liderazgo."
+ 
+ ALC_war_for_castile:0 "Guerra con Castilla"
+ ALC_war_for_castile_desc:0 "Ha llegado el momento de enfrentarnos a Castilla. Los territorios que hemos logrado influenciar se levantarán como nuestros vasallos y nos uniremos en una coalición para fragmentar definitivamente el poder castellano."
+ 
+ ALC_war_for_castile_tooltip:0 "§YLos países que hayan conseguido cores en territorios castellanos se revelarán como vasallos de Alcoy:§!\n\n- §YAndalucía§! (si tiene core en Córdoba, Sevilla o Cádiz)\n- §YLeón§! (si tiene core en León, Salamanca o Zamora)\n- §YAsturias§! (si tiene core en Asturias)\n- §YCastilla Vieja§! (si tiene core en Valladolid o Burgos)\n- §YCastilla Nueva§! (si tiene core en Guadalajara)\n- §YLa Mancha§! (si tiene core en Ciudad Real)\n\n§RCastilla mantendrá Madrid en todos los casos.§!\n\n§GSe declarará la guerra a Castilla con todos los vasallos unidos.§!"

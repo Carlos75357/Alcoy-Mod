@@ -26,3 +26,52 @@
  alcoy_baleares.1.d:0 "As the Spanish Civil War erupts across the mainland, the strategic Balearic Islands have become a focal point for both sides. While Mallorca has fallen under Nationalist control, the islands of Menorca and Ibiza have remained loyal to the Republic. This division of the archipelago will have significant implications for naval control in the Mediterranean."
  alcoy_baleares.1.a:0 "The islands choose their sides."
  alcoy_baleares_distribution_tooltip:0 "Mallorca is controlled by the Nationalists, while Menorca and Ibiza remain with the Republicans."
+
+ # Alcoy Influence Events over the Iberian Confederation
+ alc_influence.1.t:0 "Alcoy's Propaganda"
+ alc_influence.1.desc:0 "Alcoy's agents have been spreading propaganda in our country, undermining confidence in our government. Pamphlets and messages appear everywhere suggesting that our nation would be better off under Alcoy's protection. This campaign is affecting the morale of the people."
+ alc_influence.1.a:0 "Ignore the propaganda"
+ alc_influence.1.b:0 "Launch a counter-campaign"
+
+ alc_influence.2.t:0 "Economic Sabotage Detected"
+ alc_influence.2.desc:0 "Our intelligence services have discovered an economic sabotage network operating in our territory. Factories have suffered 'accidents', shipments have disappeared, and rumors about economic instability are spreading. Everything points to Alcoy's agents trying to weaken our economy."
+ alc_influence.2.a:0 "We don't have resources to investigate"
+ alc_influence.2.b:0 "Invest in counter-espionage"
+
+ alc_influence.10.t:0 "Alcoy's Ultimatum"
+ alc_influence.10.desc:0 "The government of Alcoy has sent us an ultimatum. Facing the severe crisis our government is going through, they offer us 'protection' as a vassal state of the Iberian Confederation. Accepting would mean losing our sovereignty, but refusing could have serious consequences."
+ alc_influence.10.a:0 "We accept Alcoy's protection"
+ alc_influence.10.b:0 "We reject the ultimatum!"
+
+ alc_influence.11.t:0 "Ultimatum Rejected"
+ alc_influence.11.desc:0 "[FROM.GetName] has rejected our vassalization ultimatum and has left the Iberian Confederation. Although this is a diplomatic setback, the country is severely weakened and may not survive on its own."
+ alc_influence.11.a:0 "So be it"
+
+ alc_influence.20.t:0 "National Unity!"
+ alc_influence.20.desc:0 "Our national unity campaign has been a resounding success. The people have united against foreign interference and support for the government has increased significantly. Alcoy's agents no longer find receptive ears for their propaganda."
+ alc_influence.20.a:0 "United we are stronger!"
+
+ alc_influence.21.t:0 "Power Consolidated"
+ alc_influence.21.desc:0 "We have managed to consolidate our power and completely stabilize our government. Alcoy's ambitions over our country have been definitively frustrated. We are a strong and independent state within the Confederation."
+ alc_influence.21.a:0 "No one will subjugate us"
+
+ alc_influence.22.t:0 "[FROM.GetName] Consolidates Power"
+ alc_influence.22.desc:0 "[FROM.GetName] has managed to consolidate their power and definitively resist our influence. We will no longer be able to attempt to turn them into a vassal state. We will have to deal with them as equals within the Confederation."
+ alc_influence.22.a:0 "A setback for our plans"
+
+ # Aid notification events
+ alcoy_confederation.50.t:0 "[FROM.GetName] sends volunteers!"
+ alcoy_confederation.50.d:0 "[FROM.GetName] has responded to our call for help by sending experienced volunteers to reinforce our ranks. These brave men and women will fight alongside us for the freedom of our nation."
+ alcoy_confederation.50.a:0 "Welcome, brothers!"
+
+ alcoy_confederation.51.t:0 "[FROM.GetName] sends equipment"
+ alcoy_confederation.51.d:0 "[FROM.GetName] has decided to support our cause by sending military equipment. Rifles, artillery, and supplies that will be vital for our defense. Their generosity will not be forgotten."
+ alcoy_confederation.51.a:0 "Every rifle counts"
+
+ alcoy_confederation.52.t:0 "[FROM.GetName] sends reinforcements"
+ alcoy_confederation.52.d:0 "[FROM.GetName] has sent men to reinforce our manpower. These new recruits will strengthen our divisions and give us more capacity to resist."
+ alcoy_confederation.52.a:0 "Welcome to the fight"
+
+ alcoy_confederation.53.t:0 "[FROM.GetName] refuses to help"
+ alcoy_confederation.53.d:0 "[FROM.GetName] has decided not to get involved in our conflict. We will have to seek support elsewhere or rely on our own strength."
+ alcoy_confederation.53.a:0 "We will count on ourselves"

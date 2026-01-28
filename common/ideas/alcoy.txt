@@ -724,7 +724,9 @@ ideas = {
 				always = yes
 			}
 
-			visible = yes
+			visible = {
+				always = yes
+			}
 
 			removal_cost = -1
 

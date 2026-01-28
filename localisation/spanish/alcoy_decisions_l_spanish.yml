@@ -88,3 +88,62 @@
  la_mancha_resistance_won_tooltip:0 "§RCastilla ha resistido con éxito en La Mancha. Hemos perdido toda influencia en la región.§!"
 
  ALC_fragment_castile_tooltip:0 "Comenzamos nuestra campaña para fragmentar Castilla y ganar influencia en sus regiones."
+
+ # Sistema de Más Influencia - Confederación Ibérica
+ alc_more_influence_decisions:0 "Influencia sobre la Confederación"
+ alc_more_influence_decisions_desc:0 "§YSistema de Influencia sobre la Confederación Ibérica§!\n\nUtiliza estas decisiones para aumentar tu influencia sobre los países aliados de la confederación. Cuando su estabilidad caiga por debajo del §R15%§!, podrás vasallizarlos.\n\n§YNota:§! Los países pueden resistir tu influencia aumentando su estabilidad. Si alcanzan el §G90%§! de estabilidad, consolidarán su poder."
+
+ alc_increase_influence:0 "Aumentar Influencia sobre [FROM.GetName]"
+ alc_increase_influence_desc:0 "Enviar agentes y propaganda a [FROM.GetName] para debilitar su gobierno y aumentar nuestra influencia.\n\n§RReducirá su estabilidad en un 8%.§!\n§YEstabilidad actual de [FROM.GetName]: [FROM.GetStability|%0]§!"
+
+ alc_economic_sabotage:0 "Sabotaje Económico en [FROM.GetName]"
+ alc_economic_sabotage_desc:0 "Realizar operaciones de sabotaje económico en [FROM.GetName] para desestabilizar su gobierno.\n\n§RReducirá su estabilidad en un 12% y apoyo bélico en un 5%.§!\n§YSolo disponible si su estabilidad está por debajo del 50%.§!"
+
+ alc_vassalize_country:0 "Vasallizar a [FROM.GetName]"
+ alc_vassalize_country_desc:0 "El gobierno de [FROM.GetName] está tan debilitado que podemos forzar su sumisión como estado vasallo.\n\n§GCondiciones:§!\n- Estabilidad de [FROM.GetName] < 16%\n- Fábricas militares < 10\n- Ejército < 50,000 hombres"
+
+ alc_soft_diplomacy:0 "Diplomacia Suave con [FROM.GetName]"
+ alc_soft_diplomacy_desc:0 "Usar canales diplomáticos sutiles para influenciar a [FROM.GetName]. Menos efectivo pero mejora las relaciones.\n\n§RReducirá su estabilidad en un 4%.§!\n§GMejorará las relaciones.§!"
+
+ alc_influence_extra_effect_tt:0 "§RPaís muy debilitado: -2% estabilidad adicional§!"
+ ALC_more_influence_tooltip:0 "Desbloquea decisiones para aumentar tu influencia sobre los países de la Confederación Ibérica y eventualmente vasallizarlos."
+
+ # Decisiones de Resistencia para los países de la Confederación
+ confederation_resist_influence_decisions:0 "Resistir Influencia de Alcoy"
+ confederation_resist_influence_decisions_desc:0 "§YResistir la Influencia de Alcoy§!\n\nAlcoy está intentando debilitar tu gobierno para convertirte en un estado vasallo. Usa estas decisiones para fortalecer tu posición.\n\n§YTu estabilidad actual: [ROOT.GetStability|%0]§!\n\n§RPeligro de vasallización si estabilidad < 15%§!\n§GSi alcanzas 90% de estabilidad, podrás consolidar tu poder.§!"
+
+ resist_alcoy_influence:0 "Resistir Influencia de Alcoy"
+ resist_alcoy_influence_desc:0 "Organizar campañas contra la propaganda de Alcoy y fortalecer el apoyo al gobierno.\n\n§GAumentará estabilidad en un 8% y apoyo bélico en un 3%.§!"
+
+ strengthen_economy:0 "Fortalecer la Economía"
+ strengthen_economy_desc:0 "Invertir en la economía para resistir el sabotaje económico y demostrar la viabilidad del estado independiente.\n\n§GAumentará estabilidad en un 10%.§!\n§GConstruirá una fábrica civil.§!"
+
+ national_unity_campaign:0 "Campaña de Unidad Nacional"
+ national_unity_campaign_desc:0 "Lanzar una gran campaña de unidad nacional para movilizar a la población contra la influencia extranjera.\n\n§GAumentará estabilidad en un 20% y apoyo bélico en un 10%.§!\n§YSolo puede usarse una vez.§!"
+
+ consolidate_power:0 "Consolidar el Poder"
+ consolidate_power_desc:0 "Con una estabilidad tan alta, podemos consolidar definitivamente nuestro poder y rechazar permanentemente las ambiciones de Alcoy.\n\n§GBloquea permanentemente la vasallización.§!\n§YRequiere estabilidad > 85%.§!"
+
+ # Integración de la Comunidad Valenciana
+ alc_valencian_integration_category:0 "Integración Valenciana"
+ alc_valencian_integration_category_desc:0 "§YIntegración de Valencia y Castellón§!\n\nPodemos integrar estos territorios valencianos mediante dos vías:\n§Y1.§! §GAneción directa§! - Da cores pero requiere estabilidad muy baja\n§Y2.§! §GVasallaje§! - Los convierte en estados sujetos\n\nLa IA decidirá qué opción tomar según las circunstancias."
+
+ alc_influence_valencia:0 "Aumentar Influencia sobre Valencia"
+ alc_influence_valencia_desc:0 "Enviar propaganda y agentes a Valencia para debilitar su gobierno y preparar su integración.\n\n§RReducirá su estabilidad en un 10%.§!\n§YEstabilidad actual de Valencia: [VAL.GetStability|%0]§!"
+
+ alc_annex_valencia_state:0 "Anexar Valencia"
+ alc_annex_valencia_state_desc:0 "El gobierno valenciano está tan debilitado que podemos anexar directamente el territorio.\n\n§GDará cores en todos los estados valencianos.§!\n§GTransferirá todas las tropas.§!\n\n§YCondiciones:§!\n- Estabilidad < 25%\n- Fábricas militares < 8"
+
+ alc_vassalize_valencia:0 "Vasallizar Valencia"
+ alc_vassalize_valencia_desc:0 "Convertir Valencia en un estado vasallo bajo nuestra protección.\n\n§GValencia se convertirá en títere.§!\n§GMejorará las relaciones.§!\n\n§YCondiciones:§!\n- Estabilidad < 35%"
+
+ alc_influence_castellon:0 "Aumentar Influencia sobre Castellón"
+ alc_influence_castellon_desc:0 "Enviar propaganda y agentes a Castellón para debilitar su gobierno y preparar su integración.\n\n§RReducirá su estabilidad en un 10%.§!\n§YEstabilidad actual de Castellón: [CAS.GetStability|%0]§!"
+
+ alc_annex_castellon_state:0 "Anexar Castellón"
+ alc_annex_castellon_state_desc:0 "El gobierno de Castellón está tan debilitado que podemos anexar directamente el territorio.\n\n§GDará cores en todos los estados de Castellón.§!\n§GTransferirá todas las tropas.§!\n\n§YCondiciones:§!\n- Estabilidad < 25%\n- Fábricas militares < 5"
+
+ alc_vassalize_castellon:0 "Vasallizar Castellón"
+ alc_vassalize_castellon_desc:0 "Convertir Castellón en un estado vasallo bajo nuestra protección.\n\n§GCastellón se convertirá en títere.§!\n§GMejorará las relaciones.§!\n\n§YCondiciones:§!\n- Estabilidad < 35%"
+
+ ALC_valencian_comunity_tooltip:0 "§YDesbloquea decisiones para integrar Valencia y Castellón.§!\n\nPodrás elegir entre:\n- §GAneción directa§! (da cores)\n- §GVasallaje§! (los convierte en sujetos)"

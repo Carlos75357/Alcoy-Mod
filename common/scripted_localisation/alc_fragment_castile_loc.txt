@@ -1,7 +1,7 @@
 defined_text = {
     name = ALC_ANDALUCIA_INFLUENCE_LOC
     text = {
+        localization_key = ALC_ANDALUCIA_INFLUENCE_TEXT
         trigger = { always = yes }
-        localisation_key = ALC_ANDALUCIA_INFLUENCE_TEXT
     }
 }

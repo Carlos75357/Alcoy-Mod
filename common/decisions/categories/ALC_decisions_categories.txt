@@ -98,3 +98,32 @@ cst_resist_fragmentation_category = {
 
     visible_when_empty = yes
 }
+
+alc_more_influence_decisions = {
+    icon = GFX_decision_category_generic_propaganda
+    allowed = {
+        original_tag = ALC
+    }
+    visible = {
+        has_country_flag = more_influence
+    }
+    visible_when_empty = yes
+}
+
+confederation_resist_influence_decisions = {
+    icon = GFX_decision_category_generic_crisis
+    allowed = {
+        OR = {
+            is_in_faction_with = ALC
+            has_country_flag = power_consolidated
+        }
+        NOT = { original_tag = ALC }
+    }
+    visible = {
+        is_in_faction_with = ALC
+        NOT = { tag = ALC }
+        NOT = { is_subject_of = ALC }
+        ALC = { has_country_flag = more_influence }
+    }
+    visible_when_empty = yes
+}

@@ -1815,7 +1815,7 @@ focus = {
 					modifier = ALC_catching_up_allies_faction
 				}
 			}
-			set_flag = alcoy_wait_7
+			set_country_flag = alcoy_wait_7
 		}
 	}
 
@@ -1837,7 +1837,7 @@ focus = {
 		completion_reward = {
 			# Mantenerse neutral, +200 poder político
 			add_political_power = 200
-			set_flag = alcoy_wait_8
+			set_country_flag = alcoy_wait_8
 		}
 	}
 
@@ -1909,11 +1909,11 @@ focus = {
 			# Quitar international_isolation si se ha elegido el 7, reducirlo si se ha elegido el 8
 			add_stability = 0.1
 			if = {
-				ALC = { has_country_flag = alcoy_wait_7 }
+				limit = { has_country_flag = alcoy_wait_7 }
 				remove_ideas = ALC_international_political_isolation
 			}
 			if = {
-				ALC = { has_country_flag = alcoy_wait_8 }
+				limit = { has_country_flag = alcoy_wait_8 }
 				add_political_power = 50
 				swap_ideas = {
 					remove_idea = ALC_international_political_isolation
@@ -1982,7 +1982,7 @@ focus = {
 	focus = {
 		id = ALC_catalonia_independence
 		icon = GFX_goal_generic_military_deal
-		cost = 3.00
+		cost = 2.00
 		x = 96
 		y = 1
 
@@ -2006,7 +2006,7 @@ focus = {
 	focus = {
 		id = ALC_valencia_independence
 		icon = GFX_goal_generic_military_deal
-		cost = 3.00
+		cost = 2.00
 		x = 98
 		y = 1
 
@@ -2030,7 +2030,7 @@ focus = {
 	focus = {
 		id = ALC_castellon_independence
 		icon = GFX_goal_generic_military_deal
-		cost = 3.00
+		cost = 2.00
 		x = 102
 		y = 1
 
@@ -2054,7 +2054,7 @@ focus = {
 	focus = {
 		id = ALC_mallorca_independence
 		icon = GFX_goal_generic_military_deal
-		cost = 3.00
+		cost = 2.00
 		x = 104
 		y = 1
 
@@ -2078,7 +2078,7 @@ focus = {
 	focus = {
 		id = ALC_menorca_independence
 		icon = GFX_goal_generic_military_deal
-		cost = 3.00
+		cost = 2.00
 		x = 106
 		y = 1
 
@@ -2102,7 +2102,7 @@ focus = {
 	focus = {
 		id = ALC_mediterranean_confederation
 		icon = GFX_goal_generic_alliance
-		cost = 6.00
+		cost = 3.00
 		x = 100
 		y = 2
 
@@ -2306,31 +2306,36 @@ focus = {
 				declare_war_on = { 
 					target = SPR type = annex_everything 
 				}
-				add_equipment_to_stockpile = {
-					type = light_tank_chassis_0
-					amount = 100
-					variant_name = "FT Char Cannon série A"
-				}
-				add_equipment_to_stockpile = {
-					type = medium_tank_chassis_0
-					amount = 180
-					variant_name = "SOMUA S35"
-				}
-				add_equipment_to_stockpile = {
-					type = light_tank_chassis_1
-					amount = 80
-					variant_name = "LT vz. 35"
-				}
-				add_equipment_to_stockpile = {
-					type = light_tank_chassis_1
-					amount = 200
-					variant_name = "M1 Combat Car"
-				}
-				add_equipment_to_stockpile = {
-					type = light_tank_chassis_1
-					amount = 150
-					variant_name = "M2A2"
-				}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_0
+				amount = 100
+				variant_name = "FT Char Cannon série A"
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis_0
+				amount = 180
+				variant_name = "SOMUA S35"
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 80
+				variant_name = "LT vz. 35"
+				producer = CZE
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 200
+				variant_name = "M1 Combat Car"
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 150
+				variant_name = "M2A2"
+				producer = USA
+			}
 			}
 			TAR = { 
 				declare_war_on = { 
@@ -2367,34 +2372,34 @@ focus = {
 					target = SPR type = annex_everything 
 				} 
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 3000
-					producer = VAL
-				}
-				add_equipment_to_stockpile = {
 					type = light_tank_chassis_0
 					amount = 100
 					variant_name = "FT Char Cannon série A"
+					producer = FRA
 				}
 				add_equipment_to_stockpile = {
 					type = medium_tank_chassis_0
 					amount = 180
 					variant_name = "SOMUA S35"
+					producer = FRA
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					amount = 80
 					variant_name = "LT vz. 35"
+					producer = CZE
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					amount = 200
 					variant_name = "M1 Combat Car"
+					producer = USA
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					amount = 150
 					variant_name = "M2A2"
+					producer = USA
 				}
 			}
 			MLL = { 
@@ -2440,26 +2445,31 @@ focus = {
 					type = light_tank_chassis_0
 					amount = 100
 					variant_name = "FT Char Cannon série A"
+					producer = FRA
 				}
 				add_equipment_to_stockpile = {
 					type = medium_tank_chassis_0
 					amount = 180
 					variant_name = "SOMUA S35"
+					producer = FRA
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					amount = 80
 					variant_name = "LT vz. 35"
+					producer = CZE
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					amount = 200
 					variant_name = "M1 Combat Car"
+					producer = USA
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					amount = 150
 					variant_name = "M2A2"
+					producer = USA
 				}
 			}
 			RIF = { 
@@ -2467,34 +2477,34 @@ focus = {
 					target = SPR type = annex_everything 
 				} 
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 3000
-					producer = RIF
-				}
-				add_equipment_to_stockpile = {
 					type = light_tank_chassis_0
 					amount = 100
 					variant_name = "FT Char Cannon série A"
+					producer = FRA
 				}
 				add_equipment_to_stockpile = {
 					type = medium_tank_chassis_0
 					amount = 180
 					variant_name = "SOMUA S35"
+					producer = FRA
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					amount = 80
 					variant_name = "LT vz. 35"
+					producer = CZE
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					amount = 200
 					variant_name = "M1 Combat Car"
+					producer = USA
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					amount = 150
 					variant_name = "M2A2"
+					producer = USA
 				}
 			}
 			
@@ -2556,6 +2566,12 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_iberian_confederation
+		}
+
+		completion_reward = {
+			set_country_flag = more_influence
+			custom_effect_tooltip = ALC_more_influence_tooltip
+			add_political_power = 50
 		}
 	}
 
@@ -2640,6 +2656,32 @@ focus = {
 		prerequisite = {
 			focus = ALC_more_influence
 		}
+
+		completion_reward = {
+			set_country_flag = valencian_integration_unlocked
+			custom_effect_tooltip = ALC_valencian_comunity_tooltip
+			add_political_power = 50
+			
+			if = {
+				limit = { VAL = { exists = yes } }
+				VAL = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = medium_increase
+					}
+				}
+			}
+			
+			if = {
+				limit = { CAS = { exists = yes } }
+				CAS = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = medium_increase
+					}
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -2656,6 +2698,203 @@ focus = {
 
 		prerequisite = {
 			focus = ALC_iberian_integration
+		}
+
+		available = {
+			CST = { exists = yes }
+		}
+
+		completion_reward = {
+			set_country_flag = ALC_castile_war
+			custom_effect_tooltip = ALC_war_for_castile_tooltip
+
+			# Andalucía - Estados: 789 (Córdoba), 169 (Sevilla), 118 (Cádiz)
+			if = {
+				limit = {
+					OR = {
+						789 = { is_core_of = ANC }
+						169 = { is_core_of = ANC }
+						118 = { is_core_of = ANC }
+					}
+				}
+				# Liberar Andalucía como vasallo
+				CST = { release = ANC }
+				ANC = {
+					set_autonomy = {
+						target = ANC
+						autonomous_state = autonomy_puppet
+						freedom_level = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				puppet = ANC
+				add_to_faction = ANC
+				
+				# Transferir estados con core
+				if = {
+					limit = { 789 = { is_core_of = ANC } }
+					ANC = { transfer_state = 789 }
+				}
+				if = {
+					limit = { 169 = { is_core_of = ANC } }
+					ANC = { transfer_state = 169 }
+				}
+				if = {
+					limit = { 118 = { is_core_of = ANC } }
+					ANC = { transfer_state = 118 }
+				}
+			}
+
+			# León - Estados: 174 (León), 788 (Salamanca), 170 (Zamora)
+			if = {
+				limit = {
+					OR = {
+						174 = { is_core_of = LEO }
+						788 = { is_core_of = LEO }
+						170 = { is_core_of = LEO }
+					}
+				}
+				CST = { release = LEO }
+				LEO = {
+					set_autonomy = {
+						target = LEO
+						autonomous_state = autonomy_puppet
+						freedom_level = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				puppet = LEO
+				add_to_faction = LEO
+				
+				if = {
+					limit = { 174 = { is_core_of = LEO } }
+					LEO = { transfer_state = 174 }
+				}
+				if = {
+					limit = { 788 = { is_core_of = LEO } }
+					LEO = { transfer_state = 788 }
+				}
+				if = {
+					limit = { 170 = { is_core_of = LEO } }
+					LEO = { transfer_state = 170 }
+				}
+			}
+
+			# Asturias - Estado: 790 (Asturias)
+			if = {
+				limit = {
+					790 = { is_core_of = ASU }
+				}
+				CST = { release = ASU }
+				ASU = {
+					set_autonomy = {
+						target = ASU
+						autonomous_state = autonomy_puppet
+						freedom_level = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				puppet = ASU
+				add_to_faction = ASU
+				ASU = { transfer_state = 790 }
+			}
+
+			# Castilla Vieja - Estados: 791 (Valladolid), 176 (Burgos)
+			if = {
+				limit = {
+					OR = {
+						791 = { is_core_of = CVJ }
+						176 = { is_core_of = CVJ }
+					}
+				}
+				CST = { release = CVJ }
+				CVJ = {
+					set_autonomy = {
+						target = CVJ
+						autonomous_state = autonomy_puppet
+						freedom_level = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				puppet = CVJ
+				add_to_faction = CVJ
+				
+				if = {
+					limit = { 791 = { is_core_of = CVJ } }
+					CVJ = { transfer_state = 791 }
+				}
+				if = {
+					limit = { 176 = { is_core_of = CVJ } }
+					CVJ = { transfer_state = 176 }
+				}
+			}
+
+			# Castilla Nueva - Estados: 41 (Madrid - NO SE TRANSFIERE), 793 (Guadalajara)
+			if = {
+				limit = {
+					793 = { is_core_of = CNV }
+				}
+				CST = { release = CNV }
+				CNV = {
+					set_autonomy = {
+						target = CNV
+						autonomous_state = autonomy_puppet
+						freedom_level = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				puppet = CNV
+				add_to_faction = CNV
+				CNV = { transfer_state = 793 }
+			}
+
+			# La Mancha - Estado: 175 (Ciudad Real)
+			if = {
+				limit = {
+					175 = { is_core_of = LMN }
+				}
+				CST = { release = LMN }
+				LMN = {
+					set_autonomy = {
+						target = LMN
+						autonomous_state = autonomy_puppet
+						freedom_level = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+				puppet = LMN
+				add_to_faction = LMN
+				LMN = { transfer_state = 175 }
+			}
+
+			# Declarar guerra a Castilla
+			declare_war_on = {
+				target = CST
+				type = annex_everything
+			}
+
+			# Bonificaciones para la guerra
+			add_war_support = 0.15
+			add_stability = 0.05
+			add_manpower = 25000
 		}
 	}
 }
